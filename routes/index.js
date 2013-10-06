@@ -42,6 +42,20 @@ exports.saveCustomer = function (req, res) {
                 }
                 if(donation.repeat) {
                     //save info to a queue that will schedule future payments
+                    var kue = require('kue'),
+                        redis = require('redis');
+
+                    kue.redis.createClient = function() {
+                        var client = redis.createClient(config.get('queue-port'), config.get('queue-endpoint'));
+                        client.auth(config.get('queue-password'));
+                        return client;
+                    };
+
+                    jobs.create('schedule_payment', {
+                        customer_id: customer.id,
+                        amount: donation.amount,
+                        start_date: new Date()
+                    }).save();
                 }
                res.send(200);
             });
