@@ -1,22 +1,28 @@
 {
-    "name": "shopkeep",
-    "version": "0.0.1",
-    "private": true,
-    "scripts": {
-        "start": "node app"
-    },
-    "dependencies": {
-        "express": "latest",
-        "express-state": "latest",
-        "express3-handlebars": "latest"
-    },
-    "devDependencies": {
-        "grunt": "~0.4.1",
-        "grunt-yui-config": "~0.4.0",
-        "grunt-contrib-watch": "~0.5.1",
-        "grunt-notify": "~0.2.7",
-        "grunt-contrib-jshint": "~0.6.2",
-        "grunt-contrib-compass": "~0.4.1",
-        "grunt-contrib-copy": "~0.4.1"
-    }
+  "name": "shopkeep",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "latest",
+    "express-state": "latest",
+    "express3-handlebars": "latest",
+    "mongojs": "~0.9.6",
+    "qconf": "~0.3.0",
+    "paypal-rest-sdk": "~0.6.4",
+    "request": "~2.27.0",
+    "xml": "0.0.8",
+    "xml2js": "~0.2.8"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-yui-config": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-notify": "~0.2.7",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-compass": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1"
+  }
 }

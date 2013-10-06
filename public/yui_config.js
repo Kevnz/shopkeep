@@ -1,0 +1,1 @@
+YUI.applyConfig({"root":"/yui/build/","combine":true,"comboBase":"http://localhost:3000/combo?","groups":{"losingApp":{"combine":true,"root":"","modules":{}}}});

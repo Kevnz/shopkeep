@@ -9,8 +9,8 @@ var express = require('express'),
 expstate.extend(app);
 
 app.configure(function(){
-    app.set('port', process.env.PORT || 3000);
-    app.set('views', __dirname + '/views'); 
+    app.set('port', process.env.PORT || 4567);
+    app.set('views', __dirname + '/views');
     app.engine('handlebars', exphbs({defaultLayout: 'main'}));
     app.set('view engine', 'handlebars');
 

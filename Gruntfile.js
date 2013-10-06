@@ -34,23 +34,24 @@ module.exports = function (grunt) {
                 globals: {
                     YUI: true,
                     console: true,
+                    module: true,
                     exports: true,
                     require: true
                 },
  
                 ignores: ['public/js/lib/*.js']
-            }, 
+            },
             lib_test: {
                 src: ['public/js/**.js','lib/*.js', 'routes/*.js']
             }
         },
         yuiConfig: {
-            losing: {
+            shopkeep: {
                 options: {
                     dest: 'public/yui_config.js',
                     root: '/yui/build/',
-                    combine: true, 
-                    comboBase: 'http://localhost:3000/combo?', 
+                    combine: true,
+                    comboBase: 'http://localhost:3000/combo?',
                     groups: {
                         losingApp: {
                             combine: true,  
@@ -77,7 +78,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-yui-config');
-    grunt.loadNpmTasks('grunt-contrib-compass'); 
+    grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.registerTask('default',  ['jshint','compass','yuiConfig','copy']);
+    grunt.registerTask('default',  ['jshint','compass']);
 };
