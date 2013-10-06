@@ -11,10 +11,14 @@ kue.redis.createClient = function() {
 exports.index = function(req, res){
   res.render('index', { title: 'Shopkeep', subtitle:'Keeping the show' });
 };
-exports.customers = function(req, res){
-  res.render('create_customer', { title: 'Shopkeep', subtitle:'Keeping the show' });
+exports.process_payment_queue = function (req, res) {
+    jobs.process('payment', 20, function(job, done){
+        
+    });
 };
 
-exports.saveCustomer = function (req, res) {
- 
+exports.process_schedule_queue = function (req, res) {
+    jobs.process('schedule', 20, function(job, done){
+        
+    });
 };
