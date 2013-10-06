@@ -14,7 +14,8 @@
     "paypal-rest-sdk": "~0.6.4",
     "request": "~2.27.0",
     "xml": "0.0.8",
-    "xml2js": "~0.2.8"
+    "xml2js": "~0.2.8",
+    "guid": "0.0.10"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
