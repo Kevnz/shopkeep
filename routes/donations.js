@@ -5,6 +5,12 @@ exports.donation = function(req, res){
 var qconf = require('qconf'),
     config = qconf();
 exports.saveDonation = function (req, res) {
+    /*
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+ 
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    */
     try {
         var Guid = require('guid');
         var db = require('../lib/db')('donations');
@@ -60,7 +66,7 @@ exports.saveDonation = function (req, res) {
             }
 
         });
-    } catch(failed) {
+    } catch (failed) {
         res.send(200, failed);
     }
 };
