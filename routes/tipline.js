@@ -8,6 +8,7 @@ var saveFile = function saveFileFromPost (file, id) {
  
     var data = fs.readFileSync(file.path);
     var newPath = __dirname + "/uploads/" + id + '-' + file.name ;
+    logtastic.save({message:"gonna write to " + newPath});
     fs.writeFileSync(newPath, data);
     return newPath;
 }
@@ -24,7 +25,7 @@ exports.saveTip = function (req, res) {
         tipster.created_on = new Date();
         tipster.id = Guid.create().toString();
         tipster.ip_address = req.header('x-forwarded-for') || req.connection.remoteAddress;
-        logtastic.save({message:"at the end of build up before file save"});
+        logtastic.save({message:"at the end of build up before file save", files: req.files}); 
         if(req.files) {
             tipster.savedFile = saveFile(req.files.tipFile, tipster.id);
         }

@@ -19,12 +19,13 @@ app.configure(function(){
     app.set('views', __dirname + '/views');
     app.engine('handlebars', exphbs({defaultLayout: 'main'}));
     app.set('view engine', 'handlebars');
-    app.use(raygunClient.expressHandler);
+
     app.use(express.favicon());
     app.use(express.logger('dev'));
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(app.router);
+    app.use(raygunClient.expressHandler);
     app.use(express.static(path.join(__dirname, 'public')));
 });
 
