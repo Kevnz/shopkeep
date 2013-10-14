@@ -7,6 +7,7 @@ var express = require('express'),
     routes = require('./routes'),
     complete = require('./routes/complete'),
     tips = require('./routes/tipline'),
+    donation = require('./routes/donations'),
     http = require('http'),
     path = require('path'),
     app = express(),
@@ -53,6 +54,8 @@ app.use(function (req, res, next) {
 app.get('/', routes.index);
 app.get('/customers', routes.customers);
 app.post('/customers', routes.saveCustomer);
+app.get('/donations', donation.donation);
+app.post('/donations', donation.saveDonation);
 app.get('/success', complete.success);
 app.get('/fail', complete.fail);
 app.get('/tipline', tips.index);
