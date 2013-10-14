@@ -17,24 +17,29 @@ blobService.createContainerIfNotExists(containerName
     });
 
 var saveFile = function saveFileFromPost (file, id, callback) {
- 
-    var data = fs.readFileSync(file.path);
-    var newPath = __dirname + "/uploads/" + id + '-' + file.name ;
-    var fileName = id + '-' + file.name;
-    logtastic.save({message:"gonna write to " + newPath});
-    //fs.writeFileSync(newPath, data);
+    try {
+        var data = fs.readFileSync(file.path);
+        var newPath = __dirname + "/uploads/" + id + '-' + file.name ;
+        var fileName = id + '-' + file.name;
+        logtastic.save({message:"gonna write to " + newPath});
+        //fs.writeFileSync(newPath, data);
 
 
 
-    blobService.createBlockBlobFromFile(containerName
-    , fileName
-    , file.path
-    , function(error){
-         logtastic.save({message:"blob callback", error: error});
-        if(!error){
-            callback(fileName);
-        }
-    }); 
+        blobService.createBlockBlobFromFile(containerName
+        , fileName
+        , file.path
+        , function(error){
+             logtastic.save({message:"blob callback", error: error});
+            if(!error){
+                callback(fileName);
+            }
+        });
+    }
+    catch(fail) {
+        logtastic.save({message:"blob fail", error: fail});
+        callback('nothing');
+    }
 }
 exports.saveTip = function (req, res) {
     try {
