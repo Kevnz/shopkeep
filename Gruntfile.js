@@ -72,6 +72,11 @@ module.exports = function (grunt) {
                 config: 'config.rb'
                 }
             }
+        },
+        bower: {
+            dev: {
+                dest: 'public/components'
+            }
         }
     });
 
@@ -80,5 +85,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-yui-config');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.registerTask('default',  ['jshint','compass']);
+    grunt.loadNpmTasks('grunt-bower');
+    grunt.registerTask('default',  ['jshint','compass', 'bower']);
 };
