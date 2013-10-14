@@ -1,6 +1,6 @@
  
 exports.donation = function(req, res){
-  res.render('create_customer', { title: 'Taxpayers Union '});
+  res.render('donations', { title: 'Taxpayers Union '});
 };
 var qconf = require('qconf'),
     config = qconf();
