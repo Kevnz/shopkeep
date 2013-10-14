@@ -6,42 +6,47 @@ var qconf = require('qconf'),
     config = qconf();
 var azure = require('azure');
 var logtastic = require('../lib/db')('logtastic');
-var blobService = azure.createBlobService();
-var containerName = 'taxpayers-tipline';
-blobService.createContainerIfNotExists(containerName
-    , {publicAccessLevel : 'blob'}
-    , function(error){
-        if(!error){
-            // Container exists and is public
-        }
-    });
-
-var saveFile = function saveFileFromPost (file, id, callback) {
-    try {
-        var data = fs.readFileSync(file.path);
-        var newPath = __dirname + "/uploads/" + id + '-' + file.name ;
-        var fileName = id + '-' + file.name;
-        logtastic.save({message:"gonna write to " + newPath});
-        //fs.writeFileSync(newPath, data);
 
 
 
-        blobService.createBlockBlobFromFile(containerName
-        , fileName
-        , file.path
-        , function(error){
-             logtastic.save({message:"blob callback", error: error});
-            if(!error){
-                callback(fileName);
-            }
-        });
-    }
-    catch(fail) {
-        logtastic.save({message:"blob fail", error: fail});
-        callback('nothing');
-    }
-}
 exports.saveTip = function (req, res) {
+    var saveFile = function saveFileFromPost (file, id, callback) {
+        try {
+
+            var blobService = azure.createBlobService();
+            var containerName = 'taxpayers-tipline';
+            blobService.createContainerIfNotExists(containerName
+                , {publicAccessLevel : 'blob'}
+                , function(error){
+                    if(!error){
+                        // Container exists and is public
+                    }
+                });
+
+            var data = fs.readFileSync(file.path);
+            var newPath = __dirname + "/uploads/" + id + '-' + file.name ;
+            var fileName = id + '-' + file.name;
+            logtastic.save({message:"gonna write to " + newPath});
+            //fs.writeFileSync(newPath, data);
+
+
+
+            blobService.createBlockBlobFromFile(containerName
+            , fileName
+            , file.path
+            , function(error){
+                 logtastic.save({message:"blob callback", error: error});
+                if(!error){
+                    callback(fileName);
+                }
+            });
+        }
+        catch(fail) {
+            logtastic.save({message:"blob fail", error: fail});
+            callback('nothing');
+        }
+    }
+    
     try {
         var Guid = require('guid');
 
