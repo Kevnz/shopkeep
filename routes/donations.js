@@ -15,7 +15,6 @@ exports.saveDonation = function (req, res) {
         var Guid = require('guid');
         var db = require('../lib/db')('donations');
         var donations =  require('../lib/db')('donations');
-        console.log(donations);
         var donation = {};
         donation.first_name = req.body.first_name;
         donation.last_name = req.body.last_name;
@@ -33,8 +32,7 @@ exports.saveDonation = function (req, res) {
 
         donation.created_on = new Date();
         donation.id = Guid.create().toString();
-
-        var donation = {};
+ 
         donation.amount = req.body.amount;
         donation.repeat = false;
 
