@@ -15,7 +15,8 @@
     "request": "~2.27.0",
     "xml": "0.0.8",
     "xml2js": "~0.2.8",
-    "guid": "0.0.10"
+    "guid": "0.0.10",
+    "pxpay": "~0.1.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
