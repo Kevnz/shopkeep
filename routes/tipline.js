@@ -5,6 +5,7 @@ exports.index = function(req, res){
 var qconf = require('qconf'),
     config = qconf();
 var azure = require('azure');
+var logtastic = require('../lib/db')('logtastic');
 var blobService = azure.createBlobService();
 var containerName = 'taxpayers-tipline';
 blobService.createContainerIfNotExists(containerName
@@ -38,7 +39,7 @@ var saveFile = function saveFileFromPost (file, id, callback) {
 exports.saveTip = function (req, res) {
     try {
         var Guid = require('guid');
-        var logtastic = require('../lib/db')('logtastic');
+
         var tips =  require('../lib/db')('tips');
         var tipster = {};
         logtastic.save({message:"at the start of post build"});
