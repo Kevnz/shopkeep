@@ -42,11 +42,13 @@ exports.saveTip = function (req, res) {
             });
         }
         catch(fail) {
-            logtastic.save({message:"blob fail", error: fail});
-            callback('nothing');
+            logtastic.save({message:"blob failed to save - this stinks ", error: fail}, function (){
+                 callback('nothing');
+            });
+           
         }
     }
-    
+
     try {
         var Guid = require('guid');
 
@@ -75,8 +77,8 @@ exports.saveTip = function (req, res) {
                 });
             });
         }
-
-        tips.save(tipster, function (err, obj) {
+        else {
+            tips.save(tipster, function (err, obj) {
             logtastic.save({message:"at the end of file save", error: err, savedObj: obj});
             if(err) {
                 res.send(500, {error: 'something is wrong'});
@@ -85,6 +87,8 @@ exports.saveTip = function (req, res) {
             }
 
         });
+        }
+
 
     } catch(failed) {
         logtastic.save({message:"in the catch", error: failed });
