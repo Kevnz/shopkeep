@@ -1,3 +1,7 @@
+var raygun = require('raygun');
+var raygunClient = new raygun.Client().init({ apiKey: 'DTUW+h7RxSN5Meopa7KKVg==' });
+
+
 var express = require('express'),
     exphbs  = require('express3-handlebars'),
     routes = require('./routes'),
@@ -14,7 +18,7 @@ app.configure(function(){
     app.set('views', __dirname + '/views');
     app.engine('handlebars', exphbs({defaultLayout: 'main'}));
     app.set('view engine', 'handlebars');
-
+    app.use(raygunClient.expressHandler);
     app.use(express.favicon());
     app.use(express.logger('dev'));
     app.use(express.bodyParser());
