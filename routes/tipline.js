@@ -4,13 +4,36 @@ exports.index = function(req, res){
 
 var qconf = require('qconf'),
     config = qconf();
-var saveFile = function saveFileFromPost (file, id) {
+var azure = require('azure');
+var blobService = azure.createBlobService();
+var containerName = 'taxpayers-tipline';
+blobService.createContainerIfNotExists(containerName
+    , {publicAccessLevel : 'blob'}
+    , function(error){
+        if(!error){
+            // Container exists and is public
+        }
+    });
+
+var saveFile = function saveFileFromPost (file, id, callback) {
  
     var data = fs.readFileSync(file.path);
     var newPath = __dirname + "/uploads/" + id + '-' + file.name ;
+    var fileName = id + '-' + file.name;
     logtastic.save({message:"gonna write to " + newPath});
-    fs.writeFileSync(newPath, data);
-    return newPath;
+    //fs.writeFileSync(newPath, data);
+
+
+
+    blobService.createBlockBlobFromFile(containerName
+    , fileName
+    , file.path
+    , function(error){
+         logtastic.save({message:"blob callback", error: error});
+        if(!error){
+            callback(fileName);
+        }
+    }); 
 }
 exports.saveTip = function (req, res) {
     try {
@@ -27,9 +50,21 @@ exports.saveTip = function (req, res) {
         tipster.ip_address = req.header('x-forwarded-for') || req.connection.remoteAddress;
         logtastic.save({message:"at the end of build up before file save", files: req.files}); 
         if(req.files) {
-            tipster.savedFile = saveFile(req.files.tipFile, tipster.id);
+            saveFile(req.files.tipFile, tipster.id, function (filename) {
+                tipster.savedFile = filename
+                logtastic.save({message:"at the end of file save"});
+                    tips.save(tipster, function (err, obj) {
+                    logtastic.save({message:"at the end of file save", error: err, savedObj: obj});
+                    if(err) {
+                        res.send(500, {error: 'something is wrong'});
+                    } else {
+                        res.redirect('http://taxpayers.org.nz/?success');
+                    }
+
+                });
+            });
         }
-        logtastic.save({message:"at the end of file save"});
+
         tips.save(tipster, function (err, obj) {
             logtastic.save({message:"at the end of file save", error: err, savedObj: obj});
             if(err) {
@@ -39,6 +74,7 @@ exports.saveTip = function (req, res) {
             }
 
         });
+
     } catch(failed) {
         logtastic.save({message:"in the catch", error: failed });
         res.send(200, failed);
