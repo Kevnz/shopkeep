@@ -16,8 +16,6 @@ exports.saveTip = function (req, res) {
         var Guid = require('guid');
         var db = require('../lib/db')('tips');
         var tips =  require('../lib/db')('tips');
-        console.log(customers);
-
         var tipster = {};
         tipster.name = req.body.name;
         tipster.phone_number = req.body.phone_number;
