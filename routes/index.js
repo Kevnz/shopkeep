@@ -20,7 +20,7 @@ exports.saveCustomer = function (req, res) {
         customer.id = Guid.create().toString();
 
         var donation = {};
-        donation.amount = req.body.amount;
+        donation.amount = req.body.amount || req.body.custom_amount;
         donation.repeat = req.body.repeat ? true : false;
 
         customers.save(customer, function (err, obj) {
