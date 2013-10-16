@@ -1,0 +1,74 @@
+<form class="pure-form pure-form-stacked" action="/donations" method="POST">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="first_name">First Name</label>
+            <input id="first_name" name="first_name" type="text" placeholder="First Name">
+        </div>
+        <div class="pure-control-group">
+            <label for="last_name">Last Name</label>
+            <input id="last_name" name="last_name" type="text" placeholder="Last Name">
+        </div>
+        <div class="pure-control-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="Email Address">
+        </div>
+        <div class="pure-control-group">
+            <label for="address1">Address</label>
+            <input id="address1" name="address1" type="text" placeholder="Address">
+        </div>
+        <div class="pure-control-group">
+            <label for="address2">Address</label>
+            <input id="address2" name="address2" type="text" placeholder="Address">
+        </div>
+        <div class="pure-control-group">
+            <label for="address3">Address</label>
+            <input id="address3" name="address3" type="text" placeholder="Address">
+        </div>
+        <div class="pure-control-group">
+            <label>Donation Amounts</label>
+            <select id="donation" name="amount">
+                <option value="">Please Choose</option>
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+                <option>25</option>
+            </select>
+            <input id="custom_amount" name="custom_amount" type="text" placeholder="A different amount">
+        </div>
+        <div class="pure-control-group">
+             <label for="cb" class="pure-checkbox">
+                <input id="cb" name="repeat" type="checkbox"> I'd like to donate monthly
+            </label>
+        </div>
+        <div class="pure-control-group">
+             <label for="public" class="pure-checkbox">
+                <input id="public" name="public" type="checkbox"> I would like to be publicly acknowledged as a supporter of the Taxpayers’ Union 
+            </label>
+        </div>
+        <div class="pure-control-group">
+             <label for="private_identified" class="pure-checkbox">
+                <input id="private_identified" name="private_identified" type="checkbox"> I am happy to be privately identified as a financial supporter when the Taxpayers Union is presenting to other potential supporters 
+            </label>
+        </div>
+        <div class="pure-control-group">
+             <label for="provide_friends" class="pure-checkbox">
+                <input id="provide_friends" name="provide_friends" type="checkbox"> I am able to provide introductions to friends who may be willing to support the Taxpayers’ Union      
+            </label>
+        </div>
+        <div class="pure-control-group">
+             <label for="contact[post]" class="pure-checkbox">
+                How would you prefer we contact you?
+                <label><input id="contact[post]" name="contactMethod" type="radio" value="post"> Post </label>
+                <label><input id="contact[email]" name="contactMethod" type="radio" value="email"> Email </label>
+            </label>
+        </div>
+
+        <div class="pure-controls">
+            <label>
+                Please note that though the Taxpayers’ Union is not a charity your donation may be tax deductible as a business expense.
+            </label>
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </div>
+    </fieldset>
+</form>

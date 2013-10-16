@@ -1,0 +1,31 @@
+<form class="pure-form pure-form-aligned" action="/tipline" method="POST" enctype="multipart/form-data">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="name">First Name</label>
+            <input id="name" name="name" type="text" placeholder="Name">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="Email Address">
+        </div>
+        <div class="pure-control-group">
+            <label for="phone_number">Phone Number</label>
+            <input id="phone_number" name="phone_number" type="text" placeholder="Phone Number">
+        </div>
+        <div class="pure-control-group">
+            <label>Tipline Message</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+            <div class="pure-control-group">
+            <label>Attachment</label>
+            <input id="tipFile" name="tipFile" type="file" placeholder="File Attachment">
+        </div>
+        <div class="pure-controls">
+            <label for="cb" class="pure-checkbox">
+                <input id="cb" name="repeat" type="checkbox"> I'd like to donate monthly
+            </label>
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </div>
+    </fieldset>
+</form>
