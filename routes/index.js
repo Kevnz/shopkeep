@@ -27,6 +27,8 @@ exports.saveCustomer = function (req, res) {
             if(err) {
                 res.send(500, {error: 'something is wrong'});
             } else {
+                
+                
                 donation.reference = 'Payment from user ' + customer.id;
                 var pxpay = require('pxpay');
 
