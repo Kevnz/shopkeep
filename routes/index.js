@@ -6,6 +6,8 @@ exports.customers = function(req, res){
 };
 var qconf = require('qconf'),
     config = qconf();
+
+var shopify = require('../lib/shopify');
 exports.saveCustomer = function (req, res) {
     try {
         var Guid = require('guid');
@@ -18,7 +20,10 @@ exports.saveCustomer = function (req, res) {
         customer.email = req.body.email;
         customer.created_on = new Date();
         customer.id = Guid.create().toString();
-
+        customer.address1 = req.body.address1;
+        customer.address2 = req.body.address2;
+        customer.address3 = req.body.address3;
+        customer.postcode = req.body.postcode;
         var donation = {};
         var intholder =0;
         try {
@@ -49,9 +54,11 @@ exports.saveCustomer = function (req, res) {
                     failURL: 'http://localhost:4567/fail?user='+ customer.id
                 };
                 console.log(transaction);
-                pxpay.request(transaction, function(err, result) {
-                    var url = result.URI;
-                    res.redirect(url);
+                shopify.createCustomer(customer, function (err, shopifyCustomer) {
+                    pxpay.request(transaction, function(err, result) {
+                        var url = result.URI;
+                        res.redirect(url);
+                    });
                 });
                 
             }

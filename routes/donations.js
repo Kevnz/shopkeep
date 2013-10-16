@@ -22,13 +22,10 @@ exports.saveDonation = function (req, res) {
         donation.address1 = req.body.address1;
         donation.address2 = req.body.address2;
         donation.address3 = req.body.address3;
+        donation.postcode = req.body.postcode;
 
         donation.repeat = req.body.repeat;
-        donation.public = req.body.public;
-        donation.provideFriends = req.body.provide_friends;
-        donation.privateIdentified = req.body.private_identified;
-        donation.contactMethod =  req.body.contactMethod;
-
+        donation.join = req.body.join;
 
         donation.created_on = new Date();
         donation.id = Guid.create().toString();
