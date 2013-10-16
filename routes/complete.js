@@ -7,7 +7,7 @@ exports.success = function(req, res){
         result: result,
         created_on: new Date()
     }, function () {
-            res.render('index', { title: 'Shopkeep', subtitle:'Keeping the shop open' });
+            res.redirect('http://taxpayers.org.nz/donation-success') ;
     });
 
 };
@@ -20,7 +20,7 @@ exports.fail = function(req, res){
         result: result,
         created_on: new Date()
     }, function (){
-        res.render('create_customer', { title: 'Shopkeep', subtitle:'Keeping the show' });
+        res.redirect('http://taxpayers.org.nz/donation-fail')
     });
     
 };
