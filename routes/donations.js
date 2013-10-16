@@ -4,6 +4,7 @@ exports.donation = function(req, res){
 };
 var qconf = require('qconf'),
     config = qconf();
+var shopify = require('../lib/shopify');
 exports.saveDonation = function (req, res) {
     /*
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -53,11 +54,12 @@ exports.saveDonation = function (req, res) {
                     failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id
                 };
                 console.log(transaction);
-                pxpay.request(transaction, function(err, result) {
-                    var url = result.URI;
-                    res.redirect(url);
+                shopify.createCustomer(donation, function (err, shopifyCustomer){
+                    pxpay.request(transaction, function(err, result) {
+                        var url = result.URI;
+                        res.redirect(url);
+                    });
                 });
-                
             }
 
         });
