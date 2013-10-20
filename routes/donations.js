@@ -27,6 +27,10 @@ exports.saveDonation = function (req, res) {
 
         donation.repeat = req.body.repeat;
         donation.join = req.body.join;
+        if (donation.join) {
+            donation.password = req.body.password;
+            donation.password_confirmation = req.body.password_confirm;
+        }
 
         donation.created_on = new Date();
         donation.id = Guid.create().toString();
@@ -53,15 +57,21 @@ exports.saveDonation = function (req, res) {
                     successURL: 'https://tradeshop.azurewebsites.net/success?user='+ donation.id,
                     failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id
                 };
-                console.log(transaction);
-                shopify.createCustomer(donation, function (err, shopifyCustomer){
+                if (donation.join) {
+
+                    shopify.createCustomer(donation, function (err, shopifyCustomer){
+                        pxpay.request(transaction, function(err, result) {
+                            var url = result.URI;
+                            res.redirect(url);
+                        });
+                    });
+                } else {
                     pxpay.request(transaction, function(err, result) {
                         var url = result.URI;
                         res.redirect(url);
                     });
-                });
+                }
             }
-
         });
     } catch (failed) {
         res.send(200, failed);
