@@ -25,11 +25,11 @@ exports.saveCustomer = function (req, res) {
         customer.address3 = req.body.address3;
         customer.postcode = req.body.postcode;
         var donation = {};
-        var intholder =0;
+        var intholder;
         try {
-           intholder = parseInt((req.body.amount || req.body.custom_amount), 10);
+           intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
         }catch(err) {}
-        donation.amount = 5 + intholder;
+        donation.amount =  intholder;
         donation.repeat = req.body.repeat ? true : false;
 
         customers.save(customer, function (err, obj) {

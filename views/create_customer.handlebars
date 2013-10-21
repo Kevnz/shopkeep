@@ -34,7 +34,7 @@
         </div>
         <div class="clearfix large_form one-half-form-left column-form">
             <label>Donation Amounts</label>
-            <select id="donation" name="amount">
+            <select id="donation_amount" name="amount">
                 <option value="">Please Choose</option>
                 <option value="5">$5.00</option>
                 <option value="25">$25.00</option>
@@ -42,7 +42,8 @@
                 <option value="150">$150.00</option>
                 <option value="300">$300.00</option>
             </select>
-            <input id="custom_amount" name="custom_amount" type="text" placeholder="Minimum $5.00" />
+            <input id="custom_amount" name="custom_amount" type="text" placeholder="Minimum $5.00" style="display:none;" />
+            * please note it costs $5 to set up a TaxPayers' Union account.
         </div>
         <div class="pure-controls">
             <label for="cb" class="pure-checkbox">
@@ -54,4 +55,14 @@
 </form>
 <script type="text/javascript">
     $.validate(); 
+            $('#donation_amount').on('change', function () {
+            var $dd = $(this, ':selected');
+            if($dd.val() === '0') {
+                $('#custom_amount').show();
+            } else {
+                $('#custom_amount').val('');
+                $('#custom_amount').hide(); 
+            }
+
+        });
 </script>

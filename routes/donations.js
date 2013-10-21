@@ -34,7 +34,11 @@ exports.saveDonation = function (req, res) {
 
         donation.created_on = new Date();
         donation.id = Guid.create().toString();
- 
+        var intholder;
+        try {
+           intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
+        }catch(err) {}
+        donation.amount = intholder;
         donation.amount = req.body.amount;
         donation.repeat = false;
 

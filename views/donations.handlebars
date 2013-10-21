@@ -27,15 +27,18 @@
 </div>
 <div class="clearfix large_form one-half-form-left column-form">
     <label>Donation Amounts</label>
-    <select id="donation" name="amount">
+    <select id="donation_amount" name="amount">
         <option value="">Please Choose</option>
         <option value="5">$5.00</option>
         <option value="25">$25.00</option>
         <option value="50">$50.00</option>
         <option value="150">$150.00</option>
         <option value="300">$300.00</option>
+        <option value="0">Other Amount</option>
     </select>
-    <input id="custom_amount" name="custom_amount" type="text" placeholder="Minimum $5.00" />
+
+    <input id="custom_amount" name="custom_amount" type="text" placeholder="Minimum $5.00" style="display:none;"  />
+    * please note it costs $5 to set up a TaxPayers' Union account.
 </div>
 <div class="clearfix large_form">
     <label for="cb" class="pure-checkbox"> <input id="cb" name="repeat" type="checkbox" /> I'd like to donate this amount monthly </label>
@@ -57,12 +60,23 @@
 
 <script type="text/javascript">
     $(function() {
-      $('#join').on('click', function (e) {
-        if(this.checked) {
-            $('#password-holder').show(500);
-        } else {
-            $('#password-holder').hide(500);
-        }
-      });
+
+        $('#donation_amount').on('change', function () {
+            var $dd = $(this, ':selected');
+            if($dd.val() === '0') {
+                $('#custom_amount').show();
+            } else {
+                $('#custom_amount').val('');
+                $('#custom_amount').hide(); 
+            }
+
+        });
+        $('#join').on('click', function (e) {
+            if(this.checked) {
+                $('#password-holder').show(500);
+            } else {
+                $('#password-holder').hide(500);
+            }
+        });
     });
 </script>
