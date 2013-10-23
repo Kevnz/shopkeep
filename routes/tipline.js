@@ -33,11 +33,14 @@ exports.saveTip = function (req, res) {
         tipster.created_on = new Date();
         tipster.id = Guid.create().toString();
         tipster.ip_address = req.header('x-forwarded-for') || req.connection.remoteAddress;
+        logtastic.save({message:"at the end of post build"});
         if(req.files) {
             tipster.savedFile = 'yes';
             tipster.filelocation = req.files[0].path;
 
         }
+        logtastic.save({message:"at the end of file check"});
+        logtastic.save(tipster);
         tips.save(tipster, function (err, obj) {
             var sender = require('../lib/email');
             sender.sendEmail(tipser, function (err, obj) {
