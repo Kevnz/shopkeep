@@ -70,35 +70,21 @@ exports.saveTip = function (req, res) {
         tipster.created_on = new Date();
         tipster.id = Guid.create().toString();
         tipster.ip_address = req.header('x-forwarded-for') || req.connection.remoteAddress;
-        logtastic.save({message:"at the end of build up before file save", files: req.files}); 
         if(req.files) {
-            saveFile(req.files.tipFile, tipster.id, function (filename) {
-                tipster.savedFile = filename
-                logtastic.save({message:"at the end of file save"});
-                    tips.save(tipster, function (err, obj) {
-                    logtastic.save({message:"at the end of file save", error: err, savedObj: obj});
-                    if(err) {
-                        res.send(500, {error: 'something is wrong'});
-                    } else {
-                        res.send(200);
-                    }
+            tipster.savedFile = 'yes';
+            tipster.filelocation = req.files[0].path;
 
-                });
+        }
+        tips.save(tipster, function (err, obj) {
+            var sender = require('../lib/email');
+            sender.sendEmail(tipser, function (err, obj) {
+                if(err) {
+                    res.send(500, {error: 'something is wrong'});
+                } else {
+                    res.send(200);
+                }
             });
-        }
-        else {
-            tips.save(tipster, function (err, obj) {
-            logtastic.save({message:"at the end of file save", error: err, savedObj: obj});
-            if(err) {
-                res.send(500, {error: 'something is wrong'});
-            } else {
-                res.send(200);
-            }
-
         });
-        }
-
-
     } catch(failed) {
         logtastic.save({message:"in the catch", error: failed });
         res.send(200, failed);

@@ -18,7 +18,8 @@
     "guid": "0.0.10",
     "pxpay": "latest",
     "raygun": "~0.2.0",
-    "shopnode": "git+https://github.com/brightleaf/shopnode.git"
+    "shopnode": "git+https://github.com/brightleaf/shopnode.git",
+    "handlebars": "~1.0.12"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
