@@ -6,7 +6,7 @@ exports.customers = function(req, res){
 };
 var qconf = require('qconf'),
     config = qconf();
-
+var logger = require('../lib/logger');
 var shopify = require('../lib/shopify');
 exports.saveCustomer = function (req, res) {
     try {
@@ -26,15 +26,16 @@ exports.saveCustomer = function (req, res) {
         customer.postcode = req.body.postcode;
         var donation = {};
         var intholder;
+        logger.log('trying to parse int');
         try {
             intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
             if (req.body.custom_amount) {
                 intholder = intholder + 5;
             }
-        }catch(err) {}
+        }catch(err) {logger.log(err);}
         donation.amount =  intholder;
         donation.repeat = req.body.repeat ? true : false;
-
+        logger.log('presave');
         customers.save(customer, function (err, obj) {
             if(err) {
                 res.send(500, {error: 'something is wrong'});
@@ -55,9 +56,11 @@ exports.saveCustomer = function (req, res) {
                     successURL: 'https://tradeshop.azurewebsites.net/success?user='+ donation.id,
                     failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id
                 };
-                console.log(transaction);
+                logger.log('createCustomer');
                 shopify.createCustomer(customer, function (err, shopifyCustomer) {
+                    logger.log('created shopify');
                     pxpay.request(transaction, function(err, result) {
+                        logger.log('pxpay');
                         var url = result.URI;
                         res.redirect(url);
                     });
