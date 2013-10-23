@@ -66,6 +66,7 @@ exports.saveTip = function (req, res) {
         logtastic.save({message:"at the start of post build"});
         tipster.name = req.body.name;
         tipster.phone_number = req.body.phone_number;
+        tipster.email = req.body.email;
         tipster.message = req.body.message;
         tipster.created_on = new Date();
         tipster.id = Guid.create().toString();
