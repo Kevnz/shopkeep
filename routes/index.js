@@ -9,7 +9,7 @@ var qconf = require('qconf'),
 var logger = require('../lib/logger');
 var shopify = require('../lib/shopify');
 exports.saveCustomer = function (req, res) {
-    console.log(logger);
+ 
     try {
         var Guid = require('guid');
         var db = require('../lib/db')('customer');
