@@ -9,6 +9,7 @@ var qconf = require('qconf'),
 var logger = require('../lib/logger');
 var shopify = require('../lib/shopify');
 exports.saveCustomer = function (req, res) {
+    console.log(logger);
     try {
         var Guid = require('guid');
         var db = require('../lib/db')('customer');
@@ -38,7 +39,7 @@ exports.saveCustomer = function (req, res) {
         logger.log('presave');
         customers.save(customer, function (err, obj) {
             if(err) {
-                res.send(500, {error: 'something is wrong'});
+                res.send(500, {error: 'something is wrong', result: err});
             } else {
                 
                 
