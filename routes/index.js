@@ -27,7 +27,10 @@ exports.saveCustomer = function (req, res) {
         var donation = {};
         var intholder;
         try {
-           intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
+            intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
+            if (req.body.custom_amount) {
+                intholder = intholder + 5;
+            }
         }catch(err) {}
         donation.amount =  intholder;
         donation.repeat = req.body.repeat ? true : false;
@@ -48,10 +51,9 @@ exports.saveCustomer = function (req, res) {
                     reference: 'Payment from user ' + customer.id,
                     email: customer.email,
                     TxnId: 'trans-'+ Guid.create().toString(),
-                    billingId: 'bd-' + Date.now(),
                     addCard: donation.repeat ? 1 : 0,
-                    successURL: 'http://localhost:4567/success?user='+ customer.id,
-                    failURL: 'http://localhost:4567/fail?user='+ customer.id
+                    successURL: 'https://tradeshop.azurewebsites.net/success?user='+ donation.id,
+                    failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id
                 };
                 console.log(transaction);
                 shopify.createCustomer(customer, function (err, shopifyCustomer) {

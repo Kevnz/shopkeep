@@ -56,7 +56,6 @@ exports.saveDonation = function (req, res) {
                     reference: 'Payment from user ' + donation.id,
                     email: donation.email,
                     TxnId: 'trans-'+ Guid.create().toString(),
-                    billingId: 'bd-' + Date.now(),
                     addCard: donation.repeat ? 1 : 0,
                     successURL: 'https://tradeshop.azurewebsites.net/success?user='+ donation.id,
                     failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id
