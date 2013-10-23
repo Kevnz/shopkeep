@@ -34,10 +34,15 @@ exports.saveTip = function (req, res) {
         tipster.id = Guid.create().toString();
         tipster.ip_address = req.header('x-forwarded-for') || req.connection.remoteAddress;
         logtastic.save({message:"at the end of post build"});
-        if(req.files) {
-            tipster.savedFile = 'yes';
-            tipster.filelocation = req.files[0].path;
+        try {
+            if (req.files) {
+                tipster.savedFile = 'yes';
+                tipster.filelocation = req.files[0].path;
 
+            }
+        }
+        catch (e) {
+            logtastic.save({message:"failed files", error: e});
         }
         logtastic.save({message:"at the end of file check"});
         logtastic.save(tipster);
