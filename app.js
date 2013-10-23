@@ -26,7 +26,7 @@ app.configure(function(){
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(app.router);
-    //app.use(raygunClient.expressHandler());
+    app.use(raygunClient.expressHandler);
     app.use(express.static(path.join(__dirname, 'public')));
 });
 
