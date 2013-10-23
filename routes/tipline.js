@@ -35,10 +35,10 @@ exports.saveTip = function (req, res) {
         tipster.ip_address = req.header('x-forwarded-for') || req.connection.remoteAddress;
         logtastic.save({message:"at the end of post build"});
         try {
-            if (req.files) {
+            if (req.body.files) {
                 tipster.savedFile = 'yes';
+                logtastic.save(req.body.files);
                 tipster.filelocation = req.files[0].path;
-
             }
         }
         catch (e) {
