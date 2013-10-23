@@ -50,6 +50,6 @@ exports.saveTip = function (req, res) {
         });
     } catch(failed) {
         logtastic.save({message:"in the catch", error: failed });
-        res.send(200, {problem: 'yes'});
+        res.send(200, {problem: 'yes', err: failed});
     }
 };
