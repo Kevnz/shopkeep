@@ -9,7 +9,7 @@ var qconf = require('qconf'),
 var logger = require('../lib/logger');
 var shopify = require('../lib/shopify');
 exports.saveCustomer = function (req, res) {
- 
+
     try {
         var Guid = require('guid');
         var db = require('../lib/db')('customer');
@@ -62,6 +62,7 @@ exports.saveCustomer = function (req, res) {
                     logger.log('created shopify');
                     pxpay.request(transaction, function(err, result) {
                         logger.log('pxpay');
+                        logger.log(result);
                         var url = result.URI;
                         res.redirect(url);
                     });
