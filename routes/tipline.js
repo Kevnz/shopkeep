@@ -19,44 +19,6 @@ exports.saveTip = function (req, res) {
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
 
     
-    var saveFile = function saveFileFromPost (file, id, callback) {
-        try {
-
-            var blobService = azure.createBlobService();
-            var containerName = 'taxpayers-tipline';
-            blobService.createContainerIfNotExists(containerName
-                , {publicAccessLevel : 'blob'}
-                , function(error){
-                    if(!error){
-                        // Container exists and is public
-                    }
-                });
-
-            var data = fs.readFileSync(file.path);
-            var newPath = __dirname + "/uploads/" + id + '-' + file.name ;
-            var fileName = id + '-' + file.name;
-            logtastic.save({message:"gonna write to " + newPath});
-            //fs.writeFileSync(newPath, data);
-
-
-
-            blobService.createBlockBlobFromFile(containerName
-            , fileName
-            , file.path
-            , function(error){
-                 logtastic.save({message:"blob callback", error: error});
-                if(!error){
-                    callback(fileName);
-                }
-            });
-        }
-        catch(fail) {
-            logtastic.save({message:"blob failed to save - this stinks ", error: fail}, function (){
-                 callback('nothing');
-            });
-           
-        }
-    }
 
     try {
         var Guid = require('guid');
@@ -80,14 +42,14 @@ exports.saveTip = function (req, res) {
             var sender = require('../lib/email');
             sender.sendEmail(tipser, function (err, obj) {
                 if(err) {
-                    res.send(500, {error: 'something is wrong'});
+                    res.send(500, { error: 'something is wrong'});
                 } else {
-                    res.send(200, {message: 'all good', tipster:tipster});
+                    res.send(200, {message: 'all good'});
                 }
             });
         });
     } catch(failed) {
         logtastic.save({message:"in the catch", error: failed });
-        res.send(200, failed);
+        res.send(200, {problem: 'yes'});
     }
 };
