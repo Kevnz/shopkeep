@@ -19,12 +19,15 @@ exports.saveCustomer = function (req, res) {
         customer.first_name = req.body.first_name;
         customer.last_name = req.body.last_name;
         customer.email = req.body.email;
+        customer.phone_number = req.body.phone_number;
         customer.created_on = new Date();
         customer.id = Guid.create().toString();
         customer.address1 = req.body.address1;
         customer.address2 = req.body.address2;
         customer.address3 = req.body.address3;
         customer.postcode = req.body.postcode;
+        customer.password = req.body.password;
+        customer.password_confirmation = req.body.password_confirm;
         var donation = {};
         var intholder;
         logger.log('trying to parse int');
@@ -61,7 +64,7 @@ exports.saveCustomer = function (req, res) {
                 shopify.createCustomer(customer, function (err, shopifyCustomer) {
                     logger.log('created shopify');
                     pxpay.request(transaction, function(err, result) {
-                        logger.log('pxpay');
+                        logger.log(err);
                         logger.logObject(result);
                         var url = result.URI;
                         res.redirect(url);
