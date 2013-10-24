@@ -35,7 +35,7 @@ exports.saveCustomer = function (req, res) {
             intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
 
             intholder = intholder + 5;
-        }catch(err) {logger.log(err);}
+        } catch(err) { logger.logObject(err);intholder = 5;}
         donation.amount =  intholder;
         donation.repeat = req.body.repeat ? true : false;
         logger.log('presave');
