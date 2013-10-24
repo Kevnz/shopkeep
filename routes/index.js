@@ -62,9 +62,7 @@ exports.saveCustomer = function (req, res) {
                 };
                 logger.log('createCustomer');
                 shopify.createCustomer(customer, function (err, shopifyCustomer) {
-                    if(err) {
-                        res.redirect('http://taxpayers.org.nz/account/register?error=true');
-                    }
+
                     logger.log('created shopify');
                     logger.logObject(err);
                     logger.logObject(shopifyCustomer);
