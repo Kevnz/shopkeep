@@ -1,7 +1,7 @@
 exports.success = function(req, res){
     var user = req.query.user;
     var result = req.query.result;
-    var successDB = require('../lib/db')('failed');
+    var successDB = require('../lib/db')('success');
     successDB.save({
         userId: user,
         result: result,

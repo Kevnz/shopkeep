@@ -14,7 +14,6 @@ exports.saveCustomer = function (req, res) {
         var Guid = require('guid');
         var db = require('../lib/db')('customer');
         var customers =  require('../lib/db')('customer');
-        console.log(customers);
         var customer = {};
         customer.first_name = req.body.first_name;
         customer.last_name = req.body.last_name;
@@ -23,22 +22,23 @@ exports.saveCustomer = function (req, res) {
         customer.created_on = new Date();
         customer.id = Guid.create().toString();
         customer.address1 = req.body.address1;
-        customer.address2 = req.body.address2;
+        customer.address2 = req.body.address2 || '';
         customer.address3 = req.body.address3;
         customer.postcode = req.body.postcode;
         customer.password = req.body.password;
         customer.password_confirmation = req.body.password_confirm;
         var donation = {};
         var intholder = 0;
-        logger.log('trying to parse int');
+        
         try {
             intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
-
             intholder = intholder + 5;
         } catch(err) { 
             logger.logObject(err);
-            intholder= 5;
+            logger.log('failed parsing');
+            intholder = 5;
         }
+        logger.log(intholder);
         donation.amount =  intholder;
         donation.repeat = req.body.repeat ? true : false;
         logger.log('presave');
