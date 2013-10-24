@@ -63,7 +63,17 @@ exports.saveCustomer = function (req, res) {
                 logger.log('createCustomer');
                 shopify.createCustomer(customer, function (err, shopifyCustomer) {
                     logger.log('created shopify');
-                    pxpay.request(transaction, function(err, result) {
+                    pxpay.request({
+                    user: config.get('dps-user'),
+                    password: config.get('dps-password'),
+                    amount:  donation.amount + '.00',
+                    reference: 'Payment from user ' + customer.id,
+                    email: customer.email,
+                    TxnId: 'trans-'+ Guid.create().toString(),
+                    addCard: donation.repeat ? 1 : 0,
+                    successURL: 'https://tradeshop.azurewebsites.net/success?user='+ donation.id,
+                    failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id
+                }, function(err, result) {
                         logger.log(err);
                         logger.logObject(result);
                         var url = result.URI;
