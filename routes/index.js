@@ -62,7 +62,7 @@ exports.saveCustomer = function (req, res) {
                     logger.log('created shopify');
                     pxpay.request(transaction, function(err, result) {
                         logger.log('pxpay');
-                        logger.log(result);
+                        logger.logObject(result);
                         var url = result.URI;
                         res.redirect(url);
                     });
