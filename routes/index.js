@@ -29,7 +29,7 @@ exports.saveCustomer = function (req, res) {
         customer.password = req.body.password;
         customer.password_confirmation = req.body.password_confirm;
         var donation = {};
-        var intholder;
+        var intholder = 0;
         logger.log('trying to parse int');
         try {
             intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
