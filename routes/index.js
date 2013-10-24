@@ -57,8 +57,8 @@ exports.saveCustomer = function (req, res) {
                     email: customer.email,
                     TxnId: 'trans-'+ Guid.create().toString(),
                     addCard: donation.repeat ? 1 : 0,
-                    successURL: 'https://tradeshop.azurewebsites.net/success?user='+ donation.id,
-                    failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id
+                    successURL: 'https://tradeshop.azurewebsites.net/success?user='+ customer.id,
+                    failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ customer.id
                 };
                 logger.log('createCustomer');
                 shopify.createCustomer(customer, function (err, shopifyCustomer) {
