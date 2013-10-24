@@ -60,7 +60,6 @@ exports.saveDonation = function (req, res) {
                     successURL: 'https://tradeshop.azurewebsites.net/success?user='+ donation.id,
                     failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id
                 };
-                
                 if (donation.join) {
 
                     shopify.createCustomer(donation, function (err, shopifyCustomer){
