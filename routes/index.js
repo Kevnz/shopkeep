@@ -60,7 +60,7 @@ exports.saveCustomer = function (req, res) {
                     successURL: 'https://tradeshop.azurewebsites.net/success?user='+ customer.id,
                     failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ customer.id
                 };
-                logger.log('createCustomer');
+                logger.logObject(transaction);
                 shopify.createCustomer(customer, function (err, shopifyCustomer) {
 
                     logger.log('created shopify');
