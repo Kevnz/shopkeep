@@ -33,9 +33,8 @@ exports.saveCustomer = function (req, res) {
         logger.log('trying to parse int');
         try {
             intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
-            if (req.body.custom_amount) {
-                intholder = intholder + 5;
-            }
+
+            intholder = intholder + 5;
         }catch(err) {logger.log(err);}
         donation.amount =  intholder;
         donation.repeat = req.body.repeat ? true : false;
