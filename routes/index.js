@@ -63,7 +63,8 @@ exports.saveCustomer = function (req, res) {
                 logger.log('createCustomer');
                 shopify.createCustomer(customer, function (err, shopifyCustomer) {
                     logger.log('created shopify');
-                    pxpay.request(transaction, function(err, result) {
+                    logger.logObject(shopifyCustomer);
+                    pxpay.request(transaction, function(errpx, result) {
                          
                         logger.logObject(arguments);
                         var url = result.URI;
