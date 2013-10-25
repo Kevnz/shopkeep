@@ -16,6 +16,7 @@ exports.saveDonation = function (req, res) {
         var Guid = require('guid');
         var db = require('../lib/db')('donations');
         var donations =  require('../lib/db')('donations');
+        var customers =  require('../lib/db')('customer');
         var donation = {};
         donation.first_name = req.body.first_name;
         donation.last_name = req.body.last_name;
@@ -57,23 +58,20 @@ exports.saveDonation = function (req, res) {
                     email: donation.email,
                     TxnId: 'trans-'+ Guid.create().toString(),
                     addCard: donation.repeat ? 1 : 0,
-                    successURL: 'https://tradeshop.azurewebsites.net/success?user='+ donation.id,
-                    failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id
+                    successURL: 'https://tradeshop.azurewebsites.net/success?donation='+ donation.id,
+                    failURL: 'https://tradeshop.azurewebsites.net/fail?donation='+ donation.id
                 };
                 if (donation.join) {
-
-                    shopify.createCustomer(donation, function (err, shopifyCustomer){
-                        pxpay.request(transaction, function(err, result) {
-                            var url = result.URI;
-                            res.redirect(url);
-                        });
-                    });
-                } else {
-                    pxpay.request(transaction, function(err, result) {
-                        var url = result.URI;
-                        res.redirect(url);
-                    });
+                    donation.wasDonation = true;
+                    customers.save(donation);
+                    transaction.successURL = 'https://tradeshop.azurewebsites.net/success?user='+ donation.id;
+                    transaction.failURL = 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id;
                 }
+                pxpay.request(transaction, function(err, result) {
+                    var url = result.URI;
+                    res.redirect(url);
+                });
+                 
             }
         });
     } catch (failed) {

@@ -62,17 +62,11 @@ exports.saveCustomer = function (req, res) {
                     successURL: 'https://tradeshop.azurewebsites.net/success?user='+ customer.id,
                     failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ customer.id
                 };
-                logger.logObject(transaction);
-                shopify.createCustomer(customer, function (err, shopifyCustomer) {
-
-                    logger.log('created shopify');
-                    logger.logObject(err);
-                    logger.logObject(shopifyCustomer);
-                    pxpay.request(transaction, function(errpx, result) {
-                        logger.logObject(errpx);
-                        var url = result.URI;
-                        res.redirect(url);
-                    });
+                logger.logObject(transaction); 
+                pxpay.request(transaction, function(errpx, result) {
+                    logger.logObject(errpx);
+                    var url = result.URI;
+                    res.redirect(url);
                 });
                 
             }
