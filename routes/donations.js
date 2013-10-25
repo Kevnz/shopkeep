@@ -58,14 +58,14 @@ exports.saveDonation = function (req, res) {
                     email: donation.email,
                     TxnId: 'trans-'+ Guid.create().toString(),
                     addCard: donation.repeat ? 1 : 0,
-                    successURL: 'https://tradeshop.azurewebsites.net/success?donation='+ donation.id,
-                    failURL: 'https://tradeshop.azurewebsites.net/fail?donation='+ donation.id
+                    successURL: 'http://localhost:4567/success?donation='+ donation.id,
+                    failURL: 'http://localhost:4567/fail?donation='+ donation.id
                 };
                 if (donation.join) {
                     donation.wasDonation = true;
                     customers.save(donation);
-                    transaction.successURL = 'https://tradeshop.azurewebsites.net/success?user='+ donation.id;
-                    transaction.failURL = 'https://tradeshop.azurewebsites.net/fail?user='+ donation.id;
+                    transaction.successURL = 'http://localhost:4567/success?user='+ donation.id;
+                    transaction.failURL = 'http://localhost:4567/fail?user='+ donation.id;
                 }
                 pxpay.request(transaction, function(err, result) {
                     var url = result.URI;

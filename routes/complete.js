@@ -9,6 +9,7 @@ exports.success = function(req, res){
     successDB.save({
         userId: user,
         result: result,
+        requestBody: req.body,
         created_on: new Date()
         }, function () {
 
@@ -22,7 +23,7 @@ exports.success = function(req, res){
                 },
                 function (err, userDoc) {
                     shopify.createCustomer(userDoc, function (err, shopifyCustomer) {
-                        res.redirect('http://taxpayers.org.nz/donation-success');
+                        //res.redirect('http://taxpayers.org.nz/donation-success');
                     });
                 });
         } else if (donation) {
@@ -32,7 +33,7 @@ exports.success = function(req, res){
                     new: false
                 },
                 function (err, userDoc) {
-                    res.redirect('http://taxpayers.org.nz/donation-success');
+                    //res.redirect('http://taxpayers.org.nz/donation-success');
                 });
         }
     });
@@ -48,6 +49,7 @@ exports.fail = function(req, res){
     failedDB.save({
         userId: user,
         result: result,
+        requestBody: req.body,
         created_on: new Date()
     }, function () {
 
@@ -63,7 +65,7 @@ exports.fail = function(req, res){
 
                     //do I want to do this.
                     shopify.createCustomer(userDoc, function (err, shopifyCustomer) {
-                        res.redirect('http://taxpayers.org.nz/donation-fail');
+                        //res.redirect('http://taxpayers.org.nz/donation-fail');
                     });
                 });
         } else if (donation) {
@@ -73,10 +75,10 @@ exports.fail = function(req, res){
                     new: false
                 },
                 function (err, userDoc) {
-                    res.redirect('http://taxpayers.org.nz/donation-fail');
+                    //res.redirect('http://taxpayers.org.nz/donation-fail');
                 });
         }
-        res.redirect('http://taxpayers.org.nz/donation-fail')
+        //res.redirect('http://taxpayers.org.nz/donation-fail')
     });
  
 };
