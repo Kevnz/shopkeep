@@ -10,34 +10,35 @@ exports.success = function(req, res){
         userId: user,
         result: result,
         created_on: new Date()
-    }, function () {
+        }, function () {
 
-     var customers = require('../lib/db')('customer');
-     var donations = require('../lib/db')('donations');
-     if (user) {
-        customers.findAndModify({
-                query: { id: user},
-                update: { paid: true },
-                new: false
-            },
-            function (err, userDoc) {
-                shopify.createCustomer(userDoc, function (err, shopifyCustomer) {
+         var customers = require('../lib/db')('customer');
+         var donations = require('../lib/db')('donations');
+         if (user) {
+            customers.findAndModify({
+                    query: { id: user},
+                    update: { paid: true },
+                    new: false
+                },
+                function (err, userDoc) {
+                    shopify.createCustomer(userDoc, function (err, shopifyCustomer) {
+                        res.redirect('http://taxpayers.org.nz/donation-success');
+                    });
+                });
+        } else if (donation) {
+            donations.findAndModify({
+                    query: { id: donation},
+                    update: { paid: true },
+                    new: false
+                },
+                function (err, userDoc) {
                     res.redirect('http://taxpayers.org.nz/donation-success');
                 });
-            });
-        });
-    } else if (donation) {
-        donations.findAndModify({
-                query: { id: donation},
-                update: { paid: true },
-                new: false
-            },
-            function (err, userDoc) {
-                res.redirect('http://taxpayers.org.nz/donation-success');
-            });
-        });
-    }
+        }
+    });
 };
+
+
 exports.fail = function(req, res){
     var user = req.query.user;
     var donation = req.query.donation;
@@ -63,7 +64,6 @@ exports.fail = function(req, res){
                         res.redirect('http://taxpayers.org.nz/donation-fail');
                     });
                 });
-            });
         } else if (donation) {
             donations.findAndModify({
                     query: { id: donation},
@@ -73,9 +73,8 @@ exports.fail = function(req, res){
                 function (err, userDoc) {
                     res.redirect('http://taxpayers.org.nz/donation-fail');
                 });
-            });
         }
         res.redirect('http://taxpayers.org.nz/donation-fail')
     });
-    
+ 
 };
