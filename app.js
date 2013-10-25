@@ -8,6 +8,7 @@ var express = require('express'),
     complete = require('./routes/complete'),
     tips = require('./routes/tipline'),
     donation = require('./routes/donations'),
+    details = require('./routes/details'),
     http = require('http'),
     path = require('path'),
     app = express(),
@@ -60,6 +61,7 @@ app.get('/success', complete.success);
 app.get('/fail', complete.fail);
 app.get('/tipline', tips.index);
 app.post('/tipline', tips.saveTip);
+app.get('/details', details.index);
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port') + " in " + app.get('env') +" mode");
 });
