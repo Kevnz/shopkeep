@@ -28,7 +28,7 @@ exports.saveDonation = function (req, res) {
 
         donation.repeat = req.body.repeat;
         donation.join = req.body.join;
-        if (donation.join) {
+        if (donation.join == 'on') {
             donation.password = req.body.password;
             donation.password_confirmation = req.body.password_confirm;
         }
@@ -45,8 +45,10 @@ exports.saveDonation = function (req, res) {
 
         donations.save(donation, function (err, obj) {
             if(err) {
-                res.send(500, {error: 'something is wrong'});
+                res.send(500, { error: 'something is wrong' });
             } else {
+                //save as a customer now
+
                 donation.reference = 'Payment from user ' + donation.id;
                 var pxpay = require('pxpay');
 
@@ -61,7 +63,7 @@ exports.saveDonation = function (req, res) {
                     successURL: 'http://localhost:4567/success?donation='+ donation.id,
                     failURL: 'http://localhost:4567/fail?donation='+ donation.id
                 };
-                if (donation.join) {
+                if (donation.join == 'on') {
                     donation.wasDonation = true;
                     customers.save(donation);
                     transaction.successURL = 'http://localhost:4567/success?user='+ donation.id;

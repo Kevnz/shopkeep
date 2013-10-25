@@ -8,10 +8,11 @@ exports.index = function (req, res) {
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
 
     var email = req.query.email;
-
+    console.log(email);
     var customers = require('../lib/db')('customer');
 
     customers.findOne({email: email}, function (err, doc) {
+        console.log(arguments);
         if (err) {
             res.send(200, err);
         } else {

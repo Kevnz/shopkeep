@@ -3,13 +3,14 @@ var shopify = require('../lib/shopify');
 
 exports.success = function(req, res){
     var user = req.query.user;
+    var userid = req.query.userid;
     var donation = req.query.donation;
     var result = req.query.result;
     var successDB = require('../lib/db')('success');
     successDB.save({
         userId: user,
+        donationId: donation,
         result: result,
-        requestBody: req.body,
         created_on: new Date()
         }, function () {
 
