@@ -60,6 +60,8 @@ exports.fail = function(req, res){
                     new: false
                 },
                 function (err, userDoc) {
+
+                    //do I want to do this.
                     shopify.createCustomer(userDoc, function (err, shopifyCustomer) {
                         res.redirect('http://taxpayers.org.nz/donation-fail');
                     });
