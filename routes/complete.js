@@ -85,7 +85,7 @@ exports.fail = function(req, res){
                     res.redirect('http://taxpayers.org.nz/donation-fail');
                 });
         }
-        res.redirect('http://taxpayers.org.nz/donation-fail')
+        res.redirect('http://taxpayers.org.nz/donation-fail');
     });
  
 };
