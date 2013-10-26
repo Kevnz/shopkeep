@@ -7,7 +7,6 @@ exports.customers = function(req, res){
 var qconf = require('qconf'),
     config = qconf();
 var logger = require('../lib/logger');
-var shopify = require('../lib/shopify');
 var dps = '-' + config.get('dps');
 exports.saveCustomer = function (req, res) {
 

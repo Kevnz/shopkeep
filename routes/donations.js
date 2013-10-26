@@ -4,7 +4,6 @@ exports.donation = function(req, res){
 };
 var qconf = require('qconf'),
     config = qconf();
-var shopify = require('../lib/shopify');
 
 var dps = '-' + config.get('dps');
 exports.saveDonation = function (req, res) {
