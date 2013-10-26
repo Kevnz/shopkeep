@@ -48,7 +48,7 @@ exports.saveDonation = function (req, res) {
  
         donation.amount = intholder;
         donation.repeat = false;
-        logger.logObject(donation);
+        log.logObject(donation);
         donations.save(donation, function (err, obj) {
             if(err) {
                 res.send(500, { error: 'something is wrong' });
