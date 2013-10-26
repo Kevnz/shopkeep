@@ -34,7 +34,7 @@ exports.success = function(req, res){
                         shopify.createCustomer(userDoc, function (serr, shopifyCustomer) {
                             log.logObject(serr, "shopify error object");
                             log.logObject(shopifyCustomer, "shopify customer");
-                            res.redirect('http://taxpayers.org.nz/donation-success');
+                            res.redirect('http://taxpayers.org.nz/pages/donation-success');
                         });
                     } catch (shopError) {
                         log.logObject(shopError);
@@ -48,7 +48,7 @@ exports.success = function(req, res){
                     new: false
                 },
                 function (err, userDoc) {
-                    res.redirect('http://taxpayers.org.nz/donation-success');
+                    res.redirect('http://taxpayers.org.nz/pages/donation-success');
                 });
         }
     });
@@ -90,10 +90,10 @@ exports.fail = function(req, res){
                     new: false
                 },
                 function (err, userDoc) {
-                    res.redirect('http://taxpayers.org.nz/donation-fail');
+                    res.redirect('http://taxpayers.org.nz/pages/donation-fail');
                 });
         }
-        res.redirect('http://taxpayers.org.nz/donation-fail');
+        res.redirect('http://taxpayers.org.nz/pages/donation-fail');
     });
  
 };

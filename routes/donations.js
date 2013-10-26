@@ -64,8 +64,8 @@ exports.saveDonation = function (req, res) {
                     email: donation.email,
                     TxnId: 'trans-'+ Guid.create().toString(),
                     addCard: donation.repeat ? 1 : 0,
-                    successURL: 'http://localhost:4567/success?donation='+ refId,
-                    failURL: 'http://localhost:4567/fail?donation='+ refId
+                    successURL: 'http://tradeshop.azurewebsites.net/success?donation='+ refId,
+                    failURL: 'http://tradeshop.azurewebsites.net/fail?donation='+ refId
                 };
                 if (donation.join == 'on') {
                     console.log('save customer');
@@ -73,8 +73,8 @@ exports.saveDonation = function (req, res) {
                     donation.donationId = refId;
                     donation.id = refId;
                     customers.save(donation);
-                    transaction.successURL = 'http://localhost:4567/success?user='+ refId;
-                    transaction.failURL = 'http://localhost:4567/fail?user='+ refId;
+                    transaction.successURL = 'http://tradeshop.azurewebsites.net/success?user='+ refId;
+                    transaction.failURL = 'http://tradeshop.azurewebsites.net/fail?user='+ refId;
                 }
                 pxpay.request(transaction, function(err, result) {
                     var url = result.URI;
