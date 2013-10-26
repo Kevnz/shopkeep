@@ -4,7 +4,7 @@ exports.donation = function(req, res){
 };
 var qconf = require('qconf'),
     config = qconf();
-
+var log = require('../lib/logger');
 var dps = '-' + config.get('dps');
 exports.saveDonation = function (req, res) {
     /*
@@ -14,7 +14,7 @@ exports.saveDonation = function (req, res) {
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
     */
     try {
-        var Guid = require('guid'); 
+        var Guid = require('guid');
         var donations =  require('../lib/db')('donations');
         var customers =  require('../lib/db')('customer');
         var donation = {};
@@ -38,14 +38,17 @@ exports.saveDonation = function (req, res) {
         var intholder = 0;
         try {
            intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
-        }catch(err) {}
+        }catch(err) {
+
+            log.log('erred intholder');
+        }
         if (donation.join == 'on') {
             intholder = intholder + 5;
         }
  
         donation.amount = intholder;
         donation.repeat = false;
-        console.log(donation);
+        logger.logObject(donation);
         donations.save(donation, function (err, obj) {
             if(err) {
                 res.send(500, { error: 'something is wrong' });
