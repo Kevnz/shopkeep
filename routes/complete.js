@@ -1,8 +1,8 @@
 
 var shopify = require('../lib/shopify');
-var log = require('../lib/db')('logtastic');
+var log = require('../lib/logger');
 exports.success = function(req, res){
-    console.log(req.body);
+    log.logObject(req.body, "request body");
     var user = req.query.user;
     var userid = req.query.userid;
     var donation = req.query.donation;
