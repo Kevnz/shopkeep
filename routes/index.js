@@ -27,6 +27,7 @@ exports.saveCustomer = function (req, res) {
         customer.postcode = req.body.postcode;
         customer.password = req.body.password;
         customer.password_confirmation = req.body.password_confirm;
+        customer.paid= false;
         var donation = {};
         var intholder = 0;
         
