@@ -1,6 +1,6 @@
 
 var shopify = require('../lib/shopify');
-
+var log = require('../lib/db')('logtastic');
 exports.success = function(req, res){
     console.log(req.body);
     var user = req.query.user;
@@ -26,11 +26,13 @@ exports.success = function(req, res){
                     new: false
                 },
                 function (err, userDoc) {
-                    console.log(err);
-                    console.log(userDoc);
+                    log.logObject(err);
+                    log.logObject(userDoc);
                     res.send(200, userDoc);
                     shopify.createCustomer(userDoc, function (err, shopifyCustomer) {
-                        //res.redirect('http://taxpayers.org.nz/donation-success');
+                        log.logObject(err);
+                        log.logObject(shopifyCustomer);
+                        res.redirect('http://taxpayers.org.nz/donation-success');
                     });
                 });
         } else if (donation) {
