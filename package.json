@@ -20,7 +20,8 @@
     "shopnode": "git+https://github.com/brightleaf/shopnode.git",
     "handlebars": "~1.0.12",
     "winston": "~0.7.2",
-    "winston-mongodb": "~0.4.2"
+    "winston-mongodb": "~0.4.2",
+    "newrelic": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
