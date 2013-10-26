@@ -1,3 +1,4 @@
+require('newrelic');
 var raygun = require('raygun');
 var raygunClient = new raygun.Client().init({ apiKey: 'DTUW+h7RxSN5Meopa7KKVg==' });
 
