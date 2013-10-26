@@ -29,11 +29,16 @@ exports.success = function(req, res){
                     log.logObject(err);
                     log.logObject(userDoc);
                     res.send(200, userDoc);
-                    shopify.createCustomer(userDoc, function (err, shopifyCustomer) {
-                        log.logObject(err);
-                        log.logObject(shopifyCustomer);
-                        res.redirect('http://taxpayers.org.nz/donation-success');
-                    });
+                    try {
+                        shopify.createCustomer(userDoc, function (serr, shopifyCustomer) {
+                            log.logObject(serr, "shopify error object");
+                            log.logObject(shopifyCustomer, "shopify customer");
+                            res.redirect('http://taxpayers.org.nz/donation-success');
+                        });
+                    } catch (shopError) {
+                        log.logObject(shopError);
+                    }
+  
                 });
         } else if (donation) {
             donations.findAndModify({
