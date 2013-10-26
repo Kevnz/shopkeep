@@ -26,9 +26,9 @@ exports.success = function(req, res){
                     new: false
                 },
                 function (err, userDoc) {
-                    log.logObject(err);
-                    log.logObject(userDoc);
-                    res.send(200, userDoc);
+                    log.logObject(err, "findAndModify user error");
+                    log.logObject(userDoc, "userDoc");
+                    
                     try {
                         log.log("try to create shopify user");
                         shopify.createCustomer(userDoc, function (serr, shopifyCustomer) {
