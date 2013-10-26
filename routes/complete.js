@@ -30,6 +30,7 @@ exports.success = function(req, res){
                     log.logObject(userDoc);
                     res.send(200, userDoc);
                     try {
+                        log.log("try to create shopify user");
                         shopify.createCustomer(userDoc, function (serr, shopifyCustomer) {
                             log.logObject(serr, "shopify error object");
                             log.logObject(shopifyCustomer, "shopify customer");
