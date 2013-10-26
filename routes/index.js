@@ -8,6 +8,7 @@ var qconf = require('qconf'),
     config = qconf();
 var logger = require('../lib/logger');
 var shopify = require('../lib/shopify');
+var dps = '-' + config.get('dps');
 exports.saveCustomer = function (req, res) {
 
     try {
@@ -53,8 +54,8 @@ exports.saveCustomer = function (req, res) {
                 var pxpay = require('pxpay');
 
                 var transaction = {
-                    user: config.get('dps-user'),
-                    password: config.get('dps-password'),
+                    user: config.get('dps-user' + dps),
+                    password: config.get('dps-password' + dps),
                     amount:  donation.amount + '.00',
                     reference: 'Payment from user ' + customer.id,
                     email: customer.email,

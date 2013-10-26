@@ -5,6 +5,8 @@ exports.donation = function(req, res){
 var qconf = require('qconf'),
     config = qconf();
 var shopify = require('../lib/shopify');
+
+var dps = '-' + config.get('dps');
 exports.saveDonation = function (req, res) {
     /*
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -55,8 +57,8 @@ exports.saveDonation = function (req, res) {
                 var pxpay = require('pxpay');
 
                 var transaction = {
-                    user: config.get('dps-user'),
-                    password: config.get('dps-password'),
+                    user: config.get('dps-user' + dps),
+                    password: config.get('dps-password' + dps),
                     amount:  donation.amount + '.00',
                     reference: 'Payment from user ' + donation.id,
                     email: donation.email,
