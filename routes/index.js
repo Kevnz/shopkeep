@@ -11,7 +11,7 @@ var dps = '-' + config.get('dps');
 exports.saveCustomer = function (req, res) {
 
     try {
-        var Guid = require('guid'); 
+        var Guid = require('guid');
         var customers =  require('../lib/db')('customer');
         var customer = {};
         customer.first_name = req.body.first_name;
@@ -44,7 +44,6 @@ exports.saveCustomer = function (req, res) {
         logger.log(intholder);
         donation.amount =  intholder;
         donation.repeat = req.body.repeat ? true : false;
-        logger.log('presave');
         customers.save(customer, function (err, obj) {
             if(err) {
                 logger.logObject(err, "error with save");
@@ -60,16 +59,18 @@ exports.saveCustomer = function (req, res) {
                     password: config.get('dps-password' + dps),
                     amount:  donation.amount + '.00',
                     reference: 'Payment from user ' + customer.id,
+                    line1: customer.address1,
+                    line3: customer.address3,
                     email: customer.email,
                     TxnId: 'trans-'+ Guid.create().toString(),
                     addCard: donation.repeat ? 1 : 0,
                     successURL: 'https://tradeshop.azurewebsites.net/success?user='+ customer.id,
                     failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ customer.id
                 };
-                logger.logObject(transaction);
+                logger.logObject(transaction, "transaction from saving customer");
                 try {
                     pxpay.request(transaction, function(errpx, result) {
-                        logger.logObject(errpx);
+                        logger.logObject(errpx, "px error object");
                         var url = result.URI;
                         res.redirect(url);
                     });
