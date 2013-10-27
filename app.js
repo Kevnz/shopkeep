@@ -1,7 +1,7 @@
 require('newrelic');
 var raygun = require('raygun');
 var raygunClient = new raygun.Client().init({ apiKey: 'DTUW+h7RxSN5Meopa7KKVg==' });
-var logger = require('../lib/db')('logtastic');
+var logger = require('./lib/db')('logtastic');
 process.on('uncaughtException', function(err) {
   logger.log('Caught exception: ' + err);
   raygunClient.send(err);
