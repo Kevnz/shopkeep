@@ -11,8 +11,7 @@ var dps = '-' + config.get('dps');
 exports.saveCustomer = function (req, res) {
 
     try {
-        var Guid = require('guid');
-        var db = require('../lib/db')('customer');
+        var Guid = require('guid'); 
         var customers =  require('../lib/db')('customer');
         var customer = {};
         customer.first_name = req.body.first_name;
@@ -21,8 +20,8 @@ exports.saveCustomer = function (req, res) {
         customer.phone_number = req.body.phone_number;
         customer.created_on = new Date();
         customer.id = Guid.create().toString();
-        customer.address1 = req.body.address1;
-        customer.address2 = req.body.address2 || '';
+        customer.address1 = req.body.address1 ;
+        customer.address2 = req.body.address2 || '' ;
         customer.address3 = req.body.address3;
         customer.postcode = req.body.postcode;
         customer.password = req.body.password;
@@ -34,7 +33,7 @@ exports.saveCustomer = function (req, res) {
         try {
             intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
             intholder = intholder + 5;
-        } catch(err) { 
+        } catch(err) {
             logger.logObject(err);
             logger.log('failed parsing');
             intholder = 5;
@@ -45,6 +44,7 @@ exports.saveCustomer = function (req, res) {
         logger.log('presave');
         customers.save(customer, function (err, obj) {
             if(err) {
+                logger.logObject(err, "error with save");
                 res.send(500, {error: 'something is wrong', result: err});
             } else {
                 
@@ -63,15 +63,18 @@ exports.saveCustomer = function (req, res) {
                     successURL: 'https://tradeshop.azurewebsites.net/success?user='+ customer.id,
                     failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ customer.id
                 };
-                logger.logObject(transaction); 
-                pxpay.request(transaction, function(errpx, result) {
-                    logger.logObject(errpx);
-                    var url = result.URI;
-                    res.redirect(url);
-                });
-                
+                logger.logObject(transaction);
+                try {
+                    pxpay.request(transaction, function(errpx, result) {
+                        logger.logObject(errpx);
+                        var url = result.URI;
+                        res.redirect(url);
+                    });
+                } catch (pxerror) {
+                    logger.logObject(pxerror, "error with pxpay");
+                    res.redirect('http://taxpayers.org.nz/?fail=true');
+                }
             }
-
         });
     } catch(failed) {
         res.send(200, failed);
