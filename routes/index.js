@@ -38,6 +38,9 @@ exports.saveCustomer = function (req, res) {
             logger.log('failed parsing');
             intholder = 5;
         }
+        if(isNaN(intholder)) {
+            intholder = 5;
+        }
         logger.log(intholder);
         donation.amount =  intholder;
         donation.repeat = req.body.repeat ? true : false;
