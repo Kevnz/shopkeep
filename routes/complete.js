@@ -20,6 +20,7 @@ exports.success = function(req, res){
          var customers = require('../lib/db')('customer');
          var donations = require('../lib/db')('donations');
          if (user) {
+            log.logObject(user, 'userkey');
             customers.findAndModify({
                     query: { id: user},
                     update:{ $set: { paid: true }},
@@ -28,9 +29,10 @@ exports.success = function(req, res){
                 function (err, userDoc) {
                     log.logObject(err, "findAndModify user error");
                     log.logObject(userDoc, "userDoc");
-                    
+                    log.logObject(arguments, 'customer findAndModify return arguments');
                     try {
                         log.log("try to create shopify user");
+
                         shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
                             res.redirect('http://taxpayers.org.nz/account');
                         })
