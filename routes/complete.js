@@ -1,5 +1,5 @@
 
-var shopify = require('../lib/shopify');
+var shopify = require('../lib/shopify3');
 var log = require('../lib/logger');
 exports.success = function(req, res){
     log.logObject(req.body, "request body");
@@ -31,8 +31,10 @@ exports.success = function(req, res){
                     
                     try {
                         log.log("try to create shopify user");
-                        //shopify.createCustomer(userDoc);
-                        res.redirect('http://taxpayers.org.nz/account');
+                        shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
+                            res.redirect('http://taxpayers.org.nz/account');
+                        })
+                        
                     } catch (shopError) {
                         log.logObject(shopError);
                     }

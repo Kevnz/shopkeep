@@ -22,7 +22,8 @@
     "winston": "~0.7.2",
     "winston-mongodb": "~0.4.2",
     "newrelic": "*",
-    "shopifapi": "~0.1.5"
+    "shopifapi": "~0.1.5",
+    "nodify-shopify": "~0.1.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
