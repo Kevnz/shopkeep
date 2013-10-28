@@ -26,18 +26,30 @@ exports.success = function(req, res){
                     new: false
                 },
                 function (err, userDoc) {
+
                     log.logObject(err, "findAndModify user error");
                     log.logObject(userDoc, "userDoc");
                     log.logObject(arguments, 'customer findAndModify return arguments');
-                    try {
-                        log.log("try to create shopify user");
+                    if (!userDoc) {
+                        res.redirect('http://taxpayers.org.nz/pages/error');
+                        customers.findOne({ id: user  
+                            }, function(err, doc) {
+                                shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
+                                res.redirect('http://taxpayers.org.nz/account');
+                            });
+                        });
+                    } else {
+                        try {
+                            log.log("try to create shopify user");
 
-                        shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
-                            res.redirect('http://taxpayers.org.nz/account');
-                        })
-                        
-                    } catch (shopError) {
-                        log.logObject(shopError);
+                            shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
+                                res.redirect('http://taxpayers.org.nz/account');
+                            })
+                            
+                        } catch (shopError) {
+                            log.logObject(shopError);
+                            res.redirect('http://taxpayers.org.nz/donation-fail');
+                        }
                     }
   
                 });
