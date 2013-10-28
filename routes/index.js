@@ -1,8 +1,8 @@
 exports.index = function(req, res){
-  res.render('index', { title: 'Shopkeep', subtitle:'Keeping the show' });
+  res.render('index', { title: 'Shopkeep', subtitle:'Keeping the shop' });
 };
 exports.customers = function(req, res){
-  res.render('create_customer', { title: 'Shopkeep', subtitle:'Keeping the show' });
+  res.render('create_customer', { title: 'Shopkeep', subtitle:'Keeping the shop' });
 };
 var qconf = require('qconf'),
     config = qconf();

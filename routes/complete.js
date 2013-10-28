@@ -47,6 +47,7 @@ exports.success = function(req, res){
                             })
                             
                         } catch (shopError) {
+                            log.log('shopify catch error');
                             log.logObject(shopError);
                             res.redirect('http://taxpayers.org.nz/donation-fail');
                         }
