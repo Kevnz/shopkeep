@@ -1,5 +1,5 @@
 
-var shopify = require('../lib/shopify2');
+var shopify = require('../lib/shopify');
 var log = require('../lib/logger');
 exports.success = function(req, res){
     log.logObject(req.body, "request body");
@@ -31,7 +31,6 @@ exports.success = function(req, res){
                     log.logObject(userDoc, "userDoc");
                     log.logObject(arguments, 'customer findAndModify return arguments');
                     if (!userDoc) {
-                        res.redirect('http://taxpayers.org.nz/pages/error');
                         customers.findOne({ id: user  
                             }, function(err, doc) {
                                 shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
