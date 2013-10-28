@@ -31,11 +31,8 @@ exports.success = function(req, res){
                     
                     try {
                         log.log("try to create shopify user");
-                        shopify.createCustomer(userDoc, function (serr, shopifyCustomer) {
-                            log.logObject(serr, "shopify error object");
-                            log.logObject(shopifyCustomer, "shopify customer");
-                            res.redirect('http://taxpayers.org.nz/account');
-                        });
+                        shopify.createCustomer(userDoc);
+                        res.redirect('http://taxpayers.org.nz/account');
                     } catch (shopError) {
                         log.logObject(shopError);
                     }
