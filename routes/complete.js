@@ -1,5 +1,5 @@
 
-var shopify = require('../lib/shopify');
+var shopify = require('../lib/shopify2');
 var log = require('../lib/logger');
 exports.success = function(req, res){
     log.logObject(req.body, "request body");
@@ -19,8 +19,7 @@ exports.success = function(req, res){
 
          var customers = require('../lib/db')('customer');
          var donations = require('../lib/db')('donations');
-         if (user) {
-            log.logObject(user, 'userkey');
+         if (user) { 
             customers.findAndModify({
                     query: { id: user},
                     update:{ $set: { paid: true }},
