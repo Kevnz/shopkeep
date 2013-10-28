@@ -59,8 +59,7 @@ exports.saveCustomer = function (req, res) {
                     password: config.get('dps-password' + dps),
                     amount:  donation.amount + '.00',
                     reference: 'Payment from user ' + customer.id,
-                    line1: customer.address1,
-                    line3: customer.address3,
+                    line1: 'Payment for joing Taxpayers Union',
                     email: customer.email,
                     TxnId: 'trans-'+ Guid.create().toString(),
                     addCard: donation.repeat ? 1 : 0,
@@ -71,6 +70,7 @@ exports.saveCustomer = function (req, res) {
                 try {
                     pxpay.request(transaction, function(errpx, result) {
                         logger.logObject(errpx, "px error object");
+                        logger.logObject(result, "px result object");
                         var url = result.URI;
                         res.redirect(url);
                     });

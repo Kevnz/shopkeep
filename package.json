@@ -10,7 +10,7 @@
     "express-state": "latest",
     "express3-handlebars": "latest",
     "mongojs": "~0.9.6",
-    "qconf": "~0.3.0", 
+    "qconf": "~0.3.0",
     "request": "~2.27.0",
     "xml": "0.0.8",
     "xml2js": "~0.2.8",
@@ -21,7 +21,8 @@
     "handlebars": "~1.0.12",
     "winston": "~0.7.2",
     "winston-mongodb": "~0.4.2",
-    "newrelic": "*"
+    "newrelic": "*",
+    "shopifapi": "~0.1.5"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
