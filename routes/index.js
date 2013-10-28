@@ -45,7 +45,7 @@ exports.saveCustomer = function (req, res) {
         donation.amount =  intholder;
         donation.repeat = req.body.repeat ? true : false;
         customer.amount = intholder;
-        customer.repeat = donation.repeat;
+        customer.repeat = donation.repeat
         customers.save(customer, function (err, obj) {
             if(err) {
                 logger.logObject(err, "error with save");
