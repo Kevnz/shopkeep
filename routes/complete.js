@@ -26,11 +26,12 @@ exports.success = function(req, res){
                     new: false
                 },
                 function (err, userDoc) {
-
+                    log.logObject(err == null, "does findAndModify user error equal null");
+                    log.logObject(userDoc == null, "does userDoc equal null");
                     log.logObject(err, "findAndModify user error");
                     log.logObject(userDoc, "userDoc");
                     log.logObject(arguments, 'customer findAndModify return arguments');
-                    if (!userDoc) {
+                    if (userDoc == null) {
                         customers.findOne({ id: user  
                             }, function(err, doc) {
                                 shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
