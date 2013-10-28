@@ -1,5 +1,5 @@
 
-var shopify = require('../lib/shopify2');
+var shopify = require('../lib/shopify');
 var log = require('../lib/logger');
 exports.success = function(req, res){
     log.logObject(req.body, "request body");
