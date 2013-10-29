@@ -42,7 +42,11 @@ exports.success = function(req, res){
                         try {
                             shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
                                 if (err) {
-                                    res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                    if (userDoc.didDonate) {
+                                        res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
+                                    } else {
+                                        res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                    }
                                 } else {
                                     res.redirect('http://taxpayers.org.nz/account');
                                 }
