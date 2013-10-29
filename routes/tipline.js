@@ -25,6 +25,7 @@ exports.saveTip = function (req, res) {
         tipster.phone_number = req.body.phone_number;
         tipster.email = req.body.email;
         tipster.message = req.body.message;
+        tipster.verify = req.body.verify ? true : false;
         tipster.created_on = new Date();
         tipster.id = Guid.create().toString();
         tipster.ip_address = req.header('x-forwarded-for') || req.connection.remoteAddress;
