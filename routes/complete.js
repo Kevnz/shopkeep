@@ -21,7 +21,7 @@ exports.success = function(req, res){
          var donations = require('../lib/db')('donations');
          if (user) { 
             customers.findAndModify({
-                    query: { id: user , paid: false },
+                    query: { id: user },
                     update:{ $set: { paid: true }},
                     new: false
                 },
@@ -31,11 +31,10 @@ exports.success = function(req, res){
                     log.logObject(userDoc, "userDoc");
                     log.logObject(arguments, 'customer findAndModify return arguments');
                     if (userDoc == null) {
-                        res.redirect('http://taxpayers.org.nz/account');
+                        //res.redirect('http://taxpayers.org.nz/account');
                         //the user doc was null, is that user in database?
-                        customers.findOne({ id: user  
-                            }, function(err, doc) {
-                                if(doc!=null) {
+                        customers.findOne({ id: user }, function(err, doc) {
+                                if (doc !== null) {
                                     shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
                                         res.redirect('http://taxpayers.org.nz/account');
                                     });
