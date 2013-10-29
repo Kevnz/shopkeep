@@ -71,6 +71,7 @@ exports.saveCustomer = function (req, res) {
                 logger.logObject(transaction, "transaction from saving customer");
                 try {
                     pxpay.request(transaction, function(errpx, pxresult) {
+                        logger.logObject(arguments, 'pxargs');
                         logger.logObject(errpx, "px error object");
                         logger.logObject(pxresult, "px result object");
                         var url = pxresult.URI;
