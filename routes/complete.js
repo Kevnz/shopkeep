@@ -21,17 +21,17 @@ exports.success = function(req, res){
          var donations = require('../lib/db')('donations');
          if (user) { 
             customers.findAndModify({
-                    query: { id: user , paid:false },
+                    query: { id: user , paid: false },
                     update:{ $set: { paid: true }},
                     new: false
                 },
                 function (err, userDoc) {
                     log.logObject(err == null, "does findAndModify user error equal null");
-                    log.logObject(userDoc == null, "does userDoc equal null");
-                    log.logObject(err, "findAndModify user error");
+                    log.logObject(userDoc == null, "does userDoc equal null"); 
                     log.logObject(userDoc, "userDoc");
                     log.logObject(arguments, 'customer findAndModify return arguments');
                     if (userDoc == null) {
+                        res.redirect('http://taxpayers.org.nz/account');
                         //the user doc was null, is that user in database?
                         customers.findOne({ id: user  
                             }, function(err, doc) {
