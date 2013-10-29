@@ -74,7 +74,8 @@ exports.saveCustomer = function (req, res) {
                 transactions.save(transaction);
                 logger.logObject(transaction, "transaction from saving customer");
                 try {
-                    pxpay.request(transaction, function(errpx, pxresult) {
+                    logger.log('try/catch pxpay');
+                    pxpay.request(transaction, function pxrequestCallback (errpx, pxresult) {
                         logger.logObject(arguments, 'pxargs');
                         logger.logObject(errpx, "px error object");
                         logger.logObject(pxresult, "px result object");
