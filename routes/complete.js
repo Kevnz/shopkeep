@@ -45,11 +45,13 @@ exports.success = function(req, res){
                     } else {
                         try {
                             log.log("try to create shopify user");
-
                             shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
-                                res.redirect('http://taxpayers.org.nz/account');
-                            })
-                            
+                                if (err) {
+                                    res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                } else {
+                                    res.redirect('http://taxpayers.org.nz/account');
+                                }
+                            });
                         } catch (shopError) {
                             log.log('shopify catch error');
                             log.logObject(shopError);
