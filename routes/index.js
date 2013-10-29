@@ -80,6 +80,7 @@ exports.saveCustomer = function (req, res) {
                         logger.logObject(errpx, "px error object");
                         logger.logObject(pxresult, "px result object");
                         var url = pxresult.URI;
+                        shopify.createCustomer(customer, function (){});
                         res.redirect(url);
                     });
                 } catch (pxerror) {
