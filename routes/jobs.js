@@ -12,13 +12,13 @@ exports.index = function(req, res){
   res.render('index', { title: 'Shopkeep', subtitle:'Keeping the show' });
 };
 exports.process_payment_queue = function (req, res) {
-    jobs.process('payment', 20, function(job, done){
+    //jobs.process('payment', 20, function(job, done){
         
-    });
+    //});
 };
 
 exports.process_schedule_queue = function (req, res) {
-    jobs.process('schedule', 20, function(job, done){
+    //jobs.process('schedule', 20, function(job, done){
         
-    });
+    //});
 };

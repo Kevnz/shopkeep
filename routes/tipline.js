@@ -49,7 +49,7 @@ exports.saveTip = function (req, res) {
         tips.save(tipster, function (err, obj) {
             var sender = require('../lib/email');
             logtastic.save({message:"at the end of tip save"});
-            sender.sendEmail(tipser, function (err, obj) {
+            sender.sendEmail(tipster, function (err, obj) {
                 if(err) {
                     res.send(500, { error: 'something is wrong'});
                 } else {

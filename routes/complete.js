@@ -19,18 +19,14 @@ exports.success = function(req, res){
 
          var customers = require('../lib/db')('customer');
          var donations = require('../lib/db')('donations');
-         if (user) { 
+         if (user) {
             customers.findAndModify({
                     query: { id: user },
                     update:{ $set: { paid: true }},
                     new: false
                 },
                 function (err, userDoc) {
-                    log.logObject(err == null, "does findAndModify user error equal null");
-                    log.logObject(userDoc == null, "does userDoc equal null"); 
-                    log.logObject(userDoc, "userDoc");
-                    log.logObject(arguments, 'customer findAndModify return arguments');
-                    if (userDoc == null) {
+                    if (userDoc === null) {
                         //res.redirect('http://taxpayers.org.nz/account');
                         //the user doc was null, is that user in database?
                         customers.findOne({ id: user }, function(err, doc) {
@@ -44,7 +40,6 @@ exports.success = function(req, res){
                         });
                     } else {
                         try {
-                            log.log("try to create shopify user");
                             shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
                                 if (err) {
                                     res.redirect('http://taxpayers.org.nz/pages/thanks');
@@ -53,7 +48,6 @@ exports.success = function(req, res){
                                 }
                             });
                         } catch (shopError) {
-                            log.log('shopify catch error');
                             log.logObject(shopError);
                             res.redirect('http://taxpayers.org.nz/donation-fail');
                         }
@@ -110,5 +104,4 @@ exports.fail = function(req, res){
         }
         res.redirect('http://taxpayers.org.nz/pages/donation-fail');
     });
- 
 };

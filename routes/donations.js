@@ -28,7 +28,7 @@ exports.saveDonation = function (req, res) {
         donation.paid = false;
         donation.repeat = req.body.repeat;
         donation.join = req.body.join;
-        if (donation.join == 'on') {
+        if (donation.join === 'on') {
             donation.password = req.body.password;
             donation.password_confirmation = req.body.password_confirm;
         }
@@ -42,7 +42,7 @@ exports.saveDonation = function (req, res) {
 
             log.log('erred intholder');
         }
-        if (donation.join == 'on') {
+        if (donation.join === 'on') {
             intholder = intholder + 5;
         }
  
@@ -69,7 +69,7 @@ exports.saveDonation = function (req, res) {
                     successURL: 'http://tradeshop.azurewebsites.net/success?donation='+ refId,
                     failURL: 'http://tradeshop.azurewebsites.net/fail?donation='+ refId
                 };
-                if (donation.join == 'on') {
+                if (donation.join === 'on') {
                     console.log('save customer');
                     donation.wasDonation = true;
                     donation.donationId = refId;
