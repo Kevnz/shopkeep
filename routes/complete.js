@@ -32,10 +32,14 @@ exports.success = function(req, res){
                         customers.findOne({ id: user }, function(err, doc) {
                                 if (doc !== null) {
                                     shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
-                                        res.redirect('http://taxpayers.org.nz/account');
+                                        if (doc.didDonate) {
+                                            res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
+                                        } else {
+                                            res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                        }
                                     });
                                 } else {
-                                    res.redirect('http://taxpayers.org.nz/account');
+                                    res.redirect('http://taxpayers.org.nz/pages/thanks');
                                 }
                         });
                     } else {
@@ -48,7 +52,11 @@ exports.success = function(req, res){
                                         res.redirect('http://taxpayers.org.nz/pages/thanks');
                                     }
                                 } else {
-                                    res.redirect('http://taxpayers.org.nz/account');
+                                   if (userDoc.didDonate) {
+                                        res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
+                                    } else {
+                                        res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                    }
                                 }
                             });
                         } catch (shopError) {
