@@ -70,10 +70,10 @@ exports.saveCustomer = function (req, res) {
                 };
                 logger.logObject(transaction, "transaction from saving customer");
                 try {
-                    pxpay.request(transaction, function(errpx, result) {
+                    pxpay.request(transaction, function(errpx, pxresult) {
                         logger.logObject(errpx, "px error object");
-                        logger.logObject(result, "px result object");
-                        var url = result.URI;
+                        logger.logObject(pxresult, "px result object");
+                        var url = pxresult.URI;
                         res.redirect(url);
                     });
                 } catch (pxerror) {
