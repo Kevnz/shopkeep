@@ -71,9 +71,10 @@ exports.saveDonation = function (req, res) {
                 };
                 if (donation.join === 'on') {
                     console.log('save customer');
-                    donation.wasDonation = true;
+                    donation.didDonate = true;
                     donation.donationId = refId;
                     donation.id = refId;
+                    donation.donationAmount = intholder - 5;
                     customers.save(donation);
                     transaction.successURL = 'http://tradeshop.azurewebsites.net/success?user='+ refId;
                     transaction.failURL = 'http://tradeshop.azurewebsites.net/fail?user='+ refId;
