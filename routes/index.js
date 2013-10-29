@@ -13,6 +13,7 @@ exports.saveCustomer = function (req, res) {
     try {
         var Guid = require('guid');
         var customers =  require('../lib/db')('customer');
+        var transactions =  require('../lib/db')('transaction');
         var customer = {};
         customer.first_name = req.body.first_name;
         customer.last_name = req.body.last_name;
@@ -70,6 +71,7 @@ exports.saveCustomer = function (req, res) {
                     successURL: 'https://tradeshop.azurewebsites.net/success?user='+ customer.id,
                     failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ customer.id
                 };
+                transactions.save(transaction);
                 logger.logObject(transaction, "transaction from saving customer");
                 try {
                     pxpay.request(transaction, function(errpx, pxresult) {
