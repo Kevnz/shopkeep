@@ -46,14 +46,14 @@ exports.saveTip = function (req, res) {
             logtastic.save({message:"at the end of tip save"});
             sender.sendEmail(tipster, function (err, obj) {
                 if(err) {
-                    res.send(500, { error: 'something is wrong'});
+                    res.redirect('http://taxpayers.org.nz/pages/tip-line?e');
                 } else {
-                    res.send(200, {message: 'all good'});
+                    res.redirect('http://taxpayers.org.nz/pages/tip-line?d');
                 }
             });
         });
     } catch(failed) {
         logtastic.save({message:"in the catch", error: failed });
-        res.send(200, {problem: 'yes', err: failed});
+        res.redirect('http://taxpayers.org.nz/pages/tip-line');
     }
 };
