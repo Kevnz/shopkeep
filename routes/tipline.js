@@ -44,9 +44,9 @@ exports.saveTip = function (req, res) {
         logtastic.save(tipster);
         tips.save(tipster, function (err, obj) {
             if(err) {
-                res.redirect('http://taxpayers.org.nz/pages/tip-line?e');
+                res.send(200);
             } else {
-                res.redirect('http://taxpayers.org.nz/pages/tip-line?d');
+                res.send(200);
             }
             var sender = require('../lib/email');
             logtastic.save({message:"at the end of tip save"});
