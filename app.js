@@ -1,7 +1,7 @@
 require('newrelic');
 var raygun = require('raygun');
 var raygunClient = new raygun.Client().init({ apiKey: 'DTUW+h7RxSN5Meopa7KKVg==' });
-var logger = require('./lib/db')('logtastic');
+var logger = require('./lib/logger');
 process.on('uncaughtException', function(err) {
   logger.log('Caught exception: ' + err);
   raygunClient.send(err);
@@ -64,9 +64,24 @@ app.get('/donations', donation.donation);
 app.post('/donations', donation.saveDonation);
 app.get('/success', complete.success);
 app.get('/fail', complete.fail);
+//added to handle post
+app.post('/success', complete.success);
+app.post('/fail', complete.fail);
 app.get('/tipline', tips.index);
 app.post('/tipline', tips.saveTip);
 app.get('/details', details.index);
+
+app.get('/failtest', function (req, res) {
+
+
+});
+
+app.use(function(err, req, res, next) {
+    //log error, redirect 
+    logger.logObject(err, 'Error Catch');
+
+    res.redirect('http://taxpayers.org.nz/')
+});
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port') + " in " + app.get('env') +" mode");
 });
