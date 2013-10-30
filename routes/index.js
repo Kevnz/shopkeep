@@ -60,7 +60,7 @@ exports.saveCustomer = function (req, res) {
                 
                 donation.reference = 'Payment from user ' + customer.id;
                 var pxpay = require('pxpay');
-
+                var host = config.get('hostname');
                 var transaction = {
                     user: config.get('dps-user' + dps),
                     password: config.get('dps-password' + dps),
@@ -70,8 +70,8 @@ exports.saveCustomer = function (req, res) {
                     email: customer.email,
                     TxnId: 'trans-'+ Guid.create().toString(),
                     addCard: donation.repeat ? 1 : 0,
-                    successURL: 'https://tradeshop.azurewebsites.net/success?user='+ customer.id,
-                    failURL: 'https://tradeshop.azurewebsites.net/fail?user='+ customer.id
+                    successURL: 'https://'+ host + '/success?user='+ customer.id,
+                    failURL: 'https://'+ host + '/fail?user='+ customer.id
                 };
                 transactions.save(transaction);
                 logger.logObject(transaction, "transaction from saving customer");

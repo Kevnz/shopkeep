@@ -73,7 +73,7 @@ app.get('/details', details.index);
 
 app.get('/failtest', function (req, res) {
 
-
+    throw "fall down, go boom";
 });
 
 app.use(function(err, req, res, next) {
