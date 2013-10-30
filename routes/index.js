@@ -66,7 +66,7 @@ exports.saveCustomer = function (req, res) {
                     password: config.get('dps-password' + dps),
                     amount:  donation.amount + '.00',
                     reference: 'Payment from user ' + customer.id,
-                    line1: 'Payment for joing Taxpayers Union',
+                    line1: 'Payment for joining Taxpayers Union',
                     email: customer.email,
                     TxnId: 'trans-'+ Guid.create().toString(),
                     addCard: donation.repeat ? 1 : 0,

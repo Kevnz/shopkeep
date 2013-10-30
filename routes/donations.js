@@ -64,6 +64,7 @@ exports.saveDonation = function (req, res) {
                     amount:  donation.amount + '.00',
                     reference: 'Payment from user ' + donation.id,
                     email: donation.email,
+                    line1: 'Donation to the Taxpayers Union',
                     TxnId: 'trans-'+ Guid.create().toString(),
                     addCard: donation.repeat ? 1 : 0,
                     successURL: 'http://tradeshop.azurewebsites.net/success?donation='+ refId,
