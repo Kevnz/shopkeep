@@ -24,7 +24,8 @@
     "newrelic": "*",
     "shopifapi": "~0.1.5",
     "nodify-shopify": "~0.1.0",
-    "mongoskin": "~0.6.0"
+    "mongoskin": "~0.6.0",
+    "azure": "~0.7.16"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
