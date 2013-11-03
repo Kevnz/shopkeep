@@ -12,18 +12,19 @@ exports.index = function (req, res) {
     var customers = require('../lib/db')('customer');
 
     customers.findOne({email: email, paid:true }, function (err, doc) {
-        console.log(arguments);
-        var member = {
-            first_name: doc.first_name,
-            last_name: doc.last_name,
-            email: doc.email,
-            amount: doc.amount,
-            repeat: doc.repeat
-        };
+
+
         if (err) {
             res.send(200, err);
         } else {
-            res.send(200, doc);
+            var member = {
+                first_name: doc.first_name,
+                last_name: doc.last_name,
+                email: doc.email,
+                amount: doc.amount,
+                repeat: doc.repeat
+            };
+            res.send(200, member);
         }
     });
 };
