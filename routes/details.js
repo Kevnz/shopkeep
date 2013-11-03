@@ -1,5 +1,5 @@
 exports.index = function (req, res) {
-            res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Origin', '*');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -11,8 +11,15 @@ exports.index = function (req, res) {
     console.log(email);
     var customers = require('../lib/db')('customer');
 
-    customers.findOne({email: email}, function (err, doc) {
+    customers.findOne({email: email, paid:true }, function (err, doc) {
         console.log(arguments);
+        var member = {
+            first_name: doc.first_name,
+            last_name: doc.last_name,
+            email: doc.email,
+            amount: doc.amount,
+            repeat: doc.repeat
+        };
         if (err) {
             res.send(200, err);
         } else {
