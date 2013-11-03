@@ -34,17 +34,19 @@ exports.update = function (req, res) {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
 
-    var email = req.body.email;
+    var email = req.query.email;
     var amount = req.body.amount;
-    var repeat = req.body.repeat;
 
     var customers = require('../lib/db')('customer');
-
-    customers.findOne({email: email}, function (err, doc) {
+    var customer_updates = require('../lib/db')('customer_update');
+    customers.findOne({ email: email }, function (err, doc) {
         if (err) {
             res.send(200, err);
         } else {
-            res.send(200, doc);
+            doc.amountToDonate = amount;
+            customer_updates.save(doc, function () {
+               res.send(200);
+           });
         }
     });
 };
