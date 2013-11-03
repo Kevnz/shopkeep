@@ -70,8 +70,10 @@ app.get('/tipline', tips.index);
 app.post('/tipline', tips.saveTip);
 app.get('/details', details.index);
 
+app.get('/err', function (req, res) {
+    throw "fall down, go boom";
+});
 app.get('/failtest', function (req, res) {
-
     throw "fall down, go boom";
 });
 
