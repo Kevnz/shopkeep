@@ -3,7 +3,6 @@ var raygun = require('raygun');
 var raygunClient = new raygun.Client().init({ apiKey: 'DTUW+h7RxSN5Meopa7KKVg==' });
 var logger = require('./lib/logger');
 process.on('uncaughtException', function(err) {
-  logger.log('Caught exception: ' + err);
   raygunClient.send(err);
 });
 
@@ -78,9 +77,9 @@ app.get('/failtest', function (req, res) {
 
 app.use(function(err, req, res, next) {
     //log error, redirect 
-    logger.logObject(err, 'Error Catch');
+    raygunClient.send(err);
 
-    res.redirect('http://taxpayers.org.nz/')
+    res.redirect('http://taxpayers.org.nz/');
 });
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port') + " in " + app.get('env') +" mode");
