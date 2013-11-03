@@ -50,3 +50,29 @@ exports.update = function (req, res) {
         }
     });
 };
+
+
+exports.cancel = function (req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    var email = req.query.email; 
+
+    var customers = require('../lib/db')('customer');
+    var customer_updates = require('../lib/db')('customer_update');
+    customers.findAndModify({
+                    query: { email: email },
+                    update:{ $set: { repeat: false }},
+                    new: false
+                }, function (err, doc) {
+        if (err) {
+            res.send(200, err);
+        } else {
+            doc.stoppedDonation = new Date();
+            customer_updates.save(doc, function () {
+               res.send(200);
+           });
+        }
+    });
+};
