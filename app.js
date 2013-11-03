@@ -76,9 +76,7 @@ app.get('/failtest', function (req, res) {
 });
 
 app.use(function(err, req, res, next) {
-    //log error, redirect 
     raygunClient.send(err);
-
     res.redirect('http://taxpayers.org.nz/');
 });
 http.createServer(app).listen(app.get('port'), function(){
