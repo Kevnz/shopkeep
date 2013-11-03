@@ -69,6 +69,8 @@ app.post('/fail', complete.fail);
 app.get('/tipline', tips.index);
 app.post('/tipline', tips.saveTip);
 app.get('/details', details.index);
+app.post('/details', details.update);
+app.post('/stop-payments', details.cancel);
 
 app.get('/err', function (req, res) {
     throw "fall down, go boom";
