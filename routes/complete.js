@@ -1,14 +1,14 @@
 
 var shopify = require('../lib/shopify');
 var log = require('../lib/logger');
-exports.success = function(req, res){
+exports.success = function(req, res) {
+
     log.logObject(req.body, "request body");
     var user = req.query.user;
     var userid = req.query.userid;
     var donation = req.query.donation;
     var result = req.query.result;
     var successDB = require('../lib/db')('success');
-    console.log('success');
     successDB.save({
         userId: user,
         dpsUserId: userid,
@@ -27,20 +27,18 @@ exports.success = function(req, res){
                 },
                 function (err, userDoc) {
                     if (userDoc === null) {
-                        //res.redirect('http://taxpayers.org.nz/account');
-                        //the user doc was null, is that user in database?
                         customers.findOne({ id: user }, function(err, doc) {
-                                if (doc !== null) {
-                                    shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
-                                        if (doc.didDonate) {
-                                            res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
-                                        } else {
-                                            res.redirect('http://taxpayers.org.nz/pages/thanks');
-                                        }
-                                    });
-                                } else {
-                                    res.redirect('http://taxpayers.org.nz/pages/thanks');
-                                }
+                            if (doc !== null) {
+                                shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
+                                    if (doc.didDonate) {
+                                        res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
+                                    } else {
+                                        res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                    }
+                                });
+                            } else {
+                                res.redirect('http://taxpayers.org.nz/pages/thanks');
+                            }
                         });
                     } else {
                         try {
@@ -75,6 +73,10 @@ exports.success = function(req, res){
                 function (err, userDoc) {
                     res.redirect('http://taxpayers.org.nz/pages/donation-success');
                 });
+        }
+        else {
+            logger.log('this else should not happen');
+            res.redirect('http://taxpayers.org.nz/pages/thanks');
         }
     });
 };

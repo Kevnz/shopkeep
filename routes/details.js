@@ -22,7 +22,8 @@ exports.index = function (req, res) {
                 last_name: doc.last_name,
                 email: doc.email,
                 amount: doc.amount,
-                repeat: doc.repeat
+                repeat: doc.repeat,
+                donation_amount: doc.amountToDonate || (doc.amount - 5)
             };
             res.send(200, member);
         }
