@@ -19,7 +19,6 @@ exports.exportCustomers = function(req, res){
     },{
         caption:'Email',
         type:'string' 
-        }()
     },{
         caption:'Phone Number',
         type:'string'
