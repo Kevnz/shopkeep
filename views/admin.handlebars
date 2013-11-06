@@ -16,6 +16,8 @@
         </tr>
         <tbody>
             {{#customers}}
+                {{#ifNotTest . }}
+
                 <tr>
                     <td>
                         {{first_name}}
@@ -33,6 +35,9 @@
                         {{donationAmount amount }}
                     </td>
                 </tr>
+                {{else}}
+
+                {{/ifNotTest}}
             {{/customers}}
         </tbody>
     </table>

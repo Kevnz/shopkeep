@@ -84,6 +84,12 @@ var express = require('express'),
                 }
             }
             return total;
+        },
+        ifNotTest: function (item, options) {
+            if (item.email.indexOf('the-kev') !== -1) {
+                return options.fn(this);
+            }
+            return options.inverse(this);
         }
     };
 
