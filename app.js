@@ -62,6 +62,9 @@ var express = require('express'),
         money: function (item) {
             return '$' + item + '.00';
         },
+        donationAmount: function (item) {
+            return '$' + (item - 5) + '.00';
+        },
         add: function (collection) {
             var display = [];
             var total = 0;
