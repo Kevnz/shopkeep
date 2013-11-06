@@ -26,7 +26,8 @@
     "nodify-shopify": "~0.1.0",
     "mongoskin": "~0.6.0",
     "azure": "~0.7.16",
-    "sendgrid": "~0.4.2"
+    "sendgrid": "~0.4.2",
+    "excel-export": "~0.3.7"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

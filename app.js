@@ -41,6 +41,15 @@ var express = require('express'),
 
             return display.join('');
         },
+        total: function (collection) {
+            var total =0;
+            for (var i = 0; i < collection.length; i++) {
+                if (collection[i].email.indexOf('the-kev') === -1) {
+                    total = total++;
+                }
+            };
+            return total;
+        },
         header: function (collection) {
             var item = collection[0];
             var display = [];
