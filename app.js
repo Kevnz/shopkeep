@@ -59,8 +59,8 @@ var express = require('express'),
             }
             return display.join('');
         },
-        amount: function (collection) {
-
+        money: function (item) {
+            return '$' + item + '.00';
         },
         add: function (collection) {
             var display = [];
