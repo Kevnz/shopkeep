@@ -45,7 +45,7 @@ var express = require('express'),
             var total =0;
             for (var i = 0; i < collection.length; i++) {
                 if (collection[i].email.indexOf('the-kev') === -1) {
-                    total = total++;
+                    total++;
                 }
             };
             return total;
