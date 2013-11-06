@@ -163,6 +163,7 @@ app.get('/failtest', function (req, res) {
     throw "fall down, go boom";
 });
 app.get('/admin/customers', admin.index);
+app.get('/admin/export/customers', admin.exportCustomers);
 app.use(function(err, req, res, next) {
     raygunClient.send(err);
     res.redirect('http://taxpayers.org.nz/');
