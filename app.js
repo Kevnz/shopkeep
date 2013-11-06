@@ -13,17 +13,71 @@ var express = require('express'),
     tips = require('./routes/tipline'),
     donation = require('./routes/donations'),
     details = require('./routes/details'),
+    admin = require('./routes/admin.customers'),
     http = require('http'),
     path = require('path'),
     app = express(),
-    expstate = require('express-state');
+    expstate = require('express-state'),
+    inspect = function (obj) {
+        var display = [];
+        for (var prop in obj) {
+            if( obj.hasOwnProperty( prop ) ) {
+ 
+                display.push( prop + " = " + obj[prop] + "<br/>");
+            }
+        }
+        return display.join('');
+    },
+    helpers = {
+        inspect: function (obj) {
+            var display = [];
+            if (typeof obj == Array) {
+                for (var i = 0; i < obj.length; i++) {
+                    display.push(inspect(obj[i]));
+                }
+            } else {
+                display.push(inspect(obj));
+            }
+
+            return display.join('');
+        },
+        header: function (collection) {
+            var item = collection[0];
+            var display = [];
+            for (var prop in item) {
+                if( item.hasOwnProperty( prop ) ) {
+                    display.push('<th>' + prop + "</th>");
+                }
+            }
+            return display.join('');
+        },
+        row: function (item, whitelist) {
+            var display = [];
+            for (var i = 0; i < whitelist.length; i++) {
+                
+                display.push("<td>" + item[whitelist[i]] + "</td>");
+            }
+            return display.join('');
+        },
+        amount: function (collection) {
+
+        },
+        add: function (collection) {
+            var display = [];
+            var total = 0;
+            for (var i = 0; i < collection.length; i++) {
+                total = total+collection[i].amount;
+            }
+            return total;
+        }
+    };
 
 expstate.extend(app);
 
 app.configure(function(){
     app.set('port', process.env.PORT || 4567);
     app.set('views', __dirname + '/views');
-    app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+    app.engine('handlebars', exphbs({defaultLayout: 'main', helpers:helpers}));
     app.set('view engine', 'handlebars');
 
     app.use(express.favicon());
@@ -78,7 +132,7 @@ app.get('/err', function (req, res) {
 app.get('/failtest', function (req, res) {
     throw "fall down, go boom";
 });
-
+app.get('/admin/customers', admin.index);
 app.use(function(err, req, res, next) {
     raygunClient.send(err);
     res.redirect('http://taxpayers.org.nz/');

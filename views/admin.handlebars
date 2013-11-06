@@ -1,0 +1,36 @@
+
+<div>
+    Total Paid Customers: {{customers.length}} <br/>
+    Total Amount Paid: ${{add customers}}.00 <br/>
+</div>
+
+<div>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Amount</th>
+        </tr>
+        <tbody>
+            {{#customers}}
+                <tr>
+                    <td>
+                        {{first_name}}
+                    </td>
+                    <td>
+                        {{last_name}}
+                    </td>
+                    <td>
+                        {{email}}
+                    </td>
+                    <td>
+                        {{amount}}
+                    </td>
+                </tr>
+            {{/customers}}
+        </tbody>
+    </table>
+</div>
+<br />
+<div></div>
