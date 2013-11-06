@@ -75,7 +75,7 @@ exports.success = function(req, res) {
                 });
         }
         else {
-            logger.log('this else should not happen');
+            log.log('this else should not happen');
             res.redirect('http://taxpayers.org.nz/pages/thanks');
         }
     });

@@ -42,7 +42,8 @@ exports.exportCustomers = function(req, res){
             if (paidCustomers[i].email.indexOf('the-kev') === -1) {
                 customers.rows.push([paidCustomers[i].first_name + ' ' + paidCustomers[i].last_name, paidCustomers[i].email, paidCustomers[i].phone_number, paidCustomers[i].amount]);
             }
-        };
+        }
+        var nodeExcel = require('excel-export');
         var result = nodeExcel.execute(customers);
         res.setHeader('Content-Type', 'application/vnd.openxmlformats');
         res.setHeader("Content-Disposition", "attachment; filename=" + "CustomersReport.xlsx");
@@ -52,4 +53,4 @@ exports.exportCustomers = function(req, res){
 
     });
 
-}
+};
