@@ -3,7 +3,7 @@ exports.index = function (req, res) {
 
     db.find({ paid: true})
       .sort({created_on: -1}, function (err, paidCustomers) {
-        res.render('admin', { customers:paidCustomers });
+        res.render('admin', { title: 'Members and donations', customers:paidCustomers });
     });
 
 };

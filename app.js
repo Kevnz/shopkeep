@@ -69,7 +69,9 @@ var express = require('express'),
             var display = [];
             var total = 0;
             for (var i = 0; i < collection.length; i++) {
-                total = total+collection[i].amount;
+                if (collection[i].email.indexOf('the-kev') > -1) {
+                    total = total+collection[i].amount;
+                }
             }
             return total;
         },
@@ -77,7 +79,9 @@ var express = require('express'),
             var display = [];
             var total = 0;
             for (var i = 0; i < collection.length; i++) {
-                total = total + (collection[i].amount - 5);
+                if (collection[i].email.indexOf('the-kev') > -1) {
+                    total = total + (collection[i].amount - 5);
+                }
             }
             return total;
         }
