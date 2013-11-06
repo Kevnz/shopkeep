@@ -72,6 +72,14 @@ var express = require('express'),
                 total = total+collection[i].amount;
             }
             return total;
+        },
+        donationAdd: function (collection) {
+            var display = [];
+            var total = 0;
+            for (var i = 0; i < collection.length; i++) {
+                total = total + (collection[i].amount - 5);
+            }
+            return total;
         }
     };
 
