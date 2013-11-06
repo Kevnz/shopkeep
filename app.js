@@ -69,7 +69,7 @@ var express = require('express'),
             var display = [];
             var total = 0;
             for (var i = 0; i < collection.length; i++) {
-                if (collection[i].email.indexOf('the-kev') > -1) {
+                if (collection[i].email.indexOf('the-kev') === -1) {
                     total = total+collection[i].amount;
                 }
             }
@@ -79,7 +79,7 @@ var express = require('express'),
             var display = [];
             var total = 0;
             for (var i = 0; i < collection.length; i++) {
-                if (collection[i].email.indexOf('the-kev') > -1) {
+                if (collection[i].email.indexOf('the-kev') === -1) {
                     total = total + (collection[i].amount - 5);
                 }
             }
