@@ -103,7 +103,10 @@ var express = require('express'),
     };
 
 expstate.extend(app);
-
+var connect = require('connect');
+var auth = connect.basicAuth(function (user, pass) {
+    return (user === 'admin' && pass === 'l0g1n2tusite');
+});
 app.configure(function(){
     app.set('port', process.env.PORT || 4567);
     app.set('views', __dirname + '/views');
@@ -123,6 +126,7 @@ app.configure('development', function(){
     app.use(express.errorHandler());
     app.locals.pretty = true;
 });
+
 app.use(function (req, res, next) {
 
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -162,8 +166,8 @@ app.get('/err', function (req, res) {
 app.get('/failtest', function (req, res) {
     throw "fall down, go boom";
 });
-app.get('/admin/customers', admin.index);
-app.get('/admin/export/customers', admin.exportCustomers);
+app.get('/admin/customers', auth, admin.index);
+app.get('/admin/export/customers', auth, admin.exportCustomers);
 app.use(function(err, req, res, next) {
     raygunClient.send(err);
     res.redirect('http://taxpayers.org.nz/');

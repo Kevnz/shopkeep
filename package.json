@@ -27,7 +27,8 @@
     "mongoskin": "~0.6.0",
     "azure": "~0.7.16",
     "sendgrid": "~0.4.2",
-    "excel-export": "~0.3.7"
+    "excel-export": "~0.3.7",
+    "connect": "~2.11.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
