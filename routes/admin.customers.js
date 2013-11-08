@@ -10,37 +10,191 @@ exports.index = function (req, res) {
 
 exports.exportCustomers = function(req, res){
     var customers ={};
-    customers.cols = [{
+    customers.cols = [
+    {
         caption:'Name',
         type:'string',
         beforeCellWrite:function(row, cellData){
              return cellData.toUpperCase();
         }
     },{
-        caption:'Email',
+        caption:'EmailAddress',
         type:'string' 
+ 
     },{
-        caption:'Phone Number',
+        caption:'FirstName',
+        type:'string' 
+    },{     
+        caption:'LastName',
+        type:'string' 
+    },{ 
+        caption:'POAttentionTo',
         type:'string'
     },{
-        caption:'Amount',
+      caption:'POAddressLine1',
+        type:'string'
+    },{
+      caption:'POAddressLine2',
+        type:'string'
+    },{
+      caption:'POAddressLine3',
+        type:'string'
+    },{
+      caption:'POAddressLine4',
+        type:'string'
+    },{
+      caption:'POCity',
+        type:'string'
+    },{
+      caption:'PORegion',
+        type:'string'
+    },{
+        caption:'POPostalCode',
+        type: 'string'
+    },{ 
+        caption:'POCountry',
+        type: 'string'
+    },{
+        caption:'SAAttentionTo',
+        type: 'string'
+    },{
+        caption:'SAAddressLine1',
+        type: 'string'
+    },{
+        caption:'SAAddressLine2',
+        type: 'string'
+    },{
+        caption:'SAAddressLine3',
+        type: 'string'
+    },{
+        caption:'SAAddressLine4',
+        type: 'string'
+    },{
+        caption:'SACity',
+        type: 'string'
+    },{
+        caption:'SARegion',
+        type: 'string'
+    },{
+        caption:'SAPostalCode',
+        type: 'string'
+    },{
+        caption:'SACountry',
+        type: 'string'
+    },{
+        caption:'PhoneNumber',
+        type: 'string'
+    },{
+        caption:'FaxNumber',
+        type: 'string'
+    },{
+        caption:'MobileNumber',
+        type: 'string'
+    },{
+        caption:'DDINumber',
+        type: 'string'
+    },{
+        caption:'SkypeName',
+        type: 'string'
+    },{
+        caption:'BankAccountName',
+        type: 'string'
+    },{
+        caption:'BankAccountNumber',
          type:'currency'                
+      },{
+          caption:'BankAccountParticulars',
+        type: 'string'
+    },{
+        caption:'BankAccountCode',
+        type: 'string'
+    },{
+        caption:'BankAccountReference',
+        type: 'string'
+    },{
+        caption:'TaxNumber',
+        type: 'string'
+    },{
+        caption:'AccountsReceivableTaxCodeName',
+        type: 'string'
+    },{
+        caption:'AccountsPayableTaxCodeName',
+        type: 'string'
+    },{
+        caption:'Website',
+        type: 'string'
+    },{
+        caption:'Discount',
+        type: 'string'
+    },{
+        caption:'DueDateBillDay',
+        type: 'string'
+    },{
+        caption:'DueDateBillTerm',
+        type: 'string'
+      },{
+        caption:'DueDateSalesDay',
+        type: 'string'
+      },{
+        caption:'DueDateSalesTerm',
+        type: 'string'
       }];
     var db = require('../lib/db')('customer');
     db.find({ paid: true})
       .sort({created_on: -1}, function (err, paidCustomers) {
         
-          customers.rows = [
-         ['pi', new Date(Date.UTC(2013, 4, 1)), true, 3.14],
-         ["e", new Date(2012, 4, 1), false, 2.7182],
-          ["M&M<>'", new Date(Date.UTC(2013, 6, 9)), false, 1.2]   
-      ];
+           
+/*
+var moment = require('moment')
+var u = moment.utc(dstring);
+console.log(moment(dstring)._d);
 
-
+*/
         customers.rows=[];
         for (var i = 0; i < paidCustomers.length; i++) {
             if (paidCustomers[i].email.indexOf('the-kev') === -1) {
-                customers.rows.push([paidCustomers[i].first_name + ' ' + paidCustomers[i].last_name, paidCustomers[i].email, paidCustomers[i].phone_number, paidCustomers[i].amount]);
+                customers.rows.push([
+                  paidCustomers[i].first_name + ' ' + paidCustomers[i].last_name, 
+                  paidCustomers[i].email, 
+                  paidCustomers[i].first_name,
+                  paidCustomers[i].last_name,
+                  '',
+                  paidCustomers[i].addres1,
+                  paidCustomers[i].addres2 || '',
+                  '',
+                  '',
+                  paidCustomers[i].addres3,
+                  '',
+                  paidCustomers[i].postcode,
+                  'New Zealand',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  paidCustomers[i].phone_number,
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '',
+                  '']);
             }
         }
         var nodeExcel = require('excel-export');

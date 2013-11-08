@@ -1,3 +1,7 @@
+
+
+
+
 require('newrelic');
 var raygun = require('raygun');
 var raygunClient = new raygun.Client().init({ apiKey: 'DTUW+h7RxSN5Meopa7KKVg==' });
@@ -5,6 +9,15 @@ var logger = require('./lib/logger');
 process.on('uncaughtException', function(err) {
   raygunClient.send(err);
 });
+
+ 
+
+var dstring = '2013-10-28T02:40:35.187Z';
+var fromTZ= 'America/Los_Angles';
+var toTZ = 'Pacifc/Auckland'
+
+ 
+
 
 var express = require('express'),
     exphbs  = require('express3-handlebars'),

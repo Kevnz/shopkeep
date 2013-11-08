@@ -28,7 +28,9 @@
     "azure": "~0.7.16",
     "sendgrid": "~0.4.2",
     "excel-export": "~0.3.7",
-    "connect": "~2.11.0"
+    "connect": "~2.11.0", 
+    "moment": "~2.4.0",
+ 
   },
   "devDependencies": {
     "grunt": "~0.4.1",
