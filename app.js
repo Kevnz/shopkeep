@@ -186,6 +186,8 @@ app.use(function(err, req, res, next) {
     raygunClient.send(err);
     res.redirect('http://taxpayers.org.nz/');
 });
+
+app.get('/admin/xero/import/customers/', auth, admin.pumpCustomers);
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port') + " in " + app.get('env') +" mode");
 });
