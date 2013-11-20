@@ -24,6 +24,24 @@ exports.xero = function (req, res) {
         
     });
 };
+
+exports.xeroInvoice = function (req, res) {
+  console.log('xero-invoice');
+    var db = require('../lib/db')('customer');
+    console.log(req.params);
+    db.findOne({ paid: true, id: req.params.id}, function (err, customer) {
+        var xero = require('../lib/xero_invoice');
+        xero.raise(customer, function (err, results) {
+          if(err) {
+            res.send(200, err);
+          } else {
+            res.send(200, results);
+          }
+        });
+        
+    });
+};
+
 exports.pumpCustomers = function (req, res) {
       var db = require('../lib/db')('customer');
       db.find({ paid: true})
@@ -35,7 +53,19 @@ exports.pumpCustomers = function (req, res) {
         }
         res.send(true);
       });
-}
+};
+exports.pumpCustomersInvoices = function (req, res) {
+      var db = require('../lib/db')('customer');
+      db.find({ paid: true})
+      .sort({created_on: -1}, function (err, paidCustomers) {
+        var xero = require('../lib/xero_invoice');
+        for (var i = 0; i < paidCustomers.length; i++) {
+          xero.raise(paidCustomers[i], function (err, results) {});
+          
+        }
+        res.send(true);
+      });
+};
 exports.exportCustomers = function(req, res){
     var customers ={};
     customers.cols = [
