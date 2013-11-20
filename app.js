@@ -180,6 +180,7 @@ app.get('/failtest', function (req, res) {
     throw "fall down, go boom";
 });
 app.get('/admin/customers', auth, admin.index);
+app.get('/admin/xero/customers/:id', auth, admin.xero);
 app.get('/admin/export/customers', auth, admin.exportCustomers);
 app.use(function(err, req, res, next) {
     raygunClient.send(err);

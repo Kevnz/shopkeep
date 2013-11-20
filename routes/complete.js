@@ -30,11 +30,15 @@ exports.success = function(req, res) {
                         customers.findOne({ id: user }, function(err, doc) {
                             if (doc !== null) {
                                 shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
-                                    if (doc.didDonate) {
-                                        res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
-                                    } else {
-                                        res.redirect('http://taxpayers.org.nz/pages/thanks');
-                                    }
+                                    
+                                    var xero = require('../lib/xero_contact');
+                                    xero.createContact(doc, function (err, results) {
+                                        if (doc.didDonate) {
+                                            res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
+                                        } else {
+                                            res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                        }
+                                    });
                                 });
                             } else {
                                 res.redirect('http://taxpayers.org.nz/pages/thanks');
@@ -42,20 +46,24 @@ exports.success = function(req, res) {
                         });
                     } else {
                         try {
+                            
                             shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
-                                if (err) {
-                                    if (userDoc.didDonate) {
-                                        res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
+                                var xero = require('../lib/xero_contact');
+                                xero.createContact(userDoc, function (xerr, results) { 
+                                    if (err) {
+                                        if (userDoc.didDonate) {
+                                            res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
+                                        } else {
+                                            res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                        }
                                     } else {
-                                        res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                       if (userDoc.didDonate) {
+                                            res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
+                                        } else {
+                                            res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                        }
                                     }
-                                } else {
-                                   if (userDoc.didDonate) {
-                                        res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
-                                    } else {
-                                        res.redirect('http://taxpayers.org.nz/pages/thanks');
-                                    }
-                                }
+                                });
                             });
                         } catch (shopError) {
                             log.logObject(shopError);
