@@ -41,7 +41,14 @@ exports.xeroInvoice = function (req, res) {
         
     });
 };
-
+var timedrequest= function throttle(func, arr, i) {
+    if (i < arr.length) {
+      func(arr[i], function() {
+          i++;
+          setTimeout(timedrequest, 1000, func, arr, i);
+      });
+    }
+};
 exports.pumpCustomers = function (req, res) {
       var db = require('../lib/db')('customer');
       db.find({ paid: true})
