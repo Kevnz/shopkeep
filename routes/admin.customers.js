@@ -61,18 +61,21 @@ exports.pumpCustomers = function (req, res) {
         res.send(true);
       });
 };
+
 exports.pumpCustomersInvoices = function (req, res) {
       var db = require('../lib/db')('customer');
       db.find({ paid: true})
       .sort({created_on: -1}, function (err, paidCustomers) {
         var xero = require('../lib/xero_invoice');
+        xero.allInvoices(paidCustomers);
         for (var i = 0; i < paidCustomers.length; i++) {
-          xero.raise(paidCustomers[i], function (err, results) {});
+          //xero.raise(paidCustomers[i], function (err, results) {});
           
         }
         res.send(true);
       });
 };
+
 exports.exportCustomers = function(req, res){
     var customers ={};
     customers.cols = [

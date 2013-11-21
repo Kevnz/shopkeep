@@ -187,7 +187,7 @@ app.use(function(err, req, res, next) {
     res.redirect('http://taxpayers.org.nz/');
 });
 app.get('/admin/xero/invoice/:id', auth, admin.xeroInvoice);
-app.get('/admin/xero/import/customers/', auth, admin.pumpCustomers);
+app.get('/admin/xero/import/customers/', auth, admin.pumpCustomers); 
 app.get('/admin/xero/import/invoices/', auth, admin.pumpCustomersInvoices);
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port') + " in " + app.get('env') +" mode");
