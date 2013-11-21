@@ -31,7 +31,8 @@
     "connect": "~2.11.0",
     "moment": "~2.4.0",
     "xero": "0.0.4",
-    "heredoc": "~1.2.0"
+    "heredoc": "~1.2.0",
+    "easyxml": "0.0.4"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
