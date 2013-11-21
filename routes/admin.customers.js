@@ -33,7 +33,7 @@ exports.xeroInvoice = function (req, res) {
         var xero = require('../lib/xero_invoice');
         xero.raise(customer, function (err, results) {
           if(err) {
-            res.send(200, err);
+            res.send(200, {error: err, result: results});
           } else {
             res.send(200, results);
           }
