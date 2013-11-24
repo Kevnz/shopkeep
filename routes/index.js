@@ -9,7 +9,7 @@ var qconf = require('qconf'),
 var logger = require('../lib/logger');
 var dps = '-' + config.get('dps');
 exports.saveCustomer = function (req, res) {
-
+ 
     try {
         var Guid = require('guid');
         var customers =  require('../lib/db')('customer');
