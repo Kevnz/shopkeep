@@ -1,0 +1,5077 @@
+<Invoices><Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Tree Anna Mackay</Name>
+    </Contact>
+    <Reference>Payment from user 01722c17-cebd-0ce7-2e2f-a46e0355aad6</Reference>
+    <Date>2013-11-20T05:28:01.625Z</Date>
+    <DueDate>2013-11-20T05:28:01.625Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Gavin Logan</Name>
+    </Contact>
+    <Reference>Payment from user 0308f4f3-7c1b-4655-1024-c23188150744</Reference>
+    <Date>2013-11-17T09:55:12.413Z</Date>
+    <DueDate>2013-11-17T09:55:12.413Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Donna Broughton</Name>
+    </Contact>
+    <Reference>Payment from user d9216048-169a-f621-9df7-7f9dadd8230d</Reference>
+    <Date>2013-11-12T00:43:36.752Z</Date>
+    <DueDate>2013-11-12T00:43:36.752Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Robert Berry</Name>
+    </Contact>
+    <Reference>Payment from user 35c8cec6-aa0a-9438-f591-1d835d09997d</Reference>
+    <Date>2013-11-12T00:26:04.623Z</Date>
+    <DueDate>2013-11-12T00:26:04.623Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Maria Harrison</Name>
+    </Contact>
+    <Reference>Payment from user 40cf2cb3-a6e4-16b2-37d6-a07010c9a74b</Reference>
+    <Date>2013-11-11T20:00:50.089Z</Date>
+    <DueDate>2013-11-11T20:00:50.089Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Maree Goldie</Name>
+    </Contact>
+    <Reference>Payment from user 7de2e30d-7744-d689-aa2c-a6348665328c</Reference>
+    <Date>2013-11-08T21:09:53.066Z</Date>
+    <DueDate>2013-11-08T21:09:53.066Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Maree Goldie</Name>
+        </Contact>
+        <Reference>Payment from user 7de2e30d-7744-d689-aa2c-a6348665328c</Reference>
+        <Date>2013-11-08T21:09:53.066Z</Date>
+        <DueDate>2013-11-08T21:09:53.066Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Malcolm  Thomas</Name>
+    </Contact>
+    <Reference>Payment from user ead7a662-b33c-e2e8-46fa-5205983dd7c3</Reference>
+    <Date>2013-11-08T19:30:03.532Z</Date>
+    <DueDate>2013-11-08T19:30:03.532Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Glenn Todd</Name>
+    </Contact>
+    <Reference>Payment from user 727a3c23-8c58-975d-f63c-efe1b26604ef</Reference>
+    <Date>2013-11-08T03:53:09.186Z</Date>
+    <DueDate>2013-11-08T03:53:09.186Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Lewis Holden</Name>
+    </Contact>
+    <Reference>Payment from user 0bae09c1-d150-e5bb-6965-756b31ca1622</Reference>
+    <Date>2013-11-07T22:44:34.410Z</Date>
+    <DueDate>2013-11-07T22:44:34.410Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Lewis Holden</Name>
+        </Contact>
+        <Reference>Payment from user 0bae09c1-d150-e5bb-6965-756b31ca1622</Reference>
+        <Date>2013-11-07T22:44:34.410Z</Date>
+        <DueDate>2013-11-07T22:44:34.410Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Shaun Daly</Name>
+    </Contact>
+    <Reference>Payment from user b804898f-81ad-edc5-b3be-71c79eea86dd</Reference>
+    <Date>2013-11-07T21:00:32.350Z</Date>
+    <DueDate>2013-11-07T21:00:32.350Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Sam Archer</Name>
+    </Contact>
+    <Reference>Payment from user 6e415d01-e636-2355-4e6c-c253d8a09196</Reference>
+    <Date>2013-11-06T23:05:17.473Z</Date>
+    <DueDate>2013-11-06T23:05:17.473Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Sam Archer</Name>
+        </Contact>
+        <Reference>Payment from user 6e415d01-e636-2355-4e6c-c253d8a09196</Reference>
+        <Date>2013-11-06T23:05:17.473Z</Date>
+        <DueDate>2013-11-06T23:05:17.473Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>richard cuthbert</Name>
+    </Contact>
+    <Reference>Payment from user a8643d58-6a3c-2715-7835-45b2e3ade08b</Reference>
+    <Date>2013-11-05T23:24:47.474Z</Date>
+    <DueDate>2013-11-05T23:24:47.474Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Basma Al-Ghanim</Name>
+    </Contact>
+    <Reference>Payment from user 736f3302-4f81-1480-0172-e88b13f1d003</Reference>
+    <Date>2013-11-05T07:25:05.203Z</Date>
+    <DueDate>2013-11-05T07:25:05.203Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Basma Al-Ghanim</Name>
+        </Contact>
+        <Reference>Payment from user 736f3302-4f81-1480-0172-e88b13f1d003</Reference>
+        <Date>2013-11-05T07:25:05.203Z</Date>
+        <DueDate>2013-11-05T07:25:05.203Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Stan Rinaldi</Name>
+    </Contact>
+    <Reference>Payment from user 73fcbdbe-13a6-1033-5fa8-d6e13ec63c80</Reference>
+    <Date>2013-11-05T01:45:17.460Z</Date>
+    <DueDate>2013-11-05T01:45:17.460Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Matthew Ravlich</Name>
+    </Contact>
+    <Reference>Payment from user b1cda3da-197c-39ad-7198-979deab6c164</Reference>
+    <Date>2013-11-04T20:09:10.429Z</Date>
+    <DueDate>2013-11-04T20:09:10.429Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Matthew Ravlich</Name>
+        </Contact>
+        <Reference>Payment from user b1cda3da-197c-39ad-7198-979deab6c164</Reference>
+        <Date>2013-11-04T20:09:10.429Z</Date>
+        <DueDate>2013-11-04T20:09:10.429Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Stuart Berry</Name>
+    </Contact>
+    <Reference>Payment from user fae382c1-f01b-70a0-3971-999e4f818a58</Reference>
+    <Date>2013-11-04T08:09:44.589Z</Date>
+    <DueDate>2013-11-04T08:09:44.589Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Stuart Berry</Name>
+        </Contact>
+        <Reference>Payment from user fae382c1-f01b-70a0-3971-999e4f818a58</Reference>
+        <Date>2013-11-04T08:09:44.589Z</Date>
+        <DueDate>2013-11-04T08:09:44.589Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Peter Joyce</Name>
+    </Contact>
+    <Reference>Payment from user 2de54189-35a5-7659-fc75-231dc941aa70</Reference>
+    <Date>2013-11-04T07:02:58.379Z</Date>
+    <DueDate>2013-11-04T07:02:58.379Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Peter Joyce</Name>
+        </Contact>
+        <Reference>Payment from user 2de54189-35a5-7659-fc75-231dc941aa70</Reference>
+        <Date>2013-11-04T07:02:58.379Z</Date>
+        <DueDate>2013-11-04T07:02:58.379Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Alex Yuen</Name>
+    </Contact>
+    <Reference>Payment from user cd6ed26c-e0d4-8f06-e783-3ffbc272a336</Reference>
+    <Date>2013-11-04T05:31:14.743Z</Date>
+    <DueDate>2013-11-04T05:31:14.743Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Manu Donald</Name>
+    </Contact>
+    <Reference>Payment from user 6dda1696-5950-628d-98e2-dde42b43cc32</Reference>
+    <Date>2013-11-04T04:36:32.271Z</Date>
+    <DueDate>2013-11-04T04:36:32.271Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Jordan Williams</Name>
+    </Contact>
+    <Reference>Payment from user 69f4c031-385a-08c7-4cbd-f9af3253268b</Reference>
+    <Date>2013-11-04T03:19:59.713Z</Date>
+    <DueDate>2013-11-04T03:19:59.713Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Jordan Williams</Name>
+        </Contact>
+        <Reference>Payment from user 69f4c031-385a-08c7-4cbd-f9af3253268b</Reference>
+        <Date>2013-11-04T03:19:59.713Z</Date>
+        <DueDate>2013-11-04T03:19:59.713Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Sam Esler</Name>
+    </Contact>
+    <Reference>Payment from user 58901a94-b9db-d414-37b8-89b86d0a1538</Reference>
+    <Date>2013-11-04T02:18:01.148Z</Date>
+    <DueDate>2013-11-04T02:18:01.148Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Sam Esler</Name>
+        </Contact>
+        <Reference>Payment from user 58901a94-b9db-d414-37b8-89b86d0a1538</Reference>
+        <Date>2013-11-04T02:18:01.148Z</Date>
+        <DueDate>2013-11-04T02:18:01.148Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Bruce Young</Name>
+    </Contact>
+    <Reference>Payment from user 22543ede-cd18-0f06-f3de-437a478b6fd0</Reference>
+    <Date>2013-11-04T01:14:47.063Z</Date>
+    <DueDate>2013-11-04T01:14:47.063Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Bill Rosoman</Name>
+    </Contact>
+    <Reference>Payment from user 8576f33f-afdd-ed48-33cc-52c3512dde9a</Reference>
+    <Date>2013-11-04T00:37:50.144Z</Date>
+    <DueDate>2013-11-04T00:37:50.144Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Ian Rissetto</Name>
+    </Contact>
+    <Reference>Payment from user 02478630-734c-9d8c-8597-e3c5a3740453</Reference>
+    <Date>2013-11-03T23:23:27.182Z</Date>
+    <DueDate>2013-11-03T23:23:27.182Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Jennifer McMillan</Name>
+    </Contact>
+    <Reference>Payment from user 7bbf9ccc-586c-2b1b-d90a-4ed1fa93b373</Reference>
+    <Date>2013-11-03T22:59:37.044Z</Date>
+    <DueDate>2013-11-03T22:59:37.044Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Jennifer McMillan</Name>
+        </Contact>
+        <Reference>Payment from user 7bbf9ccc-586c-2b1b-d90a-4ed1fa93b373</Reference>
+        <Date>2013-11-03T22:59:37.044Z</Date>
+        <DueDate>2013-11-03T22:59:37.044Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Barry Chamberlain</Name>
+    </Contact>
+    <Reference>Payment from user 76adb425-1a70-db98-a3f7-17730d510c50</Reference>
+    <Date>2013-11-03T22:24:03.438Z</Date>
+    <DueDate>2013-11-03T22:24:03.438Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Barry Chamberlain</Name>
+        </Contact>
+        <Reference>Payment from user 76adb425-1a70-db98-a3f7-17730d510c50</Reference>
+        <Date>2013-11-03T22:24:03.438Z</Date>
+        <DueDate>2013-11-03T22:24:03.438Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Colin Tisdall</Name>
+    </Contact>
+    <Reference>Payment from user 44032dce-a1e0-08d5-9f05-979b44f1e6c5</Reference>
+    <Date>2013-11-03T22:09:03.554Z</Date>
+    <DueDate>2013-11-03T22:09:03.554Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Colin Tisdall</Name>
+        </Contact>
+        <Reference>Payment from user 44032dce-a1e0-08d5-9f05-979b44f1e6c5</Reference>
+        <Date>2013-11-03T22:09:03.554Z</Date>
+        <DueDate>2013-11-03T22:09:03.554Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Christopher Bishop</Name>
+    </Contact>
+    <Reference>Payment from user 30ddfb9f-767d-4f27-c7d7-20c757368739</Reference>
+    <Date>2013-11-03T21:52:41.807Z</Date>
+    <DueDate>2013-11-03T21:52:41.807Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Christopher Bishop</Name>
+        </Contact>
+        <Reference>Payment from user 30ddfb9f-767d-4f27-c7d7-20c757368739</Reference>
+        <Date>2013-11-03T21:52:41.807Z</Date>
+        <DueDate>2013-11-03T21:52:41.807Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Nick Field</Name>
+    </Contact>
+    <Reference>Payment from user 8c15011a-ce17-2942-2978-f821653ad58f</Reference>
+    <Date>2013-11-03T21:08:28.945Z</Date>
+    <DueDate>2013-11-03T21:08:28.945Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Nick Field</Name>
+        </Contact>
+        <Reference>Payment from user 8c15011a-ce17-2942-2978-f821653ad58f</Reference>
+        <Date>2013-11-03T21:08:28.945Z</Date>
+        <DueDate>2013-11-03T21:08:28.945Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Maureen Joan Anderson</Name>
+    </Contact>
+    <Reference>Payment from user 4fe2b686-5a4b-7965-c99c-33d3e341e252</Reference>
+    <Date>2013-11-03T20:56:22.799Z</Date>
+    <DueDate>2013-11-03T20:56:22.799Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Benjamin Dominikovich</Name>
+    </Contact>
+    <Reference>Payment from user 82b83095-ce0e-54b4-3961-9edd48738095</Reference>
+    <Date>2013-11-03T06:52:04.167Z</Date>
+    <DueDate>2013-11-03T06:52:04.167Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Stephen  Peacock</Name>
+    </Contact>
+    <Reference>Payment from user 9c8d1afd-de14-22f8-b723-0268e2a249c3</Reference>
+    <Date>2013-11-03T03:25:09.718Z</Date>
+    <DueDate>2013-11-03T03:25:09.718Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Stephen  Peacock</Name>
+        </Contact>
+        <Reference>Payment from user 9c8d1afd-de14-22f8-b723-0268e2a249c3</Reference>
+        <Date>2013-11-03T03:25:09.718Z</Date>
+        <DueDate>2013-11-03T03:25:09.718Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Phil Blackwell</Name>
+    </Contact>
+    <Reference>Payment from user 4f45fe1d-748f-6efa-7ef0-1cd264fba823</Reference>
+    <Date>2013-11-03T01:50:33.417Z</Date>
+    <DueDate>2013-11-03T01:50:33.417Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Phil Blackwell</Name>
+        </Contact>
+        <Reference>Payment from user 4f45fe1d-748f-6efa-7ef0-1cd264fba823</Reference>
+        <Date>2013-11-03T01:50:33.417Z</Date>
+        <DueDate>2013-11-03T01:50:33.417Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Colin Francois</Name>
+    </Contact>
+    <Reference>Payment from user d0fd7441-90fd-73e8-670c-9f4542bd6b7e</Reference>
+    <Date>2013-11-03T00:37:58.900Z</Date>
+    <DueDate>2013-11-03T00:37:58.900Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Colin Francois</Name>
+        </Contact>
+        <Reference>Payment from user d0fd7441-90fd-73e8-670c-9f4542bd6b7e</Reference>
+        <Date>2013-11-03T00:37:58.900Z</Date>
+        <DueDate>2013-11-03T00:37:58.900Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Nova Gibson</Name>
+    </Contact>
+    <Reference>Payment from user bb5a33dc-9738-3efe-0f58-bb27f7af005d</Reference>
+    <Date>2013-11-02T22:48:22.552Z</Date>
+    <DueDate>2013-11-02T22:48:22.552Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Graeme Fenemor</Name>
+    </Contact>
+    <Reference>Payment from user 8b0f54a5-d453-c463-5fe2-c3dc065641aa</Reference>
+    <Date>2013-11-02T22:45:25.801Z</Date>
+    <DueDate>2013-11-02T22:45:25.801Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Trevor Croy</Name>
+    </Contact>
+    <Reference>Payment from user e6c19dd9-6556-07e8-732c-d595b26b50a7</Reference>
+    <Date>2013-11-02T22:40:57.751Z</Date>
+    <DueDate>2013-11-02T22:40:57.751Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>John Gibb</Name>
+    </Contact>
+    <Reference>Payment from user f7a3fcfd-32b3-e028-6725-4ada67fca273</Reference>
+    <Date>2013-11-02T22:22:48.149Z</Date>
+    <DueDate>2013-11-02T22:22:48.149Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Sebastian Stapleton</Name>
+    </Contact>
+    <Reference>Payment from user 47452286-40cd-324f-7c3f-255de05bd773</Reference>
+    <Date>2013-11-02T21:49:12.954Z</Date>
+    <DueDate>2013-11-02T21:49:12.954Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Sebastian Stapleton</Name>
+        </Contact>
+        <Reference>Payment from user 47452286-40cd-324f-7c3f-255de05bd773</Reference>
+        <Date>2013-11-02T21:49:12.954Z</Date>
+        <DueDate>2013-11-02T21:49:12.954Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Brian Hall</Name>
+    </Contact>
+    <Reference>Payment from user 5de6d388-981f-da37-b9a9-e9373c78076d</Reference>
+    <Date>2013-11-02T21:41:54.146Z</Date>
+    <DueDate>2013-11-02T21:41:54.146Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Brian Hall</Name>
+        </Contact>
+        <Reference>Payment from user 5de6d388-981f-da37-b9a9-e9373c78076d</Reference>
+        <Date>2013-11-02T21:41:54.146Z</Date>
+        <DueDate>2013-11-02T21:41:54.146Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Graeme Bond</Name>
+    </Contact>
+    <Reference>Payment from user 14f836bf-e716-69d7-7485-8daf916d3886</Reference>
+    <Date>2013-11-02T19:54:25.132Z</Date>
+    <DueDate>2013-11-02T19:54:25.132Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Maureen Gallie</Name>
+    </Contact>
+    <Reference>Payment from user 9d3a608f-9c46-41a0-889a-465ba7e04f7f</Reference>
+    <Date>2013-11-02T19:31:15.597Z</Date>
+    <DueDate>2013-11-02T19:31:15.597Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Rosemary Hall</Name>
+    </Contact>
+    <Reference>Payment from user fe9ab916-f6a9-f281-c395-bc8b2573a98e</Reference>
+    <Date>2013-11-02T09:18:30.435Z</Date>
+    <DueDate>2013-11-02T09:18:30.435Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Rosemary Hall</Name>
+        </Contact>
+        <Reference>Payment from user fe9ab916-f6a9-f281-c395-bc8b2573a98e</Reference>
+        <Date>2013-11-02T09:18:30.435Z</Date>
+        <DueDate>2013-11-02T09:18:30.435Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>sharon mackenzie</Name>
+    </Contact>
+    <Reference>Payment from user 68aea874-d8db-5d22-96d6-7a75ed43e3b6</Reference>
+    <Date>2013-11-02T07:20:01.673Z</Date>
+    <DueDate>2013-11-02T07:20:01.673Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Wayne Tarr</Name>
+    </Contact>
+    <Reference>Payment from user dcbc3bdc-6128-d0df-b7fc-c5f69dad6516</Reference>
+    <Date>2013-11-02T06:39:03.457Z</Date>
+    <DueDate>2013-11-02T06:39:03.457Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Keith Bond</Name>
+    </Contact>
+    <Reference>Payment from user 415f0f44-e0da-feb6-6fff-121f8421752d</Reference>
+    <Date>2013-11-02T06:35:48.263Z</Date>
+    <DueDate>2013-11-02T06:35:48.263Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Keith Bond</Name>
+        </Contact>
+        <Reference>Payment from user 415f0f44-e0da-feb6-6fff-121f8421752d</Reference>
+        <Date>2013-11-02T06:35:48.263Z</Date>
+        <DueDate>2013-11-02T06:35:48.263Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Lynette McManemin</Name>
+    </Contact>
+    <Reference>Payment from user 0ffee4aa-446b-69f2-aab5-de875b9dd477</Reference>
+    <Date>2013-11-02T04:43:25.079Z</Date>
+    <DueDate>2013-11-02T04:43:25.079Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Lynette McManemin</Name>
+        </Contact>
+        <Reference>Payment from user 0ffee4aa-446b-69f2-aab5-de875b9dd477</Reference>
+        <Date>2013-11-02T04:43:25.079Z</Date>
+        <DueDate>2013-11-02T04:43:25.079Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Ian Black</Name>
+    </Contact>
+    <Reference>Payment from user a1649673-2883-49d5-6cee-4077647b0196</Reference>
+    <Date>2013-11-02T02:34:34.192Z</Date>
+    <DueDate>2013-11-02T02:34:34.192Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Ian Black</Name>
+        </Contact>
+        <Reference>Payment from user a1649673-2883-49d5-6cee-4077647b0196</Reference>
+        <Date>2013-11-02T02:34:34.192Z</Date>
+        <DueDate>2013-11-02T02:34:34.192Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Peter McDougall</Name>
+    </Contact>
+    <Reference>Payment from user 11289523-d413-21cd-67e5-62d0fdc9c6cd</Reference>
+    <Date>2013-11-01T22:48:12.625Z</Date>
+    <DueDate>2013-11-01T22:48:12.625Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Peter McDougall</Name>
+        </Contact>
+        <Reference>Payment from user 11289523-d413-21cd-67e5-62d0fdc9c6cd</Reference>
+        <Date>2013-11-01T22:48:12.625Z</Date>
+        <DueDate>2013-11-01T22:48:12.625Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Grant Clark</Name>
+    </Contact>
+    <Reference>Payment from user 466950c3-f3c4-92df-d865-34b2a9cf9cad</Reference>
+    <Date>2013-11-01T22:28:35.160Z</Date>
+    <DueDate>2013-11-01T22:28:35.160Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Grant Clark</Name>
+        </Contact>
+        <Reference>Payment from user 466950c3-f3c4-92df-d865-34b2a9cf9cad</Reference>
+        <Date>2013-11-01T22:28:35.160Z</Date>
+        <DueDate>2013-11-01T22:28:35.160Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>jonathan howe</Name>
+    </Contact>
+    <Reference>Payment from user ca8abc5c-c532-b13e-9492-a49c9a15e2da</Reference>
+    <Date>2013-11-01T22:06:07.330Z</Date>
+    <DueDate>2013-11-01T22:06:07.330Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Steve Otto</Name>
+    </Contact>
+    <Reference>Payment from user fbc45486-3d25-500f-9d48-4a4c860ec51c</Reference>
+    <Date>2013-11-01T21:59:14.669Z</Date>
+    <DueDate>2013-11-01T21:59:14.669Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Steve Otto</Name>
+        </Contact>
+        <Reference>Payment from user fbc45486-3d25-500f-9d48-4a4c860ec51c</Reference>
+        <Date>2013-11-01T21:59:14.669Z</Date>
+        <DueDate>2013-11-01T21:59:14.669Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Alex Robinson</Name>
+    </Contact>
+    <Reference>Payment from user 7f6c300d-8864-9e12-e83e-af68fd53bfe9</Reference>
+    <Date>2013-11-01T19:28:16.252Z</Date>
+    <DueDate>2013-11-01T19:28:16.252Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Sue Kurtovich</Name>
+    </Contact>
+    <Reference>Payment from user 9155cecc-6fd9-7e36-6445-876fbc31321a</Reference>
+    <Date>2013-11-01T01:12:12.514Z</Date>
+    <DueDate>2013-11-01T01:12:12.514Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Sue Kurtovich</Name>
+        </Contact>
+        <Reference>Payment from user 9155cecc-6fd9-7e36-6445-876fbc31321a</Reference>
+        <Date>2013-11-01T01:12:12.514Z</Date>
+        <DueDate>2013-11-01T01:12:12.514Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Jacob Toner</Name>
+    </Contact>
+    <Reference>Payment from user 85e47ea4-ab07-d336-acda-9da70b06033e</Reference>
+    <Date>2013-10-31T23:59:52.817Z</Date>
+    <DueDate>2013-10-31T23:59:52.817Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Jacob Toner</Name>
+        </Contact>
+        <Reference>Payment from user 85e47ea4-ab07-d336-acda-9da70b06033e</Reference>
+        <Date>2013-10-31T23:59:52.817Z</Date>
+        <DueDate>2013-10-31T23:59:52.817Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Chuck Bird</Name>
+    </Contact>
+    <Reference>Payment from user b46004bc-5d3e-a737-963d-f7fd91ee8391</Reference>
+    <Date>2013-10-31T22:09:53.904Z</Date>
+    <DueDate>2013-10-31T22:09:53.904Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Jon Wallace</Name>
+    </Contact>
+    <Reference>Payment from user ea7f5009-c81f-7bb1-e131-4d0d96323eea</Reference>
+    <Date>2013-10-31T20:45:03.383Z</Date>
+    <DueDate>2013-10-31T20:45:03.383Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Jon Wallace</Name>
+        </Contact>
+        <Reference>Payment from user ea7f5009-c81f-7bb1-e131-4d0d96323eea</Reference>
+        <Date>2013-10-31T20:45:03.383Z</Date>
+        <DueDate>2013-10-31T20:45:03.383Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Les Stephens</Name>
+    </Contact>
+    <Reference>Payment from user d3972368-71bc-bebc-32d2-a91618e95675</Reference>
+    <Date>2013-10-31T20:27:24.603Z</Date>
+    <DueDate>2013-10-31T20:27:24.603Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Les Stephens</Name>
+        </Contact>
+        <Reference>Payment from user d3972368-71bc-bebc-32d2-a91618e95675</Reference>
+        <Date>2013-10-31T20:27:24.603Z</Date>
+        <DueDate>2013-10-31T20:27:24.603Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Andrew Bowman</Name>
+    </Contact>
+    <Reference>Payment from user d51e3abf-7cf9-bcd3-a820-ddb414b596f7</Reference>
+    <Date>2013-10-31T09:48:56.686Z</Date>
+    <DueDate>2013-10-31T09:48:56.686Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Andrew Bowman</Name>
+        </Contact>
+        <Reference>Payment from user d51e3abf-7cf9-bcd3-a820-ddb414b596f7</Reference>
+        <Date>2013-10-31T09:48:56.686Z</Date>
+        <DueDate>2013-10-31T09:48:56.686Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Bob McMillan</Name>
+    </Contact>
+    <Reference>Payment from user 158c910f-28c9-9751-fed9-416f1e35a893</Reference>
+    <Date>2013-10-31T07:18:07.835Z</Date>
+    <DueDate>2013-10-31T07:18:07.835Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Bob McMillan</Name>
+        </Contact>
+        <Reference>Payment from user 158c910f-28c9-9751-fed9-416f1e35a893</Reference>
+        <Date>2013-10-31T07:18:07.835Z</Date>
+        <DueDate>2013-10-31T07:18:07.835Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Nigel  Gray</Name>
+    </Contact>
+    <Reference>Payment from user 8fda68f4-46b7-7b74-5b9c-3bf08957cd87</Reference>
+    <Date>2013-10-31T06:18:20.267Z</Date>
+    <DueDate>2013-10-31T06:18:20.267Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Don Brash</Name>
+    </Contact>
+    <Reference>Payment from user 4dd7039b-1736-7f16-07ce-3a7de8639d4b</Reference>
+    <Date>2013-10-31T04:52:07.900Z</Date>
+    <DueDate>2013-10-31T04:52:07.900Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Don Brash</Name>
+        </Contact>
+        <Reference>Payment from user 4dd7039b-1736-7f16-07ce-3a7de8639d4b</Reference>
+        <Date>2013-10-31T04:52:07.900Z</Date>
+        <DueDate>2013-10-31T04:52:07.900Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Stephen Falconer</Name>
+    </Contact>
+    <Reference>Payment from user 6a9cc7a8-3151-bdc4-1e91-dd2b7412d8fa</Reference>
+    <Date>2013-10-31T04:29:18.720Z</Date>
+    <DueDate>2013-10-31T04:29:18.720Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Stephen Falconer</Name>
+        </Contact>
+        <Reference>Payment from user 6a9cc7a8-3151-bdc4-1e91-dd2b7412d8fa</Reference>
+        <Date>2013-10-31T04:29:18.720Z</Date>
+        <DueDate>2013-10-31T04:29:18.720Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Annette Meates</Name>
+    </Contact>
+    <Reference>Payment from user bc5368a5-287e-5514-4c80-7e16802232f9</Reference>
+    <Date>2013-10-31T03:19:36.402Z</Date>
+    <DueDate>2013-10-31T03:19:36.402Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Oliver Erlewein</Name>
+    </Contact>
+    <Reference>Payment from user 35310c33-af76-dcce-d1ea-5e79fc2a9270</Reference>
+    <Date>2013-10-31T02:44:36.166Z</Date>
+    <DueDate>2013-10-31T02:44:36.166Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Oliver Erlewein</Name>
+        </Contact>
+        <Reference>Payment from user 35310c33-af76-dcce-d1ea-5e79fc2a9270</Reference>
+        <Date>2013-10-31T02:44:36.166Z</Date>
+        <DueDate>2013-10-31T02:44:36.166Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Terry Honan</Name>
+    </Contact>
+    <Reference>Payment from user 9305b88d-9f94-7240-5624-49f5f48b3112</Reference>
+    <Date>2013-10-31T02:39:09.952Z</Date>
+    <DueDate>2013-10-31T02:39:09.952Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Terry Honan</Name>
+        </Contact>
+        <Reference>Payment from user 9305b88d-9f94-7240-5624-49f5f48b3112</Reference>
+        <Date>2013-10-31T02:39:09.952Z</Date>
+        <DueDate>2013-10-31T02:39:09.952Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>David Slack</Name>
+    </Contact>
+    <Reference>Payment from user 55340d35-60c7-ff7b-33c0-4cd909cfdca6</Reference>
+    <Date>2013-10-31T00:39:09.314Z</Date>
+    <DueDate>2013-10-31T00:39:09.314Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Michael Jones</Name>
+    </Contact>
+    <Reference>Payment from user 5708076a-e25e-7918-59d9-f84b28a0c27c</Reference>
+    <Date>2013-10-30T23:33:36.483Z</Date>
+    <DueDate>2013-10-30T23:33:36.483Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Bryce Wilkinson</Name>
+    </Contact>
+    <Reference>Payment from user 7e770387-7f5a-577b-1447-a22a20a7a7f5</Reference>
+    <Date>2013-10-30T23:27:41.594Z</Date>
+    <DueDate>2013-10-30T23:27:41.594Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Bryce Wilkinson</Name>
+        </Contact>
+        <Reference>Payment from user 7e770387-7f5a-577b-1447-a22a20a7a7f5</Reference>
+        <Date>2013-10-30T23:27:41.594Z</Date>
+        <DueDate>2013-10-30T23:27:41.594Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>150</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Melissa Hartwick</Name>
+    </Contact>
+    <Reference>Payment from user daa358af-2673-cb04-a0cc-401543808c25</Reference>
+    <Date>2013-10-30T23:05:30.124Z</Date>
+    <DueDate>2013-10-30T23:05:30.124Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Grant Diggle</Name>
+    </Contact>
+    <Reference>Payment from user 02d79e68-f322-8efc-4684-2a0b91ecdf14</Reference>
+    <Date>2013-10-30T23:04:23.014Z</Date>
+    <DueDate>2013-10-30T23:04:23.014Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>John Eruera Tait-Jamieson</Name>
+    </Contact>
+    <Reference>Payment from user c239c426-40b8-4334-c698-4f4682ecf314</Reference>
+    <Date>2013-10-30T21:39:10.806Z</Date>
+    <DueDate>2013-10-30T21:39:10.806Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>John Eruera Tait-Jamieson</Name>
+        </Contact>
+        <Reference>Payment from user c239c426-40b8-4334-c698-4f4682ecf314</Reference>
+        <Date>2013-10-30T21:39:10.806Z</Date>
+        <DueDate>2013-10-30T21:39:10.806Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Ray Plumridge</Name>
+    </Contact>
+    <Reference>Payment from user 7ff21fd2-e17d-2eb4-6029-9b8eed9f10b6</Reference>
+    <Date>2013-10-30T21:33:21.260Z</Date>
+    <DueDate>2013-10-30T21:33:21.260Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Ray Plumridge</Name>
+        </Contact>
+        <Reference>Payment from user 7ff21fd2-e17d-2eb4-6029-9b8eed9f10b6</Reference>
+        <Date>2013-10-30T21:33:21.260Z</Date>
+        <DueDate>2013-10-30T21:33:21.260Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>David Bridewell</Name>
+    </Contact>
+    <Reference>Payment from user 98b90e0d-bf4b-080e-18fb-2e5e98bc7e54</Reference>
+    <Date>2013-10-30T20:31:42.240Z</Date>
+    <DueDate>2013-10-30T20:31:42.240Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>David Bridewell</Name>
+        </Contact>
+        <Reference>Payment from user 98b90e0d-bf4b-080e-18fb-2e5e98bc7e54</Reference>
+        <Date>2013-10-30T20:31:42.240Z</Date>
+        <DueDate>2013-10-30T20:31:42.240Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Lindsay Geary</Name>
+    </Contact>
+    <Reference>Payment from user a5379d74-bebc-2d27-ec6d-c3abb97f863b</Reference>
+    <Date>2013-10-30T20:14:56.627Z</Date>
+    <DueDate>2013-10-30T20:14:56.627Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Lindsay Geary</Name>
+        </Contact>
+        <Reference>Payment from user a5379d74-bebc-2d27-ec6d-c3abb97f863b</Reference>
+        <Date>2013-10-30T20:14:56.627Z</Date>
+        <DueDate>2013-10-30T20:14:56.627Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Wallis Keiller</Name>
+    </Contact>
+    <Reference>Payment from user f2904c9f-dd81-69a4-3985-ba03516c330a</Reference>
+    <Date>2013-10-30T20:14:33.276Z</Date>
+    <DueDate>2013-10-30T20:14:33.276Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Rodney Craig</Name>
+    </Contact>
+    <Reference>Payment from user 2da1b453-e52d-3492-8587-a9a7505c458f</Reference>
+    <Date>2013-10-30T20:09:14.479Z</Date>
+    <DueDate>2013-10-30T20:09:14.479Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Rodney Craig</Name>
+        </Contact>
+        <Reference>Payment from user 2da1b453-e52d-3492-8587-a9a7505c458f</Reference>
+        <Date>2013-10-30T20:09:14.479Z</Date>
+        <DueDate>2013-10-30T20:09:14.479Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Mike McKinley</Name>
+    </Contact>
+    <Reference>Payment from user 846f8c64-15e7-72d5-dee7-b1023a39930a</Reference>
+    <Date>2013-10-30T17:50:13.052Z</Date>
+    <DueDate>2013-10-30T17:50:13.052Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>David Weikart</Name>
+    </Contact>
+    <Reference>Payment from user 8a142409-76c6-9162-7a31-e420354afcd4</Reference>
+    <Date>2013-10-30T13:32:10.070Z</Date>
+    <DueDate>2013-10-30T13:32:10.070Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>David Weikart</Name>
+        </Contact>
+        <Reference>Payment from user 8a142409-76c6-9162-7a31-e420354afcd4</Reference>
+        <Date>2013-10-30T13:32:10.070Z</Date>
+        <DueDate>2013-10-30T13:32:10.070Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>NEIL O'HARA</Name>
+    </Contact>
+    <Reference>Payment from user 99e4be84-8ef4-7fe7-1629-b2aa3aea70a8</Reference>
+    <Date>2013-10-30T13:04:02.892Z</Date>
+    <DueDate>2013-10-30T13:04:02.892Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>NEIL O'HARA</Name>
+        </Contact>
+        <Reference>Payment from user 99e4be84-8ef4-7fe7-1629-b2aa3aea70a8</Reference>
+        <Date>2013-10-30T13:04:02.892Z</Date>
+        <DueDate>2013-10-30T13:04:02.892Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Barry Brill</Name>
+    </Contact>
+    <Reference>Payment from user 0101a01c-dd0c-28f9-0eb3-6c1f7eb6cc5a</Reference>
+    <Date>2013-10-30T12:02:19.199Z</Date>
+    <DueDate>2013-10-30T12:02:19.199Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Barry Brill</Name>
+        </Contact>
+        <Reference>Payment from user 0101a01c-dd0c-28f9-0eb3-6c1f7eb6cc5a</Reference>
+        <Date>2013-10-30T12:02:19.199Z</Date>
+        <DueDate>2013-10-30T12:02:19.199Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Peter Macpherson</Name>
+    </Contact>
+    <Reference>Payment from user 379a2afb-0da1-83c4-73db-585ca9a01a94</Reference>
+    <Date>2013-10-30T08:58:31.307Z</Date>
+    <DueDate>2013-10-30T08:58:31.307Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Peter Macpherson</Name>
+        </Contact>
+        <Reference>Payment from user 379a2afb-0da1-83c4-73db-585ca9a01a94</Reference>
+        <Date>2013-10-30T08:58:31.307Z</Date>
+        <DueDate>2013-10-30T08:58:31.307Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Chris Ross</Name>
+    </Contact>
+    <Reference>Payment from user 7d3667d1-b32f-ae74-0ff0-4dac46061ff3</Reference>
+    <Date>2013-10-30T08:51:43.126Z</Date>
+    <DueDate>2013-10-30T08:51:43.126Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Chris Ross</Name>
+        </Contact>
+        <Reference>Payment from user 7d3667d1-b32f-ae74-0ff0-4dac46061ff3</Reference>
+        <Date>2013-10-30T08:51:43.126Z</Date>
+        <DueDate>2013-10-30T08:51:43.126Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Nicolas Williams</Name>
+    </Contact>
+    <Reference>Payment from user db67a872-1c88-040d-2be4-08646760fef4</Reference>
+    <Date>2013-10-30T08:13:37.262Z</Date>
+    <DueDate>2013-10-30T08:13:37.262Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Murray Cruickshank</Name>
+    </Contact>
+    <Reference>Payment from user 56d8bd3c-f621-3dab-4b21-2852d2a561d9</Reference>
+    <Date>2013-10-30T08:07:21.518Z</Date>
+    <DueDate>2013-10-30T08:07:21.518Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Michael Ellis</Name>
+    </Contact>
+    <Reference>Payment from user e769af8c-6622-062a-77ca-e3e1d9490789</Reference>
+    <Date>2013-10-30T07:42:49.813Z</Date>
+    <DueDate>2013-10-30T07:42:49.813Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>David Begg</Name>
+    </Contact>
+    <Reference>Payment from user 1012dff8-fb4b-4d55-9ee5-3b7f1a4b68f1</Reference>
+    <Date>2013-10-30T07:38:31.779Z</Date>
+    <DueDate>2013-10-30T07:38:31.779Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Stephen Berry</Name>
+    </Contact>
+    <Reference>Payment from user a423e25d-27dd-812a-ec82-039dfc159e23</Reference>
+    <Date>2013-10-30T07:30:04.948Z</Date>
+    <DueDate>2013-10-30T07:30:04.948Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Stephen Berry</Name>
+        </Contact>
+        <Reference>Payment from user a423e25d-27dd-812a-ec82-039dfc159e23</Reference>
+        <Date>2013-10-30T07:30:04.948Z</Date>
+        <DueDate>2013-10-30T07:30:04.948Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Bruce Hoult</Name>
+    </Contact>
+    <Reference>Payment from user 5d1d2f1d-c96b-2800-6658-3636dcb4b7a1</Reference>
+    <Date>2013-10-30T07:17:37.349Z</Date>
+    <DueDate>2013-10-30T07:17:37.349Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Michael Stevenson</Name>
+    </Contact>
+    <Reference>Payment from user d9b780c2-1eac-7712-0810-7b93481a5879</Reference>
+    <Date>2013-10-30T06:50:03.064Z</Date>
+    <DueDate>2013-10-30T06:50:03.064Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Michael Stevenson</Name>
+        </Contact>
+        <Reference>Payment from user d9b780c2-1eac-7712-0810-7b93481a5879</Reference>
+        <Date>2013-10-30T06:50:03.064Z</Date>
+        <DueDate>2013-10-30T06:50:03.064Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Graeme Bain</Name>
+    </Contact>
+    <Reference>Payment from user fe84cdd4-7a28-0153-3c74-2c59ecfb13e0</Reference>
+    <Date>2013-10-30T06:24:37.733Z</Date>
+    <DueDate>2013-10-30T06:24:37.733Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Sharee Burrett</Name>
+    </Contact>
+    <Reference>Payment from user 6bd1c262-ebd1-4a7c-c89c-b3e81d55fa63</Reference>
+    <Date>2013-10-30T06:11:56.930Z</Date>
+    <DueDate>2013-10-30T06:11:56.930Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Sharee Burrett</Name>
+        </Contact>
+        <Reference>Payment from user 6bd1c262-ebd1-4a7c-c89c-b3e81d55fa63</Reference>
+        <Date>2013-10-30T06:11:56.930Z</Date>
+        <DueDate>2013-10-30T06:11:56.930Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Brent Le Vert</Name>
+    </Contact>
+    <Reference>Payment from user 3fb7d913-c51f-6d0f-78d4-ae72edd12a9c</Reference>
+    <Date>2013-10-30T06:01:56.451Z</Date>
+    <DueDate>2013-10-30T06:01:56.451Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Brent Le Vert</Name>
+        </Contact>
+        <Reference>Payment from user 3fb7d913-c51f-6d0f-78d4-ae72edd12a9c</Reference>
+        <Date>2013-10-30T06:01:56.451Z</Date>
+        <DueDate>2013-10-30T06:01:56.451Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Jan Edge</Name>
+    </Contact>
+    <Reference>Payment from user 0396e76d-d315-ade2-e06d-f07e371a6016</Reference>
+    <Date>2013-10-30T06:01:38.921Z</Date>
+    <DueDate>2013-10-30T06:01:38.921Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Jan Edge</Name>
+        </Contact>
+        <Reference>Payment from user 0396e76d-d315-ade2-e06d-f07e371a6016</Reference>
+        <Date>2013-10-30T06:01:38.921Z</Date>
+        <DueDate>2013-10-30T06:01:38.921Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Romana Graham</Name>
+    </Contact>
+    <Reference>Payment from user 95517f50-da07-df4e-73f9-5e04e9674968</Reference>
+    <Date>2013-10-30T05:20:06.892Z</Date>
+    <DueDate>2013-10-30T05:20:06.892Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Romana Graham</Name>
+        </Contact>
+        <Reference>Payment from user 95517f50-da07-df4e-73f9-5e04e9674968</Reference>
+        <Date>2013-10-30T05:20:06.892Z</Date>
+        <DueDate>2013-10-30T05:20:06.892Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>dan stenhouse</Name>
+    </Contact>
+    <Reference>Payment from user e3c0de95-2f24-0b08-2bcd-e7ffa5775642</Reference>
+    <Date>2013-10-30T04:26:48.112Z</Date>
+    <DueDate>2013-10-30T04:26:48.112Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Ted Thompson</Name>
+    </Contact>
+    <Reference>Payment from user 830d098f-610f-11be-7437-8008140f6978</Reference>
+    <Date>2013-10-30T04:24:46.956Z</Date>
+    <DueDate>2013-10-30T04:24:46.956Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Ted Thompson</Name>
+        </Contact>
+        <Reference>Payment from user 830d098f-610f-11be-7437-8008140f6978</Reference>
+        <Date>2013-10-30T04:24:46.956Z</Date>
+        <DueDate>2013-10-30T04:24:46.956Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Richard Thomas</Name>
+    </Contact>
+    <Reference>Payment from user dde6fcd9-8146-67ba-c786-b5a3d7690cbd</Reference>
+    <Date>2013-10-30T04:00:54.161Z</Date>
+    <DueDate>2013-10-30T04:00:54.161Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>William Fussey</Name>
+    </Contact>
+    <Reference>Payment from user b0033e76-4e67-3b23-c810-edf5aca4aeaa</Reference>
+    <Date>2013-10-30T03:56:55.491Z</Date>
+    <DueDate>2013-10-30T03:56:55.491Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Josh Metcalfe</Name>
+    </Contact>
+    <Reference>Payment from user 32e47dda-5330-a671-28e3-95c02fefb456</Reference>
+    <Date>2013-10-30T03:53:24.307Z</Date>
+    <DueDate>2013-10-30T03:53:24.307Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Nick Gibbs</Name>
+    </Contact>
+    <Reference>Payment from user cc17119d-5e8e-4845-3bd4-a381bccdcae3</Reference>
+    <Date>2013-10-30T03:45:48.511Z</Date>
+    <DueDate>2013-10-30T03:45:48.511Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Nick Gibbs</Name>
+        </Contact>
+        <Reference>Payment from user cc17119d-5e8e-4845-3bd4-a381bccdcae3</Reference>
+        <Date>2013-10-30T03:45:48.511Z</Date>
+        <DueDate>2013-10-30T03:45:48.511Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Kevin Test</Name>
+    </Contact>
+    <Reference>Payment from user 9e7708b6-6465-1d43-cd90-33bee5b71ff0</Reference>
+    <Date>2013-10-30T03:32:52.113Z</Date>
+    <DueDate>2013-10-30T03:32:52.113Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Annette Booth</Name>
+    </Contact>
+    <Reference>Payment from user b20cc8f3-b358-61ed-9247-189b31233671</Reference>
+    <Date>2013-10-30T03:22:27.003Z</Date>
+    <DueDate>2013-10-30T03:22:27.003Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Annette Booth</Name>
+        </Contact>
+        <Reference>Payment from user b20cc8f3-b358-61ed-9247-189b31233671</Reference>
+        <Date>2013-10-30T03:22:27.003Z</Date>
+        <DueDate>2013-10-30T03:22:27.003Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Rosy Fenwicke</Name>
+    </Contact>
+    <Reference>Payment from user 30564a8c-cead-8d81-00fd-a07ca796d86d</Reference>
+    <Date>2013-10-30T03:18:46.091Z</Date>
+    <DueDate>2013-10-30T03:18:46.091Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Rosy Fenwicke</Name>
+        </Contact>
+        <Reference>Payment from user 30564a8c-cead-8d81-00fd-a07ca796d86d</Reference>
+        <Date>2013-10-30T03:18:46.091Z</Date>
+        <DueDate>2013-10-30T03:18:46.091Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Joanne Rogers</Name>
+    </Contact>
+    <Reference>Payment from user 049db589-6138-b03b-88f0-2a42a10f0905</Reference>
+    <Date>2013-10-30T03:16:30.865Z</Date>
+    <DueDate>2013-10-30T03:16:30.865Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Joanne Rogers</Name>
+        </Contact>
+        <Reference>Payment from user 049db589-6138-b03b-88f0-2a42a10f0905</Reference>
+        <Date>2013-10-30T03:16:30.865Z</Date>
+        <DueDate>2013-10-30T03:16:30.865Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Michael Warren</Name>
+    </Contact>
+    <Reference>Payment from user b235d94c-a5f5-f0d1-80c7-30cc949c5c6f</Reference>
+    <Date>2013-10-30T02:46:20.667Z</Date>
+    <DueDate>2013-10-30T02:46:20.667Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Michael Warren</Name>
+        </Contact>
+        <Reference>Payment from user b235d94c-a5f5-f0d1-80c7-30cc949c5c6f</Reference>
+        <Date>2013-10-30T02:46:20.667Z</Date>
+        <DueDate>2013-10-30T02:46:20.667Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Peter Cutten</Name>
+    </Contact>
+    <Reference>Payment from user 562cf420-be56-8d4b-a06e-d592dd39d5c4</Reference>
+    <Date>2013-10-30T02:44:57.743Z</Date>
+    <DueDate>2013-10-30T02:44:57.743Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Peter Cutten</Name>
+        </Contact>
+        <Reference>Payment from user 562cf420-be56-8d4b-a06e-d592dd39d5c4</Reference>
+        <Date>2013-10-30T02:44:57.743Z</Date>
+        <DueDate>2013-10-30T02:44:57.743Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Peter Salmon</Name>
+    </Contact>
+    <Reference>Payment from user aa621e95-f549-a20f-7ef2-3ce7cb03a70c</Reference>
+    <Date>2013-10-30T02:44:50.321Z</Date>
+    <DueDate>2013-10-30T02:44:50.321Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Peter Salmon</Name>
+        </Contact>
+        <Reference>Payment from user aa621e95-f549-a20f-7ef2-3ce7cb03a70c</Reference>
+        <Date>2013-10-30T02:44:50.321Z</Date>
+        <DueDate>2013-10-30T02:44:50.321Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Julia Howell</Name>
+    </Contact>
+    <Reference>Payment from user 246b7ade-1426-3125-6aba-574694fe1383</Reference>
+    <Date>2013-10-30T02:22:21.296Z</Date>
+    <DueDate>2013-10-30T02:22:21.296Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Simon Carson</Name>
+    </Contact>
+    <Reference>Payment from user 4d0d56f1-8049-3d5e-0b53-d1d09cd6f2d6</Reference>
+    <Date>2013-10-30T02:17:48.711Z</Date>
+    <DueDate>2013-10-30T02:17:48.711Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>David Cropp</Name>
+    </Contact>
+    <Reference>Payment from user a16bd45f-f69f-e2c5-dee0-cabb8b67691b</Reference>
+    <Date>2013-10-30T02:04:25.975Z</Date>
+    <DueDate>2013-10-30T02:04:25.975Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Andrew Riches</Name>
+    </Contact>
+    <Reference>Payment from user 84932926-3487-9f55-92b3-6a58fba644a3</Reference>
+    <Date>2013-10-30T01:57:11.538Z</Date>
+    <DueDate>2013-10-30T01:57:11.538Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Andrew Riches</Name>
+        </Contact>
+        <Reference>Payment from user 84932926-3487-9f55-92b3-6a58fba644a3</Reference>
+        <Date>2013-10-30T01:57:11.538Z</Date>
+        <DueDate>2013-10-30T01:57:11.538Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Sarah Heffer</Name>
+    </Contact>
+    <Reference>Payment from user 8823944a-cd40-f4c8-937d-3fc68ab4c49a</Reference>
+    <Date>2013-10-30T01:31:05.805Z</Date>
+    <DueDate>2013-10-30T01:31:05.805Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Tony Harrison</Name>
+    </Contact>
+    <Reference>Payment from user 3bff51b5-46de-d7d6-d541-334b1ea7d8e5</Reference>
+    <Date>2013-10-30T01:24:22.712Z</Date>
+    <DueDate>2013-10-30T01:24:22.712Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Tony Harrison</Name>
+        </Contact>
+        <Reference>Payment from user 3bff51b5-46de-d7d6-d541-334b1ea7d8e5</Reference>
+        <Date>2013-10-30T01:24:22.712Z</Date>
+        <DueDate>2013-10-30T01:24:22.712Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Victoria Davidson</Name>
+    </Contact>
+    <Reference>Payment from user 9542c6fc-cb20-8a51-0992-ebac7e8f9339</Reference>
+    <Date>2013-10-30T01:23:31.278Z</Date>
+    <DueDate>2013-10-30T01:23:31.278Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Victoria Davidson</Name>
+        </Contact>
+        <Reference>Payment from user 9542c6fc-cb20-8a51-0992-ebac7e8f9339</Reference>
+        <Date>2013-10-30T01:23:31.278Z</Date>
+        <DueDate>2013-10-30T01:23:31.278Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Vaughan Davidson</Name>
+    </Contact>
+    <Reference>Payment from user 43710d55-59ca-87e0-34ea-9ba4aaadb159</Reference>
+    <Date>2013-10-30T01:21:15.910Z</Date>
+    <DueDate>2013-10-30T01:21:15.910Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Vaughan Davidson</Name>
+        </Contact>
+        <Reference>Payment from user 43710d55-59ca-87e0-34ea-9ba4aaadb159</Reference>
+        <Date>2013-10-30T01:21:15.910Z</Date>
+        <DueDate>2013-10-30T01:21:15.910Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>NcKinsey Roche-Kerr</Name>
+    </Contact>
+    <Reference>Payment from user ef12632e-dc2f-fc56-e850-e6893915492d</Reference>
+    <Date>2013-10-30T01:04:41.938Z</Date>
+    <DueDate>2013-10-30T01:04:41.938Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Tony Stuart</Name>
+    </Contact>
+    <Reference>Payment from user e4100376-0819-cbe7-6040-fb91e3cad005</Reference>
+    <Date>2013-10-30T01:00:07.442Z</Date>
+    <DueDate>2013-10-30T01:00:07.442Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Tony Stuart</Name>
+        </Contact>
+        <Reference>Payment from user e4100376-0819-cbe7-6040-fb91e3cad005</Reference>
+        <Date>2013-10-30T01:00:07.442Z</Date>
+        <DueDate>2013-10-30T01:00:07.442Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Hayden Fitzgerald</Name>
+    </Contact>
+    <Reference>Payment from user 325c9f63-6db9-aada-4272-f68df0f95356</Reference>
+    <Date>2013-10-30T00:52:56.931Z</Date>
+    <DueDate>2013-10-30T00:52:56.931Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>tina campbell</Name>
+    </Contact>
+    <Reference>Payment from user e7d3f38f-78fe-18a0-0039-fd51ee7965cf</Reference>
+    <Date>2013-10-30T00:43:10.764Z</Date>
+    <DueDate>2013-10-30T00:43:10.764Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>tina campbell</Name>
+        </Contact>
+        <Reference>Payment from user e7d3f38f-78fe-18a0-0039-fd51ee7965cf</Reference>
+        <Date>2013-10-30T00:43:10.764Z</Date>
+        <DueDate>2013-10-30T00:43:10.764Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Len Ward</Name>
+    </Contact>
+    <Reference>Payment from user 3166a042-e258-9e33-8e0e-0834a3a6ed94</Reference>
+    <Date>2013-10-30T00:37:05.651Z</Date>
+    <DueDate>2013-10-30T00:37:05.651Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Len Ward</Name>
+        </Contact>
+        <Reference>Payment from user 3166a042-e258-9e33-8e0e-0834a3a6ed94</Reference>
+        <Date>2013-10-30T00:37:05.651Z</Date>
+        <DueDate>2013-10-30T00:37:05.651Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>John Brinsley-Pirie</Name>
+    </Contact>
+    <Reference>Payment from user 56b828bc-9fbf-a0a8-0081-24adbd024aeb</Reference>
+    <Date>2013-10-30T00:30:40.937Z</Date>
+    <DueDate>2013-10-30T00:30:40.937Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Geoffrey Bourke</Name>
+    </Contact>
+    <Reference>Payment from user 9bb04937-9107-4389-1347-11bcac150efe</Reference>
+    <Date>2013-10-30T00:22:10.403Z</Date>
+    <DueDate>2013-10-30T00:22:10.403Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Richard Meadows</Name>
+    </Contact>
+    <Reference>Payment from user 98c7b74e-d92c-73de-1c73-61d075e83f93</Reference>
+    <Date>2013-10-30T00:01:07.909Z</Date>
+    <DueDate>2013-10-30T00:01:07.909Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Richard Meadows</Name>
+        </Contact>
+        <Reference>Payment from user 98c7b74e-d92c-73de-1c73-61d075e83f93</Reference>
+        <Date>2013-10-30T00:01:07.909Z</Date>
+        <DueDate>2013-10-30T00:01:07.909Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Dave Guerin</Name>
+    </Contact>
+    <Reference>Payment from user a72567cd-2475-d185-13a8-396a56845de2</Reference>
+    <Date>2013-10-29T23:00:40.326Z</Date>
+    <DueDate>2013-10-29T23:00:40.326Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Dave Guerin</Name>
+        </Contact>
+        <Reference>Payment from user a72567cd-2475-d185-13a8-396a56845de2</Reference>
+        <Date>2013-10-29T23:00:40.326Z</Date>
+        <DueDate>2013-10-29T23:00:40.326Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Harry Tothill</Name>
+    </Contact>
+    <Reference>Payment from user 31b58736-ed31-0622-5094-9180bb0effd0</Reference>
+    <Date>2013-10-29T22:54:54.271Z</Date>
+    <DueDate>2013-10-29T22:54:54.271Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Mick Elmes</Name>
+    </Contact>
+    <Reference>Payment from user ce377bb8-acae-526e-30ed-73cf8953d799</Reference>
+    <Date>2013-10-29T22:47:29.812Z</Date>
+    <DueDate>2013-10-29T22:47:29.812Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Michelle Turner</Name>
+    </Contact>
+    <Reference>Payment from user 33ac2241-21e2-58a8-7c31-48c28fb1c421</Reference>
+    <Date>2013-10-29T22:47:25.921Z</Date>
+    <DueDate>2013-10-29T22:47:25.921Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Michelle Turner</Name>
+        </Contact>
+        <Reference>Payment from user 33ac2241-21e2-58a8-7c31-48c28fb1c421</Reference>
+        <Date>2013-10-29T22:47:25.921Z</Date>
+        <DueDate>2013-10-29T22:47:25.921Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Peter Grooby</Name>
+    </Contact>
+    <Reference>Payment from user 6088c4ae-db7a-6a65-0916-4fc92df3c6cf</Reference>
+    <Date>2013-10-29T22:34:35.289Z</Date>
+    <DueDate>2013-10-29T22:34:35.289Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Marsha Yamshikova</Name>
+    </Contact>
+    <Reference>Payment from user 1982cb41-e6ad-28c6-67ce-426dfbde1e1a</Reference>
+    <Date>2013-10-29T22:01:29.293Z</Date>
+    <DueDate>2013-10-29T22:01:29.293Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Marsha Yamshikova</Name>
+        </Contact>
+        <Reference>Payment from user 1982cb41-e6ad-28c6-67ce-426dfbde1e1a</Reference>
+        <Date>2013-10-29T22:01:29.293Z</Date>
+        <DueDate>2013-10-29T22:01:29.293Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Brittany Raleigh</Name>
+    </Contact>
+    <Reference>Payment from user 871de099-dccf-8662-d6b4-0b133627117d</Reference>
+    <Date>2013-10-29T21:54:15.647Z</Date>
+    <DueDate>2013-10-29T21:54:15.647Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Brittany Raleigh</Name>
+        </Contact>
+        <Reference>Payment from user 871de099-dccf-8662-d6b4-0b133627117d</Reference>
+        <Date>2013-10-29T21:54:15.647Z</Date>
+        <DueDate>2013-10-29T21:54:15.647Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Brian Casey</Name>
+    </Contact>
+    <Reference>Payment from user 28ce34ae-6701-6aa0-3849-c868171b9ffb</Reference>
+    <Date>2013-10-29T21:51:43.545Z</Date>
+    <DueDate>2013-10-29T21:51:43.545Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Brian Casey</Name>
+        </Contact>
+        <Reference>Payment from user 28ce34ae-6701-6aa0-3849-c868171b9ffb</Reference>
+        <Date>2013-10-29T21:51:43.545Z</Date>
+        <DueDate>2013-10-29T21:51:43.545Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Clive Pinfold</Name>
+    </Contact>
+    <Reference>Payment from user 878e6452-0645-dad6-8d01-4db30efc954e</Reference>
+    <Date>2013-10-29T21:50:32.611Z</Date>
+    <DueDate>2013-10-29T21:50:32.611Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Clive Pinfold</Name>
+        </Contact>
+        <Reference>Payment from user 878e6452-0645-dad6-8d01-4db30efc954e</Reference>
+        <Date>2013-10-29T21:50:32.611Z</Date>
+        <DueDate>2013-10-29T21:50:32.611Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Edgar Henson</Name>
+    </Contact>
+    <Reference>Payment from user 9e27197e-914e-25d3-61df-f4c02280b30d</Reference>
+    <Date>2013-10-29T21:34:43.073Z</Date>
+    <DueDate>2013-10-29T21:34:43.073Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Edgar Henson</Name>
+        </Contact>
+        <Reference>Payment from user 9e27197e-914e-25d3-61df-f4c02280b30d</Reference>
+        <Date>2013-10-29T21:34:43.073Z</Date>
+        <DueDate>2013-10-29T21:34:43.073Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>William Endean</Name>
+    </Contact>
+    <Reference>Payment from user 959c67b2-8052-7d13-21eb-53c8cab5dc09</Reference>
+    <Date>2013-10-29T21:24:22.112Z</Date>
+    <DueDate>2013-10-29T21:24:22.112Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>William Endean</Name>
+        </Contact>
+        <Reference>Payment from user 959c67b2-8052-7d13-21eb-53c8cab5dc09</Reference>
+        <Date>2013-10-29T21:24:22.112Z</Date>
+        <DueDate>2013-10-29T21:24:22.112Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Berend de Boer</Name>
+    </Contact>
+    <Reference>Payment from user 58132776-f024-805b-de26-8b70a98ecac5</Reference>
+    <Date>2013-10-29T21:22:19.082Z</Date>
+    <DueDate>2013-10-29T21:22:19.082Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Berend de Boer</Name>
+        </Contact>
+        <Reference>Payment from user 58132776-f024-805b-de26-8b70a98ecac5</Reference>
+        <Date>2013-10-29T21:22:19.082Z</Date>
+        <DueDate>2013-10-29T21:22:19.082Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>James Ogle</Name>
+    </Contact>
+    <Reference>Payment from user 8ba5aef3-5605-f1d9-2a36-779cd31fb1ba</Reference>
+    <Date>2013-10-29T21:11:06.678Z</Date>
+    <DueDate>2013-10-29T21:11:06.678Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>James Ogle</Name>
+        </Contact>
+        <Reference>Payment from user 8ba5aef3-5605-f1d9-2a36-779cd31fb1ba</Reference>
+        <Date>2013-10-29T21:11:06.678Z</Date>
+        <DueDate>2013-10-29T21:11:06.678Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Greg Milne</Name>
+    </Contact>
+    <Reference>Payment from user 2f28d3ef-78a5-c22b-6404-d3f9f7f420bc</Reference>
+    <Date>2013-10-29T21:04:23.820Z</Date>
+    <DueDate>2013-10-29T21:04:23.820Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Greg Milne</Name>
+        </Contact>
+        <Reference>Payment from user 2f28d3ef-78a5-c22b-6404-d3f9f7f420bc</Reference>
+        <Date>2013-10-29T21:04:23.820Z</Date>
+        <DueDate>2013-10-29T21:04:23.820Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Alan Wilkinson</Name>
+    </Contact>
+    <Reference>Payment from user 0de3a495-68dc-9b69-221c-b84019c5c3e2</Reference>
+    <Date>2013-10-29T21:02:50.690Z</Date>
+    <DueDate>2013-10-29T21:02:50.690Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Alan Wilkinson</Name>
+        </Contact>
+        <Reference>Payment from user 0de3a495-68dc-9b69-221c-b84019c5c3e2</Reference>
+        <Date>2013-10-29T21:02:50.690Z</Date>
+        <DueDate>2013-10-29T21:02:50.690Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Rupert Applin</Name>
+    </Contact>
+    <Reference>Payment from user 6dbd5026-02b7-e4de-ea48-0dbe2e7c16a9</Reference>
+    <Date>2013-10-29T20:45:38.084Z</Date>
+    <DueDate>2013-10-29T20:45:38.084Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Rupert Applin</Name>
+        </Contact>
+        <Reference>Payment from user 6dbd5026-02b7-e4de-ea48-0dbe2e7c16a9</Reference>
+        <Date>2013-10-29T20:45:38.084Z</Date>
+        <DueDate>2013-10-29T20:45:38.084Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Ben Guerin</Name>
+    </Contact>
+    <Reference>Payment from user 166424e6-a7b6-ddce-30bf-67d86dd67bd4</Reference>
+    <Date>2013-10-29T20:44:49.773Z</Date>
+    <DueDate>2013-10-29T20:44:49.773Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Richard D'Ath</Name>
+    </Contact>
+    <Reference>Payment from user b356d5ca-8b66-a7e9-eb56-56e3779098e2</Reference>
+    <Date>2013-10-29T20:36:57.784Z</Date>
+    <DueDate>2013-10-29T20:36:57.784Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Richard D'Ath</Name>
+        </Contact>
+        <Reference>Payment from user b356d5ca-8b66-a7e9-eb56-56e3779098e2</Reference>
+        <Date>2013-10-29T20:36:57.784Z</Date>
+        <DueDate>2013-10-29T20:36:57.784Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>John Spavin</Name>
+    </Contact>
+    <Reference>Payment from user 1fae180e-43da-7568-1ba9-c854daf0a392</Reference>
+    <Date>2013-10-29T20:35:25.829Z</Date>
+    <DueDate>2013-10-29T20:35:25.829Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Richard Beddie</Name>
+    </Contact>
+    <Reference>Payment from user fd191d95-87a8-e64d-f229-dc75377a781b</Reference>
+    <Date>2013-10-29T20:32:59.181Z</Date>
+    <DueDate>2013-10-29T20:32:59.181Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Richard Beddie</Name>
+        </Contact>
+        <Reference>Payment from user fd191d95-87a8-e64d-f229-dc75377a781b</Reference>
+        <Date>2013-10-29T20:32:59.181Z</Date>
+        <DueDate>2013-10-29T20:32:59.181Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Daniel McCollum</Name>
+    </Contact>
+    <Reference>Payment from user cc69c64a-390d-4c85-c326-9b36860c944b</Reference>
+    <Date>2013-10-29T20:31:14.049Z</Date>
+    <DueDate>2013-10-29T20:31:14.049Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Daniel McCollum</Name>
+        </Contact>
+        <Reference>Payment from user cc69c64a-390d-4c85-c326-9b36860c944b</Reference>
+        <Date>2013-10-29T20:31:14.049Z</Date>
+        <DueDate>2013-10-29T20:31:14.049Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Pat Caradus</Name>
+    </Contact>
+    <Reference>Payment from user fa32c155-95b0-2013-8416-c1223c6cb58e</Reference>
+    <Date>2013-10-29T20:31:00.704Z</Date>
+    <DueDate>2013-10-29T20:31:00.704Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Pat Caradus</Name>
+        </Contact>
+        <Reference>Payment from user fa32c155-95b0-2013-8416-c1223c6cb58e</Reference>
+        <Date>2013-10-29T20:31:00.704Z</Date>
+        <DueDate>2013-10-29T20:31:00.704Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Michael Hoogenboom</Name>
+    </Contact>
+    <Reference>Payment from user 6702ba81-b560-c601-0d83-d4b8fd82f6f8</Reference>
+    <Date>2013-10-29T20:25:14.699Z</Date>
+    <DueDate>2013-10-29T20:25:14.699Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Michael Hoogenboom</Name>
+        </Contact>
+        <Reference>Payment from user 6702ba81-b560-c601-0d83-d4b8fd82f6f8</Reference>
+        <Date>2013-10-29T20:25:14.699Z</Date>
+        <DueDate>2013-10-29T20:25:14.699Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Cohen Glass</Name>
+    </Contact>
+    <Reference>Payment from user 5af3101f-ce1c-a432-5182-07ea0290d8ee</Reference>
+    <Date>2013-10-29T20:19:14.626Z</Date>
+    <DueDate>2013-10-29T20:19:14.626Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Cohen Glass</Name>
+        </Contact>
+        <Reference>Payment from user 5af3101f-ce1c-a432-5182-07ea0290d8ee</Reference>
+        <Date>2013-10-29T20:19:14.626Z</Date>
+        <DueDate>2013-10-29T20:19:14.626Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>David Langley</Name>
+    </Contact>
+    <Reference>Payment from user 06552369-b56c-65a7-c7de-f706d30771b4</Reference>
+    <Date>2013-10-29T20:15:45.335Z</Date>
+    <DueDate>2013-10-29T20:15:45.335Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>David Langley</Name>
+        </Contact>
+        <Reference>Payment from user 06552369-b56c-65a7-c7de-f706d30771b4</Reference>
+        <Date>2013-10-29T20:15:45.335Z</Date>
+        <DueDate>2013-10-29T20:15:45.335Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Luke Howison</Name>
+    </Contact>
+    <Reference>Payment from user 2cab87cd-dc23-adfe-b18d-dc6b73b06d9c</Reference>
+    <Date>2013-10-29T20:14:39.697Z</Date>
+    <DueDate>2013-10-29T20:14:39.697Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Angus Ogilvie</Name>
+    </Contact>
+    <Reference>Payment from user 4433b5eb-9c39-dd30-1fae-f1d9c1d5aeea</Reference>
+    <Date>2013-10-29T20:13:25.642Z</Date>
+    <DueDate>2013-10-29T20:13:25.642Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Melissa Hartwick</Name>
+    </Contact>
+    <Reference>Payment from user d5243692-493e-d9b9-10ac-fa839d4fa930</Reference>
+    <Date>2013-10-29T20:09:23.649Z</Date>
+    <DueDate>2013-10-29T20:09:23.649Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Paul Findlay</Name>
+    </Contact>
+    <Reference>Payment from user 35cbda1c-052a-6caa-96f1-71152afc76e0</Reference>
+    <Date>2013-10-29T19:53:33.008Z</Date>
+    <DueDate>2013-10-29T19:53:33.008Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Greg van der Loeff</Name>
+    </Contact>
+    <Reference>Payment from user a9ea274b-f7d1-ab3e-cdee-5b6950246ed8</Reference>
+    <Date>2013-10-29T19:48:39.576Z</Date>
+    <DueDate>2013-10-29T19:48:39.576Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Greg van der Loeff</Name>
+        </Contact>
+        <Reference>Payment from user a9ea274b-f7d1-ab3e-cdee-5b6950246ed8</Reference>
+        <Date>2013-10-29T19:48:39.576Z</Date>
+        <DueDate>2013-10-29T19:48:39.576Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>John Tucker</Name>
+    </Contact>
+    <Reference>Payment from user 3fb49b29-f704-141d-06e1-e42dc6e98316</Reference>
+    <Date>2013-10-29T19:46:24.067Z</Date>
+    <DueDate>2013-10-29T19:46:24.067Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>John Tucker</Name>
+        </Contact>
+        <Reference>Payment from user 3fb49b29-f704-141d-06e1-e42dc6e98316</Reference>
+        <Date>2013-10-29T19:46:24.067Z</Date>
+        <DueDate>2013-10-29T19:46:24.067Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Brent Coffey</Name>
+    </Contact>
+    <Reference>Payment from user 151b0d57-ff51-42e1-488a-bece855fe4c1</Reference>
+    <Date>2013-10-29T19:43:26.099Z</Date>
+    <DueDate>2013-10-29T19:43:26.099Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Brent Coffey</Name>
+        </Contact>
+        <Reference>Payment from user 151b0d57-ff51-42e1-488a-bece855fe4c1</Reference>
+        <Date>2013-10-29T19:43:26.099Z</Date>
+        <DueDate>2013-10-29T19:43:26.099Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Craig Ryan</Name>
+    </Contact>
+    <Reference>Payment from user d3f28207-e515-7574-41c4-63bcc6c149f7</Reference>
+    <Date>2013-10-29T19:36:12.963Z</Date>
+    <DueDate>2013-10-29T19:36:12.963Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Rajnesh  Singh</Name>
+    </Contact>
+    <Reference>Payment from user 5be28f3b-8989-dbde-ca8c-fe838aad41d9</Reference>
+    <Date>2013-10-29T19:26:19.053Z</Date>
+    <DueDate>2013-10-29T19:26:19.053Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Camryn Brown</Name>
+    </Contact>
+    <Reference>Payment from user fdc17672-0909-c50f-e0ab-cf3325f80b88</Reference>
+    <Date>2013-10-29T19:17:13.086Z</Date>
+    <DueDate>2013-10-29T19:17:13.086Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Camryn Brown</Name>
+        </Contact>
+        <Reference>Payment from user fdc17672-0909-c50f-e0ab-cf3325f80b88</Reference>
+        <Date>2013-10-29T19:17:13.086Z</Date>
+        <DueDate>2013-10-29T19:17:13.086Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Frank Walkington</Name>
+    </Contact>
+    <Reference>Payment from user c82ba76a-9327-c48a-157b-b31e6efc0d4b</Reference>
+    <Date>2013-10-29T19:16:16.322Z</Date>
+    <DueDate>2013-10-29T19:16:16.322Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Frank Walkington</Name>
+        </Contact>
+        <Reference>Payment from user c82ba76a-9327-c48a-157b-b31e6efc0d4b</Reference>
+        <Date>2013-10-29T19:16:16.322Z</Date>
+        <DueDate>2013-10-29T19:16:16.322Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>A O'Sullivan</Name>
+    </Contact>
+    <Reference>Payment from user fb37411a-69fd-9743-0606-f8c55132d12e</Reference>
+    <Date>2013-10-29T18:24:26.599Z</Date>
+    <DueDate>2013-10-29T18:24:26.599Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>colin searle</Name>
+    </Contact>
+    <Reference>Payment from user 303b29a3-8c4c-92e1-f116-3bb1340035e2</Reference>
+    <Date>2013-10-29T17:44:15.385Z</Date>
+    <DueDate>2013-10-29T17:44:15.385Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>colin searle</Name>
+        </Contact>
+        <Reference>Payment from user 303b29a3-8c4c-92e1-f116-3bb1340035e2</Reference>
+        <Date>2013-10-29T17:44:15.385Z</Date>
+        <DueDate>2013-10-29T17:44:15.385Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>50</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>test test</Name>
+    </Contact>
+    <Reference>Payment from user f926a98e-9022-a852-68f9-23ad674a07eb</Reference>
+    <Date>2013-10-29T10:22:16.722Z</Date>
+    <DueDate>2013-10-29T10:22:16.722Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>test test</Name>
+        </Contact>
+        <Reference>Payment from user f926a98e-9022-a852-68f9-23ad674a07eb</Reference>
+        <Date>2013-10-29T10:22:16.722Z</Date>
+        <DueDate>2013-10-29T10:22:16.722Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Jordan Williams test 2</Name>
+    </Contact>
+    <Reference>Payment from user de195f99-8863-63f2-53fa-09c614d6fa6f</Reference>
+    <Date>2013-10-29T02:47:05.154Z</Date>
+    <DueDate>2013-10-29T02:47:05.154Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Ben Craven</Name>
+    </Contact>
+    <Reference>Payment from user f8ba5b7f-6c8e-5d52-7b6c-b5a2099550f8</Reference>
+    <Date>2013-10-29T02:46:36.044Z</Date>
+    <DueDate>2013-10-29T02:46:36.044Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Jordan Williams</Name>
+    </Contact>
+    <Reference>Payment from user c2a409f1-9c0f-3eb4-4af7-07a234d84f5e</Reference>
+    <Date>2013-10-29T02:44:20.709Z</Date>
+    <DueDate>2013-10-29T02:44:20.709Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Jordan Williams</Name>
+        </Contact>
+        <Reference>Payment from user c2a409f1-9c0f-3eb4-4af7-07a234d84f5e</Reference>
+        <Date>2013-10-29T02:44:20.709Z</Date>
+        <DueDate>2013-10-29T02:44:20.709Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Missy Hartwick</Name>
+    </Contact>
+    <Reference>Payment from user ad17eea6-5867-a77f-5a9e-ab8014c7348f</Reference>
+    <Date>2013-10-29T02:36:07.428Z</Date>
+    <DueDate>2013-10-29T02:36:07.428Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Missy Hartwick</Name>
+        </Contact>
+        <Reference>Payment from user ad17eea6-5867-a77f-5a9e-ab8014c7348f</Reference>
+        <Date>2013-10-29T02:36:07.428Z</Date>
+        <DueDate>2013-10-29T02:36:07.428Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>5</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Melissa Hartwick</Name>
+    </Contact>
+    <Reference>Payment from user b29f2347-350b-8f69-1c98-cc5bbdeea67d</Reference>
+    <Date>2013-10-29T02:32:37.658Z</Date>
+    <DueDate>2013-10-29T02:32:37.658Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Another Test</Name>
+    </Contact>
+    <Reference>Payment from user 4c2619d7-2779-8b0f-d5f1-77f7b0089e55</Reference>
+    <Date>2013-10-29T02:22:27.161Z</Date>
+    <DueDate>2013-10-29T02:22:27.161Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Another Test</Name>
+    </Contact>
+    <Reference>Payment from user 2d332c70-87f8-fd0e-77c7-c3d5c02093f9</Reference>
+    <Date>2013-10-29T02:15:22.672Z</Date>
+    <DueDate>2013-10-29T02:15:22.672Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Another Test</Name>
+    </Contact>
+    <Reference>Payment from user 5a828425-dc6a-c043-f204-0f977df0fa73</Reference>
+    <Date>2013-10-29T01:50:37.951Z</Date>
+    <DueDate>2013-10-29T01:50:37.951Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Type>ACCREC</Type>
+    <Contact>
+        <Name>Again Test</Name>
+    </Contact>
+    <Reference>Payment from user 51cdb591-1cd8-5605-c2f1-7d8cdf7e74fe</Reference>
+    <Date>2013-10-28T22:32:37.837Z</Date>
+    <DueDate>2013-10-28T22:32:37.837Z</DueDate>
+    <LineAmountTypes>Inclusive</LineAmountTypes>
+    <LineItems>
+        <LineItem>
+            <Description>Joining Fee</Description>
+            <Quantity>1</Quantity>
+            <UnitAmount>5</UnitAmount>
+            <AccountCode>202</AccountCode>
+        </LineItem>
+    </LineItems>
+</Invoice>
+<Invoice>
+    <Invoice>
+        <Type>ACCREC</Type>
+        <Contact>
+            <Name>Again Test</Name>
+        </Contact>
+        <Reference>Payment from user 51cdb591-1cd8-5605-c2f1-7d8cdf7e74fe</Reference>
+        <Date>2013-10-28T22:32:37.837Z</Date>
+        <DueDate>2013-10-28T22:32:37.837Z</DueDate>
+        <LineAmountTypes>NoTax</LineAmountTypes>
+        <LineItems>
+            <LineItem>
+                <Description>Donation – Thank You.</Description>
+                <Quantity>1</Quantity>
+                <UnitAmount>25</UnitAmount>
+                <AccountCode>211</AccountCode>
+            </LineItem>
+        </LineItems>
+    </Invoice>
+</Invoice>
+</Invoices>

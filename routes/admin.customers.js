@@ -49,6 +49,7 @@ var timedrequest= function throttle(func, arr, i) {
       });
     }
 };
+
 exports.pumpCustomers = function (req, res) {
       var db = require('../lib/db')('customer');
       db.find({ paid: true})
@@ -67,12 +68,11 @@ exports.pumpCustomersInvoices = function (req, res) {
       db.find({ paid: true})
       .sort({created_on: -1}, function (err, paidCustomers) {
         var xero = require('../lib/xero_invoice');
-        xero.allInvoices(paidCustomers);
-        for (var i = 0; i < paidCustomers.length; i++) {
-          //xero.raise(paidCustomers[i], function (err, results) {});
-          
-        }
-        res.send(true);
+        xero.allInvoices(paidCustomers, function (err, results) {
+          res.send(true, results);
+        });
+ 
+        
       });
 };
 
