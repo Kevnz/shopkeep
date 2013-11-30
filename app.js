@@ -56,11 +56,15 @@ var express = require('express'),
         },
         total: function (collection) {
             var total =0;
+            if (!collection) {
+                console.log('no customers? #dafuq');
+                return '---';
+            }
             for (var i = 0; i < collection.length; i++) {
                 if (collection[i].email.indexOf('the-kev') === -1) {
                     total++;
                 }
-            };
+            }
             return total;
         },
         header: function (collection) {
