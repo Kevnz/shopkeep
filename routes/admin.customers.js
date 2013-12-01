@@ -1,8 +1,9 @@
 exports.index = function (req, res) {
     var db = require('../lib/db')('customer');
-
+    console.log('list');
     db.find({ paid: true})
       .sort({created_on: -1}, function (err, paidCustomers) {
+        console.log(paidCustomers.length);
         res.render('admin', { title: 'Members and donations', customers:paidCustomers });
     });
 
