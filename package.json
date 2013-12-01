@@ -34,7 +34,8 @@
     "heredoc": "~1.2.0",
     "easyxml": "0.0.4",
     "js2xmlparser": "~0.1.2",
-    "data2xml": "~0.9.0"
+    "data2xml": "~0.9.0",
+    "oauth": "~0.9.10"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
