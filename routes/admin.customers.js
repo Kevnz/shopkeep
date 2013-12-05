@@ -34,8 +34,25 @@ exports.xeroInvoice = function (req, res) {
         var xero = require('../lib/xero_invoice');
         xero.raise(customer, function (err, results) {
           if(err) {
-            res.send(200, {error: err, result: results});
+            res.send(200, results);
           } else {
+            res.send(200, results);
+          }
+        });
+        
+    });
+};
+exports.xeroDonation = function (req, res) {
+  console.log('xero-donation');
+    var db = require('../lib/db')('customer');
+    console.log(req.params);
+    db.findOne({ paid: true, id: req.params.id}, function (err, customer) {
+        var xero = require('../lib/xero_invoice');
+        xero.raiseDonation(customer, function (err, results) {
+          if(err) {
+            res.send(200, results);
+          } else {
+            res.set('Content-Type', 'text/xml');
             res.send(200, results);
           }
         });
