@@ -25,7 +25,22 @@ exports.xero = function (req, res) {
         
     });
 };
-
+exports.xeroDonor = function (req, res) {
+  console.log('xero-customer');
+    var db = require('../lib/db')('donations');
+    console.log(req.params);
+    db.findOne({ paid: true, id: req.params.id}, function (err, customer) {
+        var xero = require('../lib/xero_contact');
+        xero.createContact(customer, function (err, results) {
+          if(err) {
+            res.send(200, err);
+          } else {
+            res.send(200, results);
+          }
+        });
+        
+    });
+};
 exports.xeroInvoice = function (req, res) {
   console.log('xero-invoice');
     var db = require('../lib/db')('customer');
@@ -42,6 +57,40 @@ exports.xeroInvoice = function (req, res) {
         
     });
 };
+exports.xeroDonorInvoice = function (req, res) {
+  console.log('xero-invoice');
+    var db = require('../lib/db')('donations');
+    console.log(req.params);
+    db.findOne({ paid: true, id: req.params.id}, function (err, customer) {
+        var xero = require('../lib/xero_invoice');
+        xero.raiseDonor(customer, function (err, results) {
+          if(err) {
+            res.send(200, results);
+          } else {
+            res.send(200, results);
+          }
+        });
+        
+    });
+};
+exports.xeroDonateInvoice = function (req, res) {
+  console.log('xero-invoice');
+    var db = require('../lib/db')('donations');
+    console.log(req.params);
+    db.findOne({ paid: true, id: req.params.id}, function (err, customer) {
+        var xero = require('../lib/xero_invoice');
+        xero.raise(customer, function (err, results) {
+          if(err) {
+            res.send(200, results);
+          } else {
+            res.send(200, results);
+          }
+        });
+        
+    });
+};
+
+
 exports.xeroDonation = function (req, res) {
   console.log('xero-donation');
     var db = require('../lib/db')('customer');
