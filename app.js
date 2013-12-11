@@ -185,6 +185,8 @@ app.get('/failtest', function (req, res) {
 });
 app.get('/admin/customers', auth, admin.index);
 app.get('/admin/xero/customers/:id', auth, admin.xero);
+app.get('/admin/xero/donors/:id', auth, admin.xeroDonor);
+app.get('/admin/xero/donors/invoice/:id', auth, admin.xeroDonorInvoice);
 app.get('/admin/export/customers', auth, admin.exportCustomers);
 app.use(function(err, req, res, next) {
     raygunClient.send(err);
