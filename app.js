@@ -14,7 +14,7 @@ process.on('uncaughtException', function(err) {
 
 var dstring = '2013-10-28T02:40:35.187Z';
 var fromTZ= 'America/Los_Angles';
-var toTZ = 'Pacifc/Auckland'
+var toTZ = 'Pacifc/Auckland';
 
  
 
@@ -27,6 +27,7 @@ var express = require('express'),
     donation = require('./routes/donations'),
     details = require('./routes/details'),
     admin = require('./routes/admin.customers'),
+    exports = require('./routes/exports'),
     http = require('http'),
     path = require('path'),
     app = express(),
@@ -187,14 +188,14 @@ app.get('/admin/customers', auth, admin.index);
 app.get('/admin/xero/customers/:id', auth, admin.xero);
 app.get('/admin/xero/donors/:id', auth, admin.xeroDonor);
 app.get('/admin/xero/donors/invoice/:id', auth, admin.xeroDonorInvoice);
-app.get('/admin/export/customers', auth, admin.exportCustomers);
+app.get('/admin/export/customers',  exports.index);
 app.use(function(err, req, res, next) {
     raygunClient.send(err);
     res.redirect('http://taxpayers.org.nz/');
 });
 app.get('/admin/xero/invoice/:id', auth, admin.xeroInvoice);
 app.get('/admin/xero/d/invoice/:id', auth, admin.xeroDonation);
-app.get('/admin/xero/import/customers/', auth, admin.pumpCustomers); 
+app.get('/admin/xero/import/customers/', auth, admin.pumpCustomers);
 app.get('/admin/xero/import/invoices/', auth, admin.pumpCustomersInvoices);
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port') + " in " + app.get('env') +" mode");
