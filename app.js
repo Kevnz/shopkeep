@@ -188,7 +188,7 @@ app.get('/admin/customers', auth, admin.index);
 app.get('/admin/xero/customers/:id', auth, admin.xero);
 app.get('/admin/xero/donors/:id', auth, admin.xeroDonor);
 app.get('/admin/xero/donors/invoice/:id', auth, admin.xeroDonorInvoice);
-app.get('/admin/export/customers',  exports.index);
+app.get('/admin/export/customers',auth, exports.index);
 app.use(function(err, req, res, next) {
     raygunClient.send(err);
     res.redirect('http://taxpayers.org.nz/');
