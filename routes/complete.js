@@ -19,9 +19,10 @@ exports.success = function(req, res) {
 
          var customers = require('../lib/db')('customer');
          var donations = require('../lib/db')('donations');
+         var xero = require('../lib/xero_process');
          if (user) {
             customers.findAndModify({
-                    query: { id: user },
+                    query: { id: user, paid: false },
                     update:{ $set: { paid: true }},
                     new: false
                 },
@@ -31,8 +32,8 @@ exports.success = function(req, res) {
                             if (doc !== null) {
                                 shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
                                     
-                                    var xero = require('../lib/xero_contact');
-                                    xero.createContact(doc, function (err, results) {
+                                    
+                                    xero.SendToXero(doc, function (err, results) {
                                         if (doc.didDonate) {
                                             res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
                                         } else {
@@ -48,8 +49,7 @@ exports.success = function(req, res) {
                         try {
                             
                             shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
-                                var xero = require('../lib/xero_contact');
-                                xero.createContact(userDoc, function (xerr, results) { 
+                                xero.SendToXero(userDoc, function (xerr, results) {
                                     if (err) {
                                         if (userDoc.didDonate) {
                                             res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
