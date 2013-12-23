@@ -40,7 +40,8 @@
     "node-zip": "0.0.2",
     "node-native-zip": "~1.1.0",
     "excel-export-impr": "~0.4.1",
-    "xlsx-template": "git+https://github.com/brightleaf/xlsx-template.git"
+    "xlsx-template": "git+https://github.com/brightleaf/xlsx-template.git",
+    "delayed-job": "0.0.2"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
