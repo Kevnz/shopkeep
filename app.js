@@ -15,7 +15,7 @@ process.on('uncaughtException', function(err) {
 var dstring = '2013-10-28T02:40:35.187Z';
 var fromTZ= 'America/Los_Angles';
 var toTZ = 'Pacifc/Auckland';
-
+/*
 var Scheduler = require('delayed-job');
 console.log(Scheduler)
 var scheduler = Scheduler.createScheduler({
@@ -33,10 +33,10 @@ var myJob = {
   title: 'Great Gig In The Sky'
 };
 
-scheduler.delay(myJob,2000);
+//scheduler.delay(myJob,2000);
 
 
-
+*/
 
 
 var express = require('express'),
@@ -205,7 +205,9 @@ app.get('/failtest', function (req, res) {
     throw "fall down, go boom";
 });
 app.get('/admin/customers', auth, admin.index);
+app.get('/admin/recurringcustomers', auth, admin.recurringCustomers);
 app.get('/admin/xero/customers/:id', auth, admin.xero);
+app.get('/admin/xero/recurringcustomers/:id', auth, admin.xeroRecurring);
 app.get('/admin/xero/donors/:id', auth, admin.xeroDonor);
 app.get('/admin/xero/donors/invoice/:id', auth, admin.xeroDonorInvoice);
 app.get('/admin/export/customers',auth, exports.index);
@@ -217,6 +219,8 @@ app.get('/admin/xero/invoice/:id', auth, admin.xeroInvoice);
 app.get('/admin/xero/d/invoice/:id', auth, admin.xeroDonation);
 app.get('/admin/xero/import/customers/', auth, admin.pumpCustomers);
 app.get('/admin/xero/import/invoices/', auth, admin.pumpCustomersInvoices);
+
+
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port') + " in " + app.get('env') +" mode");
 });

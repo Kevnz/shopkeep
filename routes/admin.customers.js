@@ -8,6 +8,16 @@ exports.index = function (req, res) {
     });
 
 };
+exports.recurringCustomers = function (req, res) {
+    var db = require('../lib/db')('customer');
+    console.log('list');
+    db.find({ paid: true, repeat:true})
+      .sort({created_on: -1}, function (err, paidCustomers) {
+        console.log(paidCustomers.length);
+        res.render('recurring', { title: 'Recurring Members and donations', customers:paidCustomers });
+    });
+
+};
 
 exports.xero = function (req, res) {
   console.log('xero-customer');
@@ -18,6 +28,23 @@ exports.xero = function (req, res) {
         xero.createContact(customer, function (err, results) {
           if(err) {
             res.send(200, err);
+          } else {
+            res.send(200, results);
+          }
+        });
+        
+    });
+};
+
+exports.xeroRecurring = function (req, res) {
+  console.log('xero-customer');
+    var db = require('../lib/db')('customer');
+    console.log(req.params);
+    db.findOne({ paid: true, id: req.params.id}, function (err, customer) {
+        var xero = require('../lib/xero_invoice');
+        xero.raiseRecurring(customer, function (err, results) {
+          if(err) {
+            res.send(200, results);
           } else {
             res.send(200, results);
           }
