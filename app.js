@@ -16,6 +16,7 @@ var dstring = '2013-10-28T02:40:35.187Z';
 var fromTZ= 'America/Los_Angles';
 var toTZ = 'Pacifc/Auckland';
 
+/*
 var Scheduler = require('delayed-job');
 
 var scheduler = Scheduler.createScheduler({
@@ -35,7 +36,7 @@ var myJob = {
 
 scheduler.delay(myJob,15000);
 
- 
+ */
 
 
 var express = require('express'),
