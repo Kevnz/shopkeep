@@ -1,3 +1,16 @@
+function TryParseInt(str,defaultValue){    
+    var retValue = defaultValue;     
+    if(str!=null){         
+        if(str.length>0){             
+            if (!isNaN(str)){                 
+                retValue = parseInt(str);             
+            }         
+        }     
+    }     
+    return retValue;
+}
+
+
  
 exports.donation = function(req, res){
   res.render('donations', { title: 'Taxpayers Union '});
@@ -36,12 +49,15 @@ exports.saveDonation = function (req, res) {
         donation.created_on = new Date();
         var refId = donation.id = Guid.create().toString();
         var intholder = 0;
-        try {
-           intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
-        }catch(err) {
+        var donAmount = TryParseInt(req.body.donation_amount, 0);
+        var cusAmount = TryParseInt(req.body.custom_amount, 0);
 
-            log.log('erred intholder');
+        if (cusAmount > donAmount) {
+            intholder = cusAmount
+        } else {
+            intholder = donAmount;
         }
+ 
         if (donation.join === 'on') {
             intholder = intholder + 5;
         }
@@ -70,6 +86,7 @@ exports.saveDonation = function (req, res) {
                     successURL: 'http://tradeshop.azurewebsites.net/success?donation='+ refId,
                     failURL: 'http://tradeshop.azurewebsites.net/fail?donation='+ refId
                 };
+
                 if (donation.join === 'on') {
                     donation.donationAmount = intholder - 5;
                     console.log('save customer');
