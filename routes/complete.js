@@ -30,10 +30,11 @@ exports.success = function(req, res) {
                     if (userDoc === null) {
                         customers.findOne({ id: user }, function(err, doc) {
                             if (doc !== null) {
-                                shopify.createCustomer(doc, function (err, createdShopifyCustomer) {
+                                
                                     
                                     
-                                    xero.SendToXero(doc, function (err, results) {
+                                xero.SendToXero(doc, function (err, results) {
+                                    shopify.createCustomer(doc, function (err, createdShopifyCustomer) {
                                         if (doc.didDonate) {
                                             res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
                                         } else {
@@ -48,8 +49,9 @@ exports.success = function(req, res) {
                     } else {
                         try {
                             
-                            shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
-                                xero.SendToXero(userDoc, function (xerr, results) {
+                            
+                            xero.SendToXero(userDoc, function (xerr, results) {
+                                shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
                                     if (err) {
                                         if (userDoc.didDonate) {
                                             res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
@@ -80,7 +82,7 @@ exports.success = function(req, res) {
                 },
                 function (err, userDoc) {
                     if (userDoc === null) return;
-                    xero.SendToXero(userDoc, function (xerr, results) {
+                    xero.SendDonationToXero(userDoc, function (xerr, results) {
                         res.redirect('http://taxpayers.org.nz/pages/donation-success');
                     });
                 });
