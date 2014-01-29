@@ -30,7 +30,7 @@ exports.success = function(req, res) {
                     if (userDoc === null) {
                         customers.findOne({ id: user }, function(err, doc) {
                             if (doc !== null) {
-                                shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
+                                shopify.createCustomer(doc, function (err, createdShopifyCustomer) {
                                     
                                     
                                     xero.SendToXero(doc, function (err, results) {
@@ -74,12 +74,15 @@ exports.success = function(req, res) {
                 });
         } else if (donation) {
             donations.findAndModify({
-                    query: { id: donation},
+                    query: { id: donation, paid: false},
                     update:{ $set: { paid: true }},
                     new: false
                 },
                 function (err, userDoc) {
-                    res.redirect('http://taxpayers.org.nz/pages/donation-success');
+                    if (userDoc === null) return;
+                    xero.SendToXero(userDoc, function (xerr, results) {
+                        res.redirect('http://taxpayers.org.nz/pages/donation-success');
+                    });
                 });
         }
         else {

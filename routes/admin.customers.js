@@ -18,7 +18,34 @@ exports.recurringCustomers = function (req, res) {
     });
 
 };
-
+exports.shopify = function (req, res) {
+    var db = require('../lib/db')('customer'); 
+    db.findOne({ paid: true, id: req.params.id}, function (err, customer) {
+        var shopify = require('../lib/shopify');
+        shopify.updateCustomer(customer, function (err, results) {
+          if(err) {
+            res.send(200, err);
+          } else {
+            res.send(200, results);
+          }
+        });
+        
+    });
+}
+exports.xeroFull = function (req, res) {
+    var db = require('../lib/db')('customer'); 
+    db.findOne({ paid: true, id: req.params.id}, function (err, customer) {
+        var xero = require('../lib/xero_process');
+        xero.SendToXero(customer, function (err, results) {
+          if(err) {
+            res.send(200, err);
+          } else {
+            res.send(200, results);
+          }
+        });
+        
+    });
+}
 exports.xero = function (req, res) {
   console.log('xero-customer');
     var db = require('../lib/db')('customer');

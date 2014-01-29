@@ -205,8 +205,10 @@ app.get('/failtest', function (req, res) {
     throw "fall down, go boom";
 });
 app.get('/admin/customers', auth, admin.index);
+app.get('/admin/shopify/customers/:id', auth, admin.shopify);
 app.get('/admin/recurringcustomers', auth, admin.recurringCustomers);
 app.get('/admin/xero/customers/:id', auth, admin.xero);
+app.get('/admin/full/xero/customers/:id', auth, admin.xeroFull);
 app.get('/admin/xero/recurringcustomers/:id', auth, admin.xeroRecurring);
 app.get('/admin/xero/donors/:id', auth, admin.xeroDonor);
 app.get('/admin/xero/donors/invoice/:id', auth, admin.xeroDonorInvoice);
