@@ -58,6 +58,9 @@ exports.saveDonation = function (req, res) {
         } else {
             intholder = donAmount;
         }
+        if (intholder === 0) {
+            res.redirect('http://taxpayers.org.nz/pages/donate?error');
+        }
         log.logObject({intholder: intholder});
         if (donation.join === 'on') {
             intholder = intholder + 5;
