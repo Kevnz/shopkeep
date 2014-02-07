@@ -4,8 +4,8 @@ console.log(PORT);
 var cluster = require('cluster');
 var os      = require("os");
 
-console.log(__dirname);
-if (cluster.isMaster) {
+console.log(__dirname)
+;if (cluster.isMaster) {
 
 
   // In real life, you'd probably use more than just 2 workers,
