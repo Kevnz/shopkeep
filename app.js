@@ -2,14 +2,15 @@
 
 
 
-require('newrelic');
+//require('newrelic');
 var raygun = require('raygun');
 var raygunClient = new raygun.Client().init({ apiKey: 'DTUW+h7RxSN5Meopa7KKVg==' });
 var logger = require('./lib/logger');
+/*
 process.on('uncaughtException', function(err) {
   raygunClient.send(err);
 });
-
+*/
  
 
 var dstring = '2013-10-28T02:40:35.187Z';
@@ -141,7 +142,8 @@ var express = require('express'),
     };
 
 expstate.extend(app);
-var connect = require('connect');
+var connect = require('connect'),
+    connectDomain = require("connect-domain");
 var auth = connect.basicAuth(function (user, pass) {
     return (user === 'admin' && pass === 'l0g1n2tusite');
 });
@@ -156,16 +158,18 @@ app.configure(function(){
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(app.router);
-    app.use(raygunClient.expressHandler);
+    //app.use(raygunClient.expressHandler);
+    //app.use(connectDomain())
     app.use(express.static(path.join(__dirname, 'public')));
 });
 
 app.configure('development', function(){
-    app.use(express.errorHandler());
+    //app.use(express.errorHandler());
     app.locals.pretty = true;
 });
 
-app.use(function (req, res, next) {
+ 
+var corsStuff = function (req, res, next) {
 
     res.setHeader('Access-Control-Allow-Origin', '*');
 
@@ -181,7 +185,7 @@ app.use(function (req, res, next) {
 
     // Pass to next layer of middleware
     next();
-});
+}
 app.get('/', routes.index);
 app.get('/customers', routes.customers);
 app.post('/customers', routes.saveCustomer);
@@ -192,17 +196,20 @@ app.get('/fail', complete.fail);
 //added to handle post
 app.post('/success', complete.success);
 app.post('/fail', complete.fail);
-app.get('/tipline', tips.index);
-app.post('/tipline', tips.saveTip);
+app.get('/tipline',corsStuff, tips.index);
+app.post('/tipline',corsStuff, tips.saveTip);
 app.get('/details', details.index);
 app.post('/details', details.update);
-app.get('/stop-payments', details.cancel);
+app.get('/stop-payments',corsStuff, details.cancel);
 
 app.get('/err', function (req, res) {
     throw "fall down, go boom";
 });
 app.get('/failtest', function (req, res) {
     throw "fall down, go boom";
+});
+app.get('/timeout', function (req, res) {
+     
 });
 app.get('/admin/customers', auth, admin.index);
 app.get('/admin/shopify/customers/:id', auth, admin.shopify);
@@ -213,17 +220,22 @@ app.get('/admin/xero/recurringcustomers/:id', auth, admin.xeroRecurring);
 app.get('/admin/xero/donors/:id', auth, admin.xeroDonor);
 app.get('/admin/xero/donors/invoice/:id', auth, admin.xeroDonorInvoice);
 app.get('/admin/export/customers',auth, exports.index);
-app.use(function(err, req, res, next) {
-    raygunClient.send(err);
-    res.redirect('http://taxpayers.org.nz/');
-});
+
+//app.use(function(err, req, res, next) {
+    //raygunClient.send(err);
+    //res.redirect('http://taxpayers.org.nz/');
+//});
 app.get('/admin/xero/invoice/:id', auth, admin.xeroInvoice);
 app.get('/admin/xero/d/invoice/:id', auth, admin.xeroDonation);
 app.get('/admin/xero/import/customers/', auth, admin.pumpCustomers);
 app.get('/admin/xero/import/invoices/', auth, admin.pumpCustomersInvoices);
-
-
+app.get('/rebillsuccess', function(req, res) {
+    console.log('rebill')
+})
+module.exports = app;
+/*
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port') + " in " + app.get('env') +" mode");
 });
 
+*/

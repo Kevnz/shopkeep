@@ -9,6 +9,7 @@
 <div>
     <table>
         <tr>
+            <th>Id</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
@@ -21,6 +22,9 @@
                 {{#ifNotTest . }}
 
                 <tr>
+                    <td>
+                        {{id}}
+                    </td>
                     <td>
                         {{first_name}}
                     </td>

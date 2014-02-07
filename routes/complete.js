@@ -28,7 +28,7 @@ exports.success = function(req, res) {
                 },
                 function (err, userDoc) {
                     if (userDoc === null) {
-                        customers.findOne({ id: user }, function(err, doc) {
+                        customers.findOne({ id: user,paid: true }, function(err, doc) {
                             if (doc !== null) {
                                 
                                     

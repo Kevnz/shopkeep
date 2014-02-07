@@ -41,7 +41,8 @@
     "node-native-zip": "~1.1.0",
     "excel-export-impr": "~0.4.1",
     "xlsx-template": "git+https://github.com/brightleaf/xlsx-template.git",
-    "delayed-job": "git+https://github.com/brightleaf/delayed-job.git"
+    "delayed-job": "git+https://github.com/brightleaf/delayed-job.git",
+    "connect-domain": "~0.5.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
