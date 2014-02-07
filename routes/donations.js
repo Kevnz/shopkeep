@@ -49,15 +49,19 @@ exports.saveDonation = function (req, res) {
         donation.created_on = new Date();
         var refId = donation.id = Guid.create().toString();
         var intholder = 0;
+        log.logObject({donation_amount: req.body.donation_amount, custom_amount:req.body.custom_amount });
         var donAmount = TryParseInt(req.body.donation_amount, 0);
         var cusAmount = TryParseInt(req.body.custom_amount, 0);
 
         if (cusAmount > donAmount) {
-            intholder = cusAmount
+            intholder = cusAmount;
         } else {
             intholder = donAmount;
         }
- 
+        if (intholder === 0) {
+            res.redirect('http://taxpayers.org.nz/pages/donate?error');
+        }
+        log.logObject({intholder: intholder});
         if (donation.join === 'on') {
             intholder = intholder + 5;
         }
@@ -67,6 +71,7 @@ exports.saveDonation = function (req, res) {
         log.logObject(donation);
         donations.save(donation, function (err, obj) {
             if(err) {
+                log.logObject(err);
                 res.send(500, { error: 'something is wrong' });
             } else {
                 //save as a customer now
