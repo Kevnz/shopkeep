@@ -37,7 +37,7 @@ if (cluster.isMaster) {
 
   // See the cluster documentation for more details about using
   // worker processes to serve requests.  How it works, caveats, etc.
-  var app = require('./app');
+  var app = require('./app').app;
   console.log('app', app);
   http = require('http');
   http.createServer(app).listen(app.get('port'), function(){
