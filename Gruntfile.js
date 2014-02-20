@@ -77,6 +77,20 @@ module.exports = function (grunt) {
             dev: {
                 dest: 'public/components'
             }
+        },
+        complexity: {
+            generic: {
+                src: ['routes/*.js', 'lib/*.js'],
+                options: {
+                    breakOnErrors: true,
+                    jsLintXML: 'report.xml',         // create XML JSLint-like report
+                    checkstyleXML: 'checkstyle.xml', // create checkstyle report
+                    errorsOnly: false,               // show only maintainability errors
+                    cyclomatic: [3, 7, 12],          // or optionally a single value, like 3
+                    halstead: [8, 13, 20],           // or optionally a single value, like 8
+                    maintainability: 100
+                }
+            }
         }
     });
 
@@ -86,5 +100,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-bower');
+    grunt.loadNpmTasks('grunt-complexity');
     grunt.registerTask('default',  ['jshint','compass', 'bower']);
 };
