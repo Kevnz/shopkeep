@@ -78,7 +78,7 @@ exports.success = function(req, res) {
                     new: false
                 },
                 function (err, userDoc) {
-                    if (userDoc === null) return;
+                    if (userDoc === null) res.redirect('http://taxpayers.org.nz/pages/donation-success');
                     xero.SendDonationToXero(userDoc, function (xerr, results) {
                         res.redirect('http://taxpayers.org.nz/pages/donation-success');
                     });
