@@ -175,7 +175,7 @@ app.configure('development', function(){
 
  
 var corsStuff = function (req, res, next) {
-
+/*
     res.setHeader('Access-Control-Allow-Origin', '*');
 
     // Request methods you wish to allow
@@ -189,6 +189,7 @@ var corsStuff = function (req, res, next) {
     //res.setHeader('Access-Control-Allow-Credentials', true);
 
     // Pass to next layer of middleware
+    */
     next();
 }
 app.get('/', routes.index);
