@@ -203,8 +203,8 @@ app.post('/success', complete.success);
 app.post('/fail', complete.fail);
 app.get('/tipline',corsStuff, tips.index);
 app.post('/tipline',corsStuff, tips.saveTip);
-app.get('/details', corsStuff, details.index);
-app.post('/details', corsStuff, details.update);
+app.get('/details',corsStuff, details.index);
+app.post('/details',corsStuff, details.update);
 app.get('/stop-payments',corsStuff, details.cancel);
 
 app.get('/err', function (req, res) {
