@@ -10,8 +10,6 @@ function TryParseInt(str,defaultValue){
     return retValue;
 }
 
-
- 
 exports.donation = function(req, res){
   res.render('donations', { title: 'Taxpayers Union '});
 };
@@ -19,13 +17,9 @@ var qconf = require('qconf'),
     config = qconf();
 var log = require('../lib/logger');
 var dps = '-' + config.get('dps');
+var failedUrl = 'http://taxpayers.org.nz/pages/donate?error';
 exports.saveDonation = function (req, res) {
-    /*
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
  
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    */
     try {
         var Guid = require('guid');
         var donations =  require('../lib/db')('donations');
@@ -49,7 +43,6 @@ exports.saveDonation = function (req, res) {
         donation.created_on = new Date();
         var refId = donation.id = Guid.create().toString();
         var intholder = 0;
-        log.logObject({donation_amount: req.body.donation_amount, custom_amount:req.body.custom_amount });
         var donAmount = TryParseInt(req.body.donation_amount, 0);
         var cusAmount = TryParseInt(req.body.custom_amount, 0);
 
@@ -59,24 +52,25 @@ exports.saveDonation = function (req, res) {
             intholder = donAmount;
         }
         if (intholder === 0) {
-            res.redirect('http://taxpayers.org.nz/pages/donate?error');
+            res.redirect(failedUrl);
         }
-        log.logObject({intholder: intholder});
+
         if (donation.join === 'on') {
             intholder = intholder + 5;
         }
  
         donation.amount = intholder;
         donation.repeat = false;
+        donation.reference = 'Payment from user ' + donation.id;
         log.logObject(donation);
         donations.save(donation, function (err, obj) {
-            if(err) {
-                log.logObject(err);
-                res.send(500, { error: 'something is wrong' });
+            if (err === true) {
+                log.logObject({error: err, donation:donation}, 'Donations saved error');
+                res.redirect(failedUrl);
             } else {
                 //save as a customer now
 
-                donation.reference = 'Payment from user ' + donation.id;
+                
                 var pxpay = require('pxpay');
 
                 var transaction = {
@@ -98,18 +92,26 @@ exports.saveDonation = function (req, res) {
                     donation.didDonate = true;
                     donation.donationId = refId;
                     donation.id = refId;
-                    customers.save(donation);
                     transaction.successURL = 'http://tradeshop.azurewebsites.net/success?user='+ refId;
                     transaction.failURL = 'http://tradeshop.azurewebsites.net/fail?user='+ refId;
                 }
                 pxpay.request(transaction, function(err, result) {
                     var url = result.URI;
-                    res.redirect(url);
+                    if(donation.join === 'on'){
+                        donation.password = req.body.password;
+                        donation.password_confirmation = req.body.password_confirmation;
+                        customers.save(donation, function (customerSaveError, cus) {
+                            res.redirect(url);
+                        });
+                    } else {
+                        res.redirect(url);
+                    }
                 });
                  
             }
         });
     } catch (failed) {
-        res.send(200, failed);
+        log.logObject(failed, 'Tried to do donation and failed');
+        res.redirect(failedUrl);
     }
 };

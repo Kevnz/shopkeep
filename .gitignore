@@ -3,3 +3,5 @@ node_modules
 .sass-cache
 config/config.json
 newrelic_agent.log
+checkstyle.xml
+report.xml

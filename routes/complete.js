@@ -28,27 +28,24 @@ exports.success = function(req, res) {
                 },
                 function (err, userDoc) {
                     if (userDoc === null) {
-                        customers.findOne({ id: user,paid: true }, function(err, doc) {
-                            if (doc !== null) {
-                                
-                                    
-                                    
-                                xero.SendToXero(doc, function (err, results) {
-                                    shopify.createCustomer(doc, function (err, createdShopifyCustomer) {
-                                        if (doc.didDonate) {
-                                            res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
-                                        } else {
-                                            res.redirect('http://taxpayers.org.nz/pages/thanks');
-                                        }
-                                    });
-                                });
+
+                        //this means it's the second post from dps
+                        //query if the user has paid, then just return don't double save
+
+                        customers.findOne({ id: user, paid: true }, function(err, doc) {
+                            if (doc !== null) {       
+                                if (doc.didDonate) {
+                                    res.redirect('http://taxpayers.org.nz/pages/memberplusdonate');
+                                } else {
+                                    res.redirect('http://taxpayers.org.nz/pages/thanks');
+                                }
                             } else {
                                 res.redirect('http://taxpayers.org.nz/pages/thanks');
                             }
                         });
                     } else {
                         try {
-                            
+                            //great user was updated, save away
                             
                             xero.SendToXero(userDoc, function (xerr, results) {
                                 shopify.createCustomer(userDoc, function (err, createdShopifyCustomer) {
@@ -68,7 +65,7 @@ exports.success = function(req, res) {
                                 });
                             });
                         } catch (shopError) {
-                            log.logObject(shopError);
+                            log.logObject(shopError, 'Error saving customer or shopify or xero');
                             res.redirect('http://taxpayers.org.nz/donation-fail');
                         }
                     }
@@ -81,7 +78,7 @@ exports.success = function(req, res) {
                     new: false
                 },
                 function (err, userDoc) {
-                    if (userDoc === null) return;
+                    if (userDoc === null) res.redirect('http://taxpayers.org.nz/pages/donation-success');
                     xero.SendDonationToXero(userDoc, function (xerr, results) {
                         res.redirect('http://taxpayers.org.nz/pages/donation-success');
                     });

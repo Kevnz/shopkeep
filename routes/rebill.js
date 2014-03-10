@@ -1,9 +1,9 @@
 
 
-
+/*
 var qconf = require('qconf'),
-    config = qconf(),
-var donations = require('../lib/db')('donations');
+    config = qconf(), 
+    donations = require('../lib/db')('donations');
 var Guid = require('guid');
 
 var Ids = [
@@ -13,7 +13,7 @@ var Ids = [
     {id:'11289523-d413-21cd-67e5-62d0fdc9c6cd', dpsBillingId:'0000010027773766', '5.00'},
     {id:'69f4c031-385a-08c7-4cbd-f9af3253268b', dpsBillingId:'0000010027918301', '5.00'},
     {id:'7ff21fd2-e17d-2eb4-6029-9b8eed9f10b6', dpsBillingId:'0000010027621453', '25.00'},
-    {id:'158c910f-28c9-9751-fed9-416f1e35a893', dpsBillingId:'0000010027664279', '5.00'},
+    {id:'158c910f-28c9-9751-fed9-416f1e35a893', dpsBillingId:'0000010027664279', '5.00'}
 ];
 
  
@@ -36,3 +36,5 @@ for (var i = 0; i < Ids.length; i++) {
 
 };
          
+
+         */
