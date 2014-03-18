@@ -13,7 +13,10 @@ exports.saveTip = function (req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
- 
+    if (req.body.honeypot) {
+        res.send(200);
+        return;
+    }
 
     try {
         var Guid = require('guid');
