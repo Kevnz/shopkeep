@@ -11,8 +11,8 @@ var logtastic = require('../lib/db')('logtastic');
 
 exports.saveTip = function (req, res) {
  
-    if (req.body.honeypot) {
-        res.send(200);
+    if (req.body.honeypot.length > 0) {
+        res.send(423);
         return;
     }
 
