@@ -218,6 +218,7 @@ app.get('/timeout', function (req, res) {
      
 });
 app.get('/admin/customers', auth, admin.index);
+app.get('/admin/donors', auth, admin.donors);
 app.get('/admin/shopify/customers/:id', auth, admin.shopify);
 app.get('/admin/recurringcustomers', auth, admin.recurringCustomers);
 app.get('/admin/xero/customers/:id', auth, admin.xero);

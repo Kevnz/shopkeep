@@ -8,6 +8,16 @@ exports.index = function (req, res) {
     });
 
 };
+exports.donors = function (req, res) {
+    var db = require('../lib/db')('donations');
+    console.log('list');
+    db.find({ paid: true})
+      .sort({created_on: -1}, function (err, paidCustomers) {
+        console.log(paidCustomers.length);
+        res.render('admin', { title: 'Members and donations', customers:paidCustomers });
+    });
+
+};
 exports.recurringCustomers = function (req, res) {
     var db = require('../lib/db')('customer');
     console.log('list');
