@@ -12,20 +12,39 @@ exports.index = function (req, res) {
     var customers = require('../lib/db')('customer');
 
     customers.findOne({email: email, paid:true }, function (err, doc) {
-
+        var member;
 
         if (err) {
             res.send(200, err);
         } else {
-            var member = {
-                first_name: doc.first_name,
-                last_name: doc.last_name,
-                email: doc.email,
-                amount: doc.amount,
-                repeat: doc.repeat,
-                donation_amount: doc.amountToDonate || (doc.amount - 5)
-            };
-            res.send(200, member);
+
+            if (doc.repeat) {
+                //I should do something.
+                var recurringDB = require('../lib/db')('recurring');
+                recurringDB.find({email:doc.email}, function(errs, docs) {
+                    member = {
+                        first_name: doc.first_name,
+                        last_name: doc.last_name,
+                        email: doc.email,
+                        amount: doc.amount,
+                        repeat: doc.repeat,
+                        donation_amount: doc.amountToDonate || (doc.amount - 5),
+                        repeats: docs
+                    };
+                    res.send(200, member);
+                });
+            } else {
+
+                member = {
+                    first_name: doc.first_name,
+                    last_name: doc.last_name,
+                    email: doc.email,
+                    amount: doc.amount,
+                    repeat: doc.repeat,
+                    donation_amount: doc.amountToDonate || (doc.amount - 5)
+                };
+                res.send(200, member);
+            }
         }
     });
 };
