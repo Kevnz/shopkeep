@@ -18,33 +18,20 @@ exports.index = function (req, res) {
             res.send(200, err);
         } else {
 
-            if (doc.repeat) {
-                //I should do something.
-                var recurringDB = require('../lib/db')('recurring');
-                recurringDB.find({email:doc.email}, function(errs, docs) {
-                    member = {
-                        first_name: doc.first_name,
-                        last_name: doc.last_name,
-                        email: doc.email,
-                        amount: doc.amount,
-                        repeat: doc.repeat,
-                        donation_amount: doc.amountToDonate || (doc.amount - 5),
-                        repeats: docs
-                    };
-                    res.send(200, member);
-                });
-            } else {
-
+            //I should do something.
+            var recurringDB = require('../lib/db')('recurring');
+            recurringDB.find({email:doc.email}, function(errs, docs) {
                 member = {
                     first_name: doc.first_name,
                     last_name: doc.last_name,
                     email: doc.email,
                     amount: doc.amount,
                     repeat: doc.repeat,
-                    donation_amount: doc.amountToDonate || (doc.amount - 5)
+                    donation_amount: doc.amountToDonate || (doc.amount - 5),
+                    repeats: docs || []
                 };
                 res.send(200, member);
-            }
+            });
         }
     });
 };
