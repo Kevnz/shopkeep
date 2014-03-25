@@ -28,6 +28,7 @@ exports.saveTip = function (req, res) {
         tipster.message = req.body.message;
         tipster.verify = req.body.verify ? true : false;
         tipster.created_on = new Date();
+        tipster.honeypot = req.body.honeypot;
         tipster.id = Guid.create().toString();
         tipster.ip_address = req.header('x-forwarded-for') || req.connection.remoteAddress;
         logtastic.save({message:"at the end of post build"});
