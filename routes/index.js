@@ -33,7 +33,10 @@ exports.saveCustomer = function (req, res) {
         logger.logObject({donation_amount: req.body.donation_amount,
             custom_amount:req.body.custom_amount });
         try {
-            intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
+            var ddAmount = parseInt((req.body.donation_amount), 10)
+            var customAmount = parseInt((req.body.custom_amount), 10)
+            var reqAmount =  ddAmount > customAmount  ? ddAmount : customAmount; 
+            intholder = reqAmount;
             intholder = intholder + 5;
         } catch(err) {
             logger.logObject(err);
