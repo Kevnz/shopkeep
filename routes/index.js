@@ -34,7 +34,7 @@ exports.saveCustomer = function (req, res) {
             custom_amount:req.body.custom_amount });
         try {
             var ddAmount = parseInt((req.body.donation_amount), 10)
-            var customAmount = parseInt((req.body.custom_amount), 10)
+            var customAmount = parseInt((req.body.custom_amount.length > 0 ? req.body.custom_amount : 0), 10)
             var reqAmount =  ddAmount > customAmount  ? ddAmount : customAmount; 
             intholder = reqAmount;
             intholder = intholder + 5;
