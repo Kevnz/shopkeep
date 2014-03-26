@@ -30,7 +30,8 @@ exports.saveCustomer = function (req, res) {
         customer.paid= false;
         var donation = {};
         var intholder = 0;
-        
+        logger.logObject({donation_amount: req.body.donation_amount,
+            custom_amount:req.body.custom_amount });
         try {
             intholder = parseInt((req.body.donation_amount || req.body.custom_amount), 10);
             intholder = intholder + 5;
