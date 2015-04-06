@@ -1,0 +1,17 @@
+@import "purecss";
+@import "pure-extras";
+@import "./modules/vars";
+
+body {
+  background: var(--color-back);
+  color:var(--color-front);
+  margin:50px;
+}
+body * {
+      box-sizing: border-box;;
+}
+.app {
+    inherit: .pure-g;
+}
+
+@import "./modules/tables";
