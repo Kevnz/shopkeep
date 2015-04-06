@@ -1,0 +1,5 @@
+.table {
+    inherit: .pure-table;
+    inherit: .pure-table-bordered;
+    inherit: .pure-table-striped;
+}

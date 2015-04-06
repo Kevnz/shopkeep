@@ -1,7 +1,8 @@
 node_modules
 .idea
 .sass-cache
-config/config.json
+config
 newrelic_agent.log
 checkstyle.xml
 report.xml
+npm-debug.log

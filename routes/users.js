@@ -2,9 +2,9 @@
 import express from 'express';
 var router = express.Router();
 
-/* GET home page. */
+/* GET users listing. */
 router.get('/', (req, res) => {
-  res.render('index', { title: 'Adelphos' });
+  res.send('respond with a resource');
 });
 
 export default router;
