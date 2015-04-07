@@ -1,12 +1,11 @@
-let firstName = '', lastName='',displayName='', name='', email = '', photo ='', gender='', auth='google';
+var Joi = require('joi');
+ 
+var schema = {
+    firstName: Joi.string().required().min(1),
+    lastName: Joi.string().required().min(1),
+    email: Joi.email().required()
+};
 
-export default {
-    firstName,
-    lastName,  
-    displayName, 
-    name, 
-    email, 
-    photo, 
-    gender,
-    auth
-}
+var joiModel = require('joi-model');
+ 
+export default joiModel(schema);
