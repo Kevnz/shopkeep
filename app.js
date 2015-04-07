@@ -6,6 +6,7 @@ import favicon from 'serve-favicon';
 import logger from 'morgan';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
+import subdomain from 'express-subdomain';
 
 import routes from './routes/index';
 import users from './routes/users';
