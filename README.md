@@ -1,6 +1,6 @@
-shopkeep
+Shopkeep
 ===
 
-### About
+### Ecommerce solution includes storefront/POS/backoffice.
 
-Write a readme for your app here
+Full ecommerce/store solution. Still a work in progress.
