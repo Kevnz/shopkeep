@@ -1,6 +1,8 @@
 'use strict';
 import SchemaValidator from '../lib/schema-validator';
+
 let v = SchemaValidator.getInstance();
+
 export default class ModelBase {
     constructor(props, schema) {
         this._schema = schema || {};
