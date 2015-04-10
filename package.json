@@ -46,6 +46,7 @@
     "joi": "^6.1.0",
     "joi-model": "0.0.8",
     "joi-react": "^1.0.1",
+    "jsonschema": "^1.0.1",
     "mongo-start": "^1.0.0",
     "morgan": "~1.0.0",
     "passport": "^0.2.1",
