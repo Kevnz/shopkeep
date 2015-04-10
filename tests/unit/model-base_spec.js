@@ -35,12 +35,20 @@ describe('Using the model base', () => {
     	assert.ok(jsonOut.modelName === undefined);
     	done();
     });
-    it('should allow to be saved', function (done) {
+    it('should not allow an invalid model to be saved', function (done) {
         let model = new TestModel({ modelName:'User'});
 
         model.save((err, item) => {
-            console.log(err)
-            assert.ok(item.title === 'Test');
+            assert.ok(err.length > 0);
+            assert.ok(item === null);
+            done();
+        });
+    });
+    it('should allow a valid object to be saved', function (done) {
+        let model = new TestModel({title: 'Test', modelName:'User'});
+        model.save((err, item) => {
+            assert.ok(err===null);
+            assert.ok(item === model);
             done();
         });
     });

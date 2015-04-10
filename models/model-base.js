@@ -10,8 +10,13 @@ export default class ModelBase {
         } 
     }
     save(callback) {
-        var errs = v.validate(this, this._schema);
-        callback(errs, this);
+        var validationResponse = v.validate(this, this._schema);
+        if (validationResponse.errors.length > 0) {
+            callback(validationResponse.errors, null);
+        } else {
+            callback(null, this);
+        }
+        
     }
     toJson(schema) {
         schema = schema || Object.keys(this._schema.properties);
