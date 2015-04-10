@@ -1,25 +1,21 @@
 'use strict';
 import assert from 'assert';
 import ModelBase from '../../models/model-base';
+let testModelSchema = {
+    "id": "/TestModel",
+    "type": "object",
+    "properties": {
+      "modelName": {"type": "string"},
+      "title": {"type": "string"}
+    },
+    "required": ["title"]
+};
+
 
 class TestModel extends ModelBase {
     constructor(props) {
-        super(props);
-    }
-    get modelName() {
-        return this._name;
-    }
-    set modelName(value) {
-        this._name = value;
-    }
-    get title() {
-        return this._title;
-    }
-    set title(value) {
-        this._title = value;
-    }
-    get getOnly(value) {
-        this._title = value;
+        super(props, testModelSchema);
+        
     }
 }
 
@@ -27,10 +23,6 @@ describe('Using the model base', () => {
     it('should construct a new object', (done) => {
 
     	let model = new TestModel({title: 'Test', modelName:'User'});
-        console.log('the model', model);
-        console.log(Object.getOwnPropertyNames(TestModel));
-        console.log(TestModel.name);
-        console.log('Object.keys', Object.keys(model));
     	let jsonOut = model.toJson();
     	assert.ok(jsonOut.title === 'Test');
     	assert.ok(jsonOut.modelName === 'User');
@@ -44,10 +36,11 @@ describe('Using the model base', () => {
     	done();
     });
     it('should allow to be saved', function (done) {
-        let model = new TestModel({title: 'Test', modelName:'User'});
+        let model = new TestModel({ modelName:'User'});
 
-        model.save(() => {
-            assert.ok(this.title === 'Test');
+        model.save((err, item) => {
+            console.log(err)
+            assert.ok(item.title === 'Test');
             done();
         });
     });
