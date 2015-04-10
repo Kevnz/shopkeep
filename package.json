@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node-dev ./bin/www",
+    "model": "node ./bin/model",
     "test": "gulp test",
     "watch": "gulp watch",
     "build": "gulp build",
@@ -47,6 +48,7 @@
     "joi-model": "0.0.8",
     "joi-react": "^1.0.1",
     "jsonschema": "^1.0.1",
+    "minimist": "^1.1.1",
     "mongo-start": "^1.0.0",
     "morgan": "~1.0.0",
     "passport": "^0.2.1",
@@ -59,6 +61,7 @@
     "serve-favicon": "^2.2.0",
     "static-favicon": "~1.0.0",
     "superagent": "^1.1.0",
+    "to-case": "^1.0.0",
     "xtconf": "^1.0.0"
   }
 }
