@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+'use strict';
+require('babel/register');
+let to = require('to-case');
+let path = require('path');
+let fs = require('fs');
+let argv = require('minimist')(process.argv.slice(2));
+
+let app = argv.a;
+let component = to.lower(argv.c);
+let componentName = to.upper(comonent);
+let appFolder = path.join('./apps');
+let reactComponent = `
+import React from 'react';
+
+export default class ${componentName} extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (<div> </div>);
+    }
+}`;
+for (var i = 0; i < properties.length; i++) {
+    var prop = properties[i].split(':');
+    schema.properties[prop[0]] = prop[1];
+}
+reactComponent
+fs.writeFileSync(path.join(appFolder, component + '.js'), reactComponent);
