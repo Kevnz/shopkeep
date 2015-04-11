@@ -1,0 +1,10 @@
+{
+"id": "InvoiceModel",
+"type": "object",
+"properties": {
+"customer": "string",
+"lineItems": "array",
+"dateCreated": "date",
+"status": "object"
+}
+}
