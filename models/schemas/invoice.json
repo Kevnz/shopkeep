@@ -1,10 +1,18 @@
 {
-"id": "InvoiceModel",
-"type": "object",
-"properties": {
-"customer": "string",
-"lineItems": "array",
-"dateCreated": "date",
-"status": "object"
-}
+    "id": "InvoiceModel",
+    "type": "object",
+    "properties": {
+        "customer": {
+            "type": "string"
+        },
+        "lineItems": {
+            "type": "array"
+        },
+        "dateCreated": {
+            "type": "date"
+        },
+        "status": {
+            "type": "object"
+        }
+    }
 }
