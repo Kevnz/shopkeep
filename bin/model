@@ -14,7 +14,7 @@ let schemaDir =  path.join(modelDir, 'schemas');
 let modelName = to.capital(model) +'Model';
 
 let schema = {
-	id: modelName,
+	id: `/${modelName}`,
 	type: 'object',
 	properties: {}
 };
