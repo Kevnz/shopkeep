@@ -38,6 +38,10 @@ for (var prop in schema.properties) {
                 propertyBagRead.push(`\t\t\t\t<div>{this.props.${prop}}</div>`);
                 propertyBagWrite.push(`<input type="text" value={this.props.${prop}} />`);
                 break;
+            case 'objectId':
+                propertyBagRead.push(`\t\t\t\t<div><a href="#" onClick={this.onViewDetails}>View Details</a></div>`);
+                propertyBagWrite.push(`<input type="hidden" value={this.props.${prop}} />`);
+                break;
             default:
                 console.log('default');
         }
