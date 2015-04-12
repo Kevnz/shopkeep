@@ -1,5 +1,5 @@
 {
-    "id": "InvoiceModel",
+    "id": "/InvoiceModel",
     "type": "object",
     "properties": {
         "customer": {
