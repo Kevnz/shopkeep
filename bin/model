@@ -20,14 +20,11 @@ let schema = {
 };
 for (var i = 0; i < properties.length; i++) {
 	var prop = properties[i].split(':');
-	schema.properties[prop[0]] = prop[1];
+	schema.properties[prop[0]] = { type: prop[1]};
 }
 let stringSchema = JSON.stringify(schema);
-let schemaToWrite = stringSchema
-	.replace(/,/ig,',\n')
-	.replace(/{/ig, '{\n')
-	.replace(/:/ig, ': ')
-	.replace(/}}/ig, '\n}\n}');
+
+let schemaToWrite = require('vkbeautify').json(stringSchema);
 fs.writeFileSync(path.join(schemaDir,model + '.json'), schemaToWrite);
 
 let modelJS = `'use strict';
