@@ -28,7 +28,7 @@
       "type": "string"
     },
     "key": {
-      "type": "string"
+      "type": "objectId"
     }
   },
   "required": [
