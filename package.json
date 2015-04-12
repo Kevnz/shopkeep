@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node-dev ./bin/www",
     "model": "node ./bin/model",
+    "component": "node ./bin/react",
     "test": "gulp test",
     "watch": "gulp watch",
     "build": "gulp build",
