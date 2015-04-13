@@ -61,6 +61,7 @@ gulp.task('lint', function() {
         .pipe(plugins.jshint())
         .pipe(plugins.jshint.reporter('default'));
 });
+
 gulp.task('buildcss', function () {
     return gulp.src('./css/style.css')
         .pipe(rework(reworkNPM({ 
