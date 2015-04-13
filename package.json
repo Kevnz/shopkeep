@@ -9,11 +9,15 @@
     "test": "gulp test",
     "watch": "gulp watch",
     "build": "gulp build",
-    "rawmocha": "mocha --compilers js:babel/register ./tests/unit/*.js"
+    "rawmocha": "mocha --compilers js:babel/register ./tests/unit/*.js",
+    "migrate-up": "db-migrate up --config ./config/database.json",
+    "migrate-down": "db-migrate down --config ./config/database.json",
+    "migrate-add": "db-migrate create --config ./config/database.json"
   },
   "devDependencies": {
     "babelify": "^5.0.4",
     "browserify": "^9.0.2",
+    "casual": "^1.4.7",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-babel": "^4.0.0",
@@ -40,6 +44,7 @@
     "babel": "^4.7.13",
     "body-parser": "~1.0.0",
     "cookie-parser": "~1.0.1",
+    "db-migrate": "^0.9.13",
     "debug": "~0.7.4",
     "ejs": "~0.8.5",
     "express": "~4.12.2",
