@@ -2,14 +2,16 @@
 require('babel/register');
 
 var casual = require('casual');
-var db = require('mongo-start');
+var products = require('mongo-start')('products');
 var addProduct = require('./seeds/products').addProduct;
 addProduct(casual);
+var bulk = products.initializeOrderedBulkOp();
 
-var products = db('products');
 for (var i = 0; i < 100; i++) {
     var product = casual.product;
-    console.log('save the product', product);
-    products.save(product);
+    bulk.insert(product)
 }
-process.exit(0);
+bulk.execute(function(err, res) {
+    console.log('Done!');
+    process.exit(0);
+});
