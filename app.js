@@ -10,6 +10,7 @@ import subdomain from 'express-subdomain';
 
 import routes from './routes/index';
 import users from './routes/users';
+import productApi from './routes/api/products';
 import passport from 'passport';
 
 import { OAuth2Strategy }  from 'passport-google-oauth';
@@ -37,7 +38,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
+app.set('query parser', 'extended');
 app.use(favicon(__dirname + '/public/favicons/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -56,12 +57,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/api/products', productApi);
 
 app.get('/auth/google', passport.authenticate('google', { scope: ['https://www.googleapis.com/auth/userinfo.email','https://www.googleapis.com/auth/userinfo.profile'] }));
 
-// Google will redirect the user to this URL after authentication.  Finish
-// the process by verifying the assertion.  If valid, the user will be
-// logged in.  Otherwise, authentication has failed.
 app.get('/auth/google/return', 
   passport.authenticate('google', { successRedirect: '/',
                                     failureRedirect: '/login' }));
