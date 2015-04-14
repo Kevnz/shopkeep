@@ -1,11 +1,14 @@
 'use strict';
 import express from 'express';
 import { allProductsForApiListing } from '../../db/products';
-var router = express.Router();
+import { count } from '../../lib/middleware/aggregates';
 
-/* GET home page. */
-router.get('/', allProductsForApiListing, (req, res) => {
-  res.send(req.apiData.products);
+var router = express.Router();
+let productCount = count('products');
+
+/* GET product listing. */
+router.get('/', productCount, allProductsForApiListing, (req, res) => {
+    res.send(req.apiData.products);
 });
 
 export default router;
