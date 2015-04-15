@@ -63,7 +63,7 @@ gulp.task('lint', function() {
 });
 
 gulp.task('buildcss', function () {
-    return gulp.src('./css/style.css')
+    return gulp.src('./css/shopping.css')
         .pipe(rework(reworkNPM({ 
             shim: { 
                 'purecss': 'build/pure.css'
@@ -84,7 +84,7 @@ gulp.task('buildcss', function () {
 
 gulp.task('buildjs', function () {
  
-    return browserify({ entries:['./app/app.js'], debug: true })
+    return browserify({ entries:['./apps/shopping/app.js'], debug: true })
         .transform(babelify.configure({
           experimental: false
         })) 
