@@ -12,7 +12,16 @@ let component = to.lower(argv.c);
 let schemaFile = `${component}.json`;
 let schemaPath = path.join('./models/schemas', schemaFile);
 console.log(schemaPath);
-let schema = require('../'+schemaPath);
+
+let schemaExists = false;
+try {
+    fs.statSync(schemaPath);
+    schemaExists = true;
+} catch (err) {
+console.log('in that catch');
+}
+
+let schema = schemaExists ? require('../'+schemaPath) : { properties : {}};
 
 
 let componentName = to.capital(component);
