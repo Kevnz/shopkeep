@@ -1,0 +1,12 @@
+{
+    "id": "/CartModel",
+    "type": "object",
+    "properties": {
+        "customer": {
+            "type": "string"
+        },
+        "items": {
+            "type": "array"
+        }
+    }
+}
