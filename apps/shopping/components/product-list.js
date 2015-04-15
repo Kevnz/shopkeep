@@ -3,9 +3,12 @@ import Product from './product';
 export default class ProductList extends React.Component {
     constructor(props) {
         super(props);
+
     }
     render() {
-        let productNodes = this.state.settings.map((product) => {
+        console.log(this.state);
+        console.log(this.props);
+        let productNodes = this.props.products.products.map((product) => {
             return (<Product product={product} />)
         })
         return (
