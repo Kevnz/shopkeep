@@ -8,7 +8,7 @@ require("babel/register");
 var app = require('../app');
 var debug = require('debug')('shopkeep:server');
 var http = require('http');
-
+var routeListing = require('../utils/routes').routeListing
 /**
  * Get port from environment and store in Express.
  */
@@ -19,7 +19,8 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
-
+ console.log('//')
+routeListing(app._router.stack, '');
 var server = http.createServer(app);
 
 /**
