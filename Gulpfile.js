@@ -61,12 +61,19 @@ gulp.task('lint', function() {
         .pipe(plugins.jshint())
         .pipe(plugins.jshint.reporter('default'));
 });
+gulp.task('fonts', function () {
+    return gulp.src('./node_modules/font-awesome/fonts/*')
+        .pipe(gulp.dest('./public/fonts'));
 
-gulp.task('buildcss', function () {
+});
+gulp.task('buildcss', ['fonts'], function () {
     return gulp.src('./css/shopping.css')
-        .pipe(rework(reworkNPM({ 
+        .pipe(rework(reworkNPM({
+            alias: { 'responsive-grids': './node_modules/purecss/build/grids-responsive.css' },
             shim: { 
-                'purecss': 'build/pure.css'
+                'purecss': 'build/pure.css',
+                'purecss/grids-responsive': 'build/grids-responsive.css',
+                'font-awesome' : 'css/font-awesome.css'
             }}),
             vars(), 
             inherit(),
