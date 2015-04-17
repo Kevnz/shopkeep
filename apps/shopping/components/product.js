@@ -2,7 +2,8 @@
 import React from 'react';
 import ImageDisplay from './image-display';
 import ActionCreators from '../actions/action-creators';
-  
+import { Router, Route, RouteHandler, Link } from 'react-router';
+
 export default class Product extends React.Component {
     constructor(props) {
         super(props);
@@ -18,7 +19,7 @@ export default class Product extends React.Component {
         let product = this.props.product;
         return (
             <div className="product-listing"> 
-                <h3>{product.name}</h3>
+                <h3><Link to={'/product/' +product.slug}>{product.name}</Link></h3>
                 <ImageDisplay images={product.images} />
                 <div>${product.price}</div>
                 <button className="btn-add" onClick={this.addToBasket}>Add to cart</button> 
@@ -26,3 +27,6 @@ export default class Product extends React.Component {
             );
     }
 }
+Product.contextTypes = {
+  router: React.PropTypes.func
+};
