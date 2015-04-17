@@ -1,4 +1,6 @@
+'use strict';
 import React from 'react';
+import { Router, Route, RouteHandler, Link } from 'react-router';
 
 export default class TopMenu extends React.Component {
     constructor(props) {
