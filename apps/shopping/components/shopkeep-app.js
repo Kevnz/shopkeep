@@ -4,9 +4,19 @@ import ProductStore from '../stores/product-store';
 import CartStore from '../stores/cart-store';
 import ProductList from './product-list';
 import TopMenu from './top-menu';
+import Router from 'react-router';
+import mixin from 'react-mixin';
+import ListenerMixin from 'alt/mixins/ListenerMixin'
+
+let DefaultRoute = Router.DefaultRoute;
+let Link = Router.Link;
+let Route = Router.Route;
+let RouteHandler = Router.RouteHandler;
+
+
 function _getStateFromStores () {
     console.log('_getStateFromStores');
-    var returnState = {
+    let returnState = {
         products: ProductStore.getState(),
         cart: CartStore.getState()
     };
@@ -18,6 +28,7 @@ export default class Shopkeep extends React.Component {
     constructor(props) {
         super(props);
         this.state = _getStateFromStores();
+
     }
     componentDidMount () {
         ProductStore.listen(this._onChange.bind(this));
@@ -30,10 +41,11 @@ export default class Shopkeep extends React.Component {
     render() {
         return (
             <div>
-                <TopMenu cartCount={this.state.cart.count} />
-            <div className="app">
-                <ProductList products={this.state.products}></ProductList>
-            </div>
+                <TopMenu cartCount={this.state.cart.count}></TopMenu>
+                <div className="app">
+                    <RouteHandler {...this.state} />
+                    
+                </div>
             </div>
         );
     }
@@ -42,3 +54,7 @@ export default class Shopkeep extends React.Component {
         this.setState(_getStateFromStores());
     }
 }
+Shopkeep.contextTypes = {
+  router: React.PropTypes.func
+};
+mixin(Shopkeep.prototype, ListenerMixin);
