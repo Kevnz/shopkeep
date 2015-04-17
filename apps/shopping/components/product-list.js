@@ -2,6 +2,7 @@ import React from 'react';
 import Product from './product';
 export default class ProductList extends React.Component {
     constructor(props) {
+        console.log('product list ctor');
         super(props);
 
     }
@@ -18,3 +19,6 @@ export default class ProductList extends React.Component {
             );
     }
 }
+ProductList.contextTypes = {
+  router: React.PropTypes.func
+};
