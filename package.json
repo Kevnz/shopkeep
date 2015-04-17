@@ -10,13 +10,17 @@
     "watch": "gulp watch",
     "build": "gulp build",
     "js": "gulp buildjs",
+    "rr": "gulp routerjs",
     "css": "gulp buildcss",
+    "bundle": "browserify -r react --standalone react > ./public/js/react.js",
     "rawmocha": "mocha --compilers js:babel/register ./tests/unit/*.js",
     "migrate-up": "db-migrate up --config ./config/database.json",
     "migrate-down": "db-migrate down --config ./config/database.json",
     "migrate-add": "db-migrate create --config ./config/database.json"
   },
   "devDependencies": {
+    "babel-core": "^5.1.10",
+    "babel-loader": "^5.0.0",
     "babelify": "^5.0.4",
     "browserify": "^9.0.2",
     "casual": "^1.4.7",
@@ -41,7 +45,8 @@
     "rework-npm": "^1.0.0",
     "rework-vars": "^3.1.1",
     "testem": "^0.7.5",
-    "vinyl-source-stream": "^1.0.0"
+    "vinyl-source-stream": "^1.0.0",
+    "webpack": "^1.8.5"
   },
   "dependencies": {
     "accounting": "^0.4.1",
@@ -72,6 +77,8 @@
     "pure-typography": "^1.0.0",
     "purecss": "^0.6.0",
     "react": "^0.13.1",
+    "react-mixin": "^1.2.0",
+    "react-router": "^0.13.2",
     "serve-favicon": "^2.2.0",
     "static-favicon": "~1.0.0",
     "superagent": "^1.1.0",
