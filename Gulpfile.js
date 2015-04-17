@@ -92,6 +92,7 @@ gulp.task('buildcss', ['fonts'], function () {
 gulp.task('buildjs', function () {
  
     return browserify({ entries:['./apps/shopping/app.js'], debug: true })
+        .ignore('react')
         .transform(babelify.configure({
           experimental: false
         })) 
@@ -107,5 +108,26 @@ gulp.task('buildjs', function () {
             console.log('ended');
         });
 });
+
+gulp.task('routerjs', function () {
+ 
+    return browserify({ entries:['./apps/shopping/index.js'], debug: true })
+        //.exclude('react')
+        .transform(babelify.configure({
+          experimental: false
+        })) 
+        .bundle()
+        .on('error', function (e) {
+            console.log('browserify error');
+            console.log(arguments);
+            throw e;
+        })
+        .pipe(source('app.js'))
+        .pipe(gulp.dest('./public/js')) 
+        .on('end', function () {
+            console.log('ended');
+        });
+});
+
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['lint','nodemon', 'watch']);
