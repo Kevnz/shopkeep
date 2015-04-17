@@ -11,9 +11,15 @@ class ProductStore {
         console.log(products);
         this.products = products.items;
     }
-    onProductSelected (product) {
+    onProductSelected (productKey) {
         console.log('page');
-        this.selectedProduct = product;
+        this.selectedProduct = this.products.filter((item) => item.slug === productKey)[0];
+    }
+    getSelectedProduct (slug) {
+        let productsFiltered = this.products.filter((item) => {
+            return item.slug === slug;
+        });
+        this.selectedProduct = productsFiltered[0];
     }
 }
 
