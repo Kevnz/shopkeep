@@ -54,6 +54,7 @@ app.use(session({
     saveUninitialized: false,
     store: new MongoSession()
 }));
+
 app.use(passport.initialize());
 app.use(passport.session());
 
