@@ -11,8 +11,8 @@ export default class TopMenu extends React.Component {
         let countDisplay = this.props.cartCount === 0 ? '': this.props.cartCount;
         return (
             <div className="top-bar"> 
-                <a href="#"className="top-bar__logo">Shopkeep</a>
-                <a href="#" className="top-bar__cart"> {countDisplay}</a>
+                <Link to='/' className="top-bar__logo">Shopkeep</Link>
+                <Link to='/checkout' className="top-bar__cart"> {countDisplay}</Link>
             </div>
             );
     }
