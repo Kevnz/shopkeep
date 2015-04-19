@@ -14,6 +14,9 @@ class CartStore {
         console.log('onAddToCart');
         this.count++;
     }
+    onReceiveCart(cart) {
+        this.checkout = cart;
+    }
 }
 
 module.exports = alt.createStore(CartStore);
