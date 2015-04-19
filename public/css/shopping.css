@@ -5155,6 +5155,7 @@ body * {
 .top-bar__logo {
   display: inline-block;
   width: 50%;
+  padding-left: 0!important;
 }
 
 .top-bar__cart {

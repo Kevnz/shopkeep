@@ -15,60 +15,12 @@ body * {
 .app {
     inherit: .pure-g;
 }
-.product-listing {
-    inherit: .pure-u-1;
-}
-.checkout {
-    inherit: .pure-u-1;
-}
-@media screen and (min-width: 35.5em) {
-   .product-listing {
-        display: inline-block;
-        zoom: 1;
-        letter-spacing: normal;
-        word-spacing: normal;
-        vertical-align: top;
-        text-rendering: auto;
-        width: 50%;
-    } 
-}
-
-@media screen and (min-width: 48em) { 
-    .product-listing {
-        display: inline-block;
-        zoom: 1;
-        letter-spacing: normal;
-        word-spacing: normal;
-        vertical-align: top;
-        text-rendering: auto;
-        width: 33.3333%;
-    }
-}
-.product-listing img {
-    max-width:200px;
-}
 .btn-add {
     inherit: .pure-button;
     inherit: .pure-button-primary;
     inherit: .pure-button-small;
 }
-.top-bar {
-    inherit: .pure-menu;
-    inherit: .pure-menu-horizontal;
-}
-.top-bar__logo {
-    inherit: .pure-menu-heading;
-    inherit: .pure-menu-link;
-    display: inline-block;
-    width: 50%;
-}
-.top-bar__cart {
-    inherit: .pure-menu-heading;
-    inherit: .pure-menu-link; 
-        display: inline-block;
-    width: 50%;
-    text-align: right;
-    inherit: .fa;
-    inherit: .fa-shopping-cart;
-}
+@import "./modules/checkout";
+@import "./modules/product-listing";
+@import "./modules/top-bar";
 @import "./modules/tables";
