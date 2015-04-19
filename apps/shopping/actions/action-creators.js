@@ -10,12 +10,16 @@ class ActionsCreators {
                 'receiveProduct',
                 'productSelected',
                 'removeFromCart',
-                'checkoutStarted'
+                'receiveCart'
             );
     }
     addToCart(productKey) {
         this.dispatch(productKey);
         api.addToCart(productKey);
+    }
+    checkoutStarted () {
+        this.dispatch('checkout');
+        api.startCheckout();
     }
 
 }
