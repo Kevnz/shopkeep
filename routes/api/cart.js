@@ -1,6 +1,6 @@
 'use strict';
 import express from 'express';
-import { getCartCount } from '../../lib/middleware/carts'; 
+import { getCartCount, getCartItemsFromSession } from '../../lib/middleware/carts'; 
 
 var router = express.Router(); 
 
@@ -14,16 +14,14 @@ router.get('/', (req, res) => {
     
 });
 
-router.post('/checkout/start', (req, res) => {
+router.post('/checkout/start', getCartItemsFromSession, (req, res) => {
     if(!req.session.cart) {
-        req.session.cart = {
-            items: []
-        };
+        res.send(412, 'You have no items in your cart');
+        return;
     }
-    req.session.cart.items.push({product: req.body.product, quantity: req.body.quantity});
-    console.log(req.session);
-
-    res.send(200);
+    
+    
+    res.send(req.apiData.cart);
 });
 
 router.post('/add', (req, res) => {
