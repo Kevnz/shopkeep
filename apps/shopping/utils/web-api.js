@@ -34,5 +34,15 @@ export default {
                 console.log(res);
                 ActionCreators.receiveProduct(res.body);
             });
+    },
+    startCheckout: function () {
+        console.log('startCheckout');
+        request.post(CART_URI + '/checkout/start')
+            .send({test:'test'})
+            .end((err, res) => {
+                console.log('back');
+                console.log(res);
+                ActionCreators.receiveCart(res.body);
+            });
     }
 };
