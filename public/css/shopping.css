@@ -484,7 +484,8 @@ th {
 /*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
 
 .pure-g,
-.app {
+.app,
+.checkout__line-item {
   letter-spacing: -0.31em;
   /* Webkit: collapse white-space between units */
   *letter-spacing: normal;
@@ -535,7 +536,8 @@ th {
 
 .opera-only :-o-prefocus,
 .pure-g,
-.app {
+.app,
+.checkout__line-item {
   word-spacing: -0.43em;
 }
 
@@ -556,7 +558,8 @@ this the same font stack that Normalize.css sets for the `body`.
 */
 
 .pure-g [class *= "pure-u"],
-.app [class *= "pure-u"] {
+.app [class *= "pure-u"],
+.checkout__line-item [class *= "pure-u"] {
   font-family: sans-serif;
 }
 
@@ -606,8 +609,12 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-u-22-24,
 .pure-u-23-24,
 .pure-u-24-24,
-.product-listing,
-.checkout {
+.checkout,
+.checkout__line-items,
+.checkout__line-item div:first-child,
+.checkout__line-item div:last-child,
+.checkout__line-item div:nth-child(2),
+.product-listing {
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -623,7 +630,8 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 .pure-u-1-12,
-.pure-u-2-24 {
+.pure-u-2-24,
+.checkout__line-item div:nth-child(2) {
   width: 8.3333%;
   *width: 8.3023%;
 }
@@ -651,7 +659,8 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 .pure-u-1-4,
-.pure-u-6-24 {
+.pure-u-6-24,
+.checkout__line-item div:last-child {
   width: 25%;
   *width: 24.9690%;
 }
@@ -718,7 +727,8 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 .pure-u-2-3,
-.pure-u-16-24 {
+.pure-u-16-24,
+.checkout__line-item div:first-child {
   width: 66.6667%;
   *width: 66.6357%;
 }
@@ -771,13 +781,15 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-u-1-1,
 .pure-u-5-5,
 .pure-u-24-24,
-.product-listing,
-.checkout {
+.checkout,
+.checkout__line-items,
+.product-listing {
   width: 100%;
 }
 
 .pure-button,
-.btn-add {
+.btn-add,
+.checkout__btn {
   /* Structure */
   display: inline-block;
   zoom: 1;
@@ -797,7 +809,8 @@ this the same font stack that Normalize.css sets for the `body`.
 /* Firefox: Get rid of the inner focus border */
 
 .pure-button::-moz-focus-inner,
-.btn-add::-moz-focus-inner {
+.btn-add::-moz-focus-inner,
+.checkout__btn::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -805,7 +818,8 @@ this the same font stack that Normalize.css sets for the `body`.
 /*csslint outline-none:false*/
 
 .pure-button,
-.btn-add {
+.btn-add,
+.checkout__btn {
   font-family: inherit;
   font-size: 100%;
   padding: 0.5em 1em;
@@ -826,19 +840,23 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-button:hover,
 .pure-button:focus,
 .btn-add:hover,
-.btn-add:focus {
+.btn-add:focus,
+.checkout__btn:hover,
+.checkout__btn:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
   background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
 }
 
 .pure-button:focus,
-.btn-add:focus {
+.btn-add:focus,
+.checkout__btn:focus {
   outline: 0;
 }
 
 .pure-button-active,
 .pure-button:active,
-.btn-add:active {
+.btn-add:active,
+.checkout__btn:active {
   box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
   border-color: #000\9;
 }
@@ -866,7 +884,8 @@ this the same font stack that Normalize.css sets for the `body`.
 /* Firefox: Get rid of the inner focus border */
 
 .pure-button::-moz-focus-inner,
-.btn-add::-moz-focus-inner {
+.btn-add::-moz-focus-inner,
+.checkout__btn::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -1884,7 +1903,8 @@ striping:
   color: white;
 }
 
-.pure-button-success {
+.pure-button-success,
+.checkout__btn {
   background: rgb(54, 197, 71);
   color: white;
 }
@@ -5122,6 +5142,20 @@ body {
 
 body * {
   box-sizing: border-box;
+}
+
+.checkout__line-items {
+  padding-top: 10px;
+}
+
+.checkout__line-item div:last-child {
+  text-align: right;
+}
+
+.checkout__total {
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 35.5em) {

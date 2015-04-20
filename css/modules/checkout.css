@@ -1,3 +1,29 @@
 .checkout {
     inherit: .pure-u-1;
 }
+.checkout__line-items {
+    inherit: .pure-u-1;
+    padding-top: 10px;
+}
+.checkout__line-item {
+    inherit: .pure-g;
+}
+.checkout__line-item div:first-child {
+    inherit: .pure-u-2-3;
+}
+.checkout__line-item div:last-child {
+    inherit: .pure-u-1-4;
+    text-align: right;
+}
+.checkout__line-item div:nth-child(2) {
+    inherit: .pure-u-1-12;
+}
+.checkout__total {
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+.checkout__btn {
+    inherit: .pure-button;
+    inherit: .pure-button-success;
+}
