@@ -68,6 +68,7 @@
     "jsonschema": "^1.0.1",
     "jsonschema-extra": "^1.2.0",
     "minimist": "^1.1.1",
+    "money-math": "^1.2.0",
     "mongo-start": "^1.0.0",
     "mongojs": "^0.18.2",
     "morgan": "~1.0.0",
