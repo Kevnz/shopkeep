@@ -7,13 +7,11 @@ import logger from 'morgan';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import subdomain from 'express-subdomain';
-
 import routes from './routes/index';
 import users from './routes/users';
 import productApi from './routes/api/products';
 import cartAPI from './routes/api/cart';
 import passport from 'passport';
-
 import { OAuth2Strategy }  from 'passport-google-oauth';
 import xtconf from 'xtconf';
 import session from 'express-session';
