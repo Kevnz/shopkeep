@@ -19,8 +19,6 @@ router.post('/checkout/start', getCartItemsFromSession, (req, res) => {
         res.send(412, 'You have no items in your cart');
         return;
     }
-    
-    
     res.send(req.apiData.cart);
 });
 
@@ -39,7 +37,6 @@ router.post('/add', (req, res) => {
     });
     if (inCartAlready) {
         req.session.cart.items.push({product: req.body.product, quantity: req.body.quantity});
-            
     }
     console.log(req.session);
 
