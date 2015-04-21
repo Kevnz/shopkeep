@@ -72,6 +72,7 @@
     "mongo-start": "^1.0.0",
     "mongojs": "^0.18.2",
     "morgan": "~1.0.0",
+    "newforms": "^0.12.1",
     "passport": "^0.2.1",
     "passport-google-oauth": "^0.2.0",
     "pluralize": "^1.1.2",
