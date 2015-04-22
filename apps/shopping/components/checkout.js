@@ -27,7 +27,7 @@ export default class Checkout extends React.Component {
                     {lineItems}
                 </div>
                 <div className="checkout__total">Total: {accounting.formatMoney(totalCost)} </div>
-                <Link to="/details" className="checkout__btn">Checkout</Link>
+                <Link to="details" className="checkout__btn">Checkout</Link>
             </div>
             );
     }
