@@ -10,8 +10,8 @@ export default (
     <Route name='main' path='/' handler={Shopkeep}>
         <DefaultRoute name="productlist" handler={Products} />
         <Route name='productlisting' path='/product/:slug' handler={ProductDetail} />
-        <Route name='checkout' handler={Checkout}>
-            <Route name="details" handler={CheckoutDetails} />
-        </Route>
+        <Route name='checkout' handler={Checkout} />
+        <Route name="details" handler={CheckoutDetails} />
+        
     </Route>
 );
