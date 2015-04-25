@@ -9,6 +9,7 @@ import Forms from 'newforms';
 export default class CheckoutDetails extends React.Component {
     constructor(props) {
         super(props);
+        this._onSubmit = this._onSubmit.bind(this);
     }
     componentDidMount () {
 
@@ -28,5 +29,8 @@ export default class CheckoutDetails extends React.Component {
 
             </div>
             );
+    }
+    _onSubmit() {
+
     }
 }
