@@ -8,6 +8,7 @@
     "component": "node ./bin/react",
     "test": "gulp test",
     "watch": "gulp watch",
+    "watchify": "gulp watchify",
     "build": "gulp build",
     "js": "gulp buildjs",
     "rr": "gulp routerjs",
@@ -46,6 +47,7 @@
     "rework-vars": "^3.1.1",
     "testem": "^0.7.5",
     "vinyl-source-stream": "^1.0.0",
+    "watchify": "^3.2.1",
     "webpack": "^1.8.5"
   },
   "dependencies": {
