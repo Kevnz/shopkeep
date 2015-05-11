@@ -7,7 +7,6 @@ var api = require('./utils/web-api');
 api.getAllProducts();
 api.getCartCount();
 
-
 router.run((Handler, state) => {
     React.render(<Handler {...state} />, appElement);
 });
