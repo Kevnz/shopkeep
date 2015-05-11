@@ -8,7 +8,8 @@ var gulp = require('gulp'),
   vars = require('rework-vars'),
   imprt = require('rework-import'),
   reworkNPM = require('rework-npm'),
-  babelify = require('babelify');
+  babelify = require('babelify'),
+  watchify = require('watchify');
 var plugins = require('gulp-load-plugins')();
 
 gulp.task('coverage', function () {
@@ -43,11 +44,11 @@ gulp.task('test', function () {
 gulp.task('watch', function() {
     var server = plugins.livereload();
 
-    plugins.watch('./app/**/*.*' , function(file) {
-        gulp.start('buildjs');
+    gulp.watch('./apps/**/**.*' , function(file) {
+        gulp.start('watchify');
         server.changed(file.path);
     });
-    plugins.watch( './css/**/*.css', function(file) {
+    gulp.watch( './css/**/*.css', function(file) {
         gulp.start('buildcss');
         server.changed(file.path);
     });
@@ -109,24 +110,42 @@ gulp.task('buildjs', function () {
         });
 });
 
-gulp.task('routerjs', function () {
- 
-    return browserify({ entries:['./apps/shopping/index.js'], debug: true })
-        //.exclude('react')
-        .transform(babelify.configure({
+var browserifyBundle = function (b) {
+    
+
+        return b.transform(babelify.configure({
           experimental: false
         })) 
-        .bundle()
-        .on('error', function (e) {
-            console.log('browserify error');
-            console.log(arguments);
-            throw e;
-        })
-        .pipe(source('app.js'))
+        .bundle();
+
+};
+var gulpifyBundle = function (b) {
+        return b.pipe(source('app.js'))
         .pipe(gulp.dest('./public/js')) 
         .on('end', function () {
             console.log('ended');
         });
+};
+gulp.task('watchify', function () {
+    var b = browserify({ entries:['./apps/shopping/index.js'], debug: true });
+    var wb = browserifyBundle(watchify(b));
+    wb.on('update', function(){
+      gulpifyBundle(b);
+    });
+
+
+});
+
+gulp.task('routerjs', function () {
+ 
+    var b = browserify({ entries:['./apps/shopping/index.js'], debug: true });
+    return gulpifyBundle(browserifyBundle(b).on('error', function (e) {
+            console.log('browserify error');
+            console.log(arguments);
+            throw e;
+        }));
+
+
 });
 
 // The default task (called when you run `gulp` from cli)
