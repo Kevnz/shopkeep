@@ -1,3 +1,4 @@
+'use strict';
 import React from 'react';
 
 export default class Cart extends React.Component {
@@ -7,8 +8,9 @@ export default class Cart extends React.Component {
     render() {
         return (
             <div> 
-                <div><i className="fa fa-shopping-cart"></i>
-</div> 
+                <div>
+                    <i className="fa fa-shopping-cart"></i>
+                </div> 
             </div>
             );
     }
