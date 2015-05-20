@@ -18,7 +18,7 @@ describe('TopMenu component', function(){
     });
 
     it('should have the count ', function() {  
-        assert(this.cartLink.getDOMNode().querySelector('span:last-child').innerHTML == '5');
+        assert(this.cartLink.getDOMNode().querySelector('span:last-child').innerHTML === '5');
     });
 
 
