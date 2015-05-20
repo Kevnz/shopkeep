@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 
-export default class Customer extends React.Component {
+export default class ImageDisplay extends React.Component {
     constructor(props) {
         super(props);
     }
