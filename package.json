@@ -2,6 +2,9 @@
   "name": "shopkeep",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "iojs": "2.0.x"
+  },
   "scripts": {
     "start": "node-dev ./bin/www",
     "model": "node ./bin/model",
