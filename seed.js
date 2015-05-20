@@ -11,6 +11,7 @@ var bulk = products.initializeOrderedBulkOp();
 for (var i = 0; i < 100; i++) {
     var product = casual.product;
     product.slug = to.slug(product.name);
+    console.log(product);
     bulk.insert(product)
 }
 bulk.execute(function(err, res) {

@@ -10,19 +10,19 @@ export function addProduct (casual) {
             price: casual.integer(1,213) + '.' + casual.integer(10,99),
             images: [{
                 name:casual.words(4), 
-                url: 'http://placehold.it/350x150'+ casual.rgb_hex.replace('#','/') + casual.rgb_hex.replace('#','/') 
+                url: 'http://lorempixel.com/400/200/technics' 
             },
             {
                 name:casual.words(5),
-                url: 'http://placehold.it/350x150'+ casual.rgb_hex.replace('#','/') + casual.rgb_hex.replace('#','/') 
+                url: 'http://lorempixel.com/400/200/cats/'
             },
             {
                 name:casual.words(5),
-                url: 'http://placehold.it/350x150'+ casual.rgb_hex.replace('#','/') + casual.rgb_hex.replace('#','/') 
+                url:  'http://lorempixel.com/400/200/sports' 
             },
             {
                 name:casual.words(5),
-                url: 'http://placehold.it/350x150'+ casual.rgb_hex.replace('#','/') + casual.rgb_hex.replace('#','/') 
+                url: 'http://lorempixel.com/400/200/transport' 
             }
             ]
         };
