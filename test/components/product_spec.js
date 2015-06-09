@@ -2,9 +2,9 @@
 var React = require('react/addons'),
         assert = require('assert'),
         TestUtils = React.addons.TestUtils,
-        TopMenu = require('../../apps/shopping/components/top-menu');
+        Product = require('../../apps/shopping/components/product');
 var stubRouterContext = require('../utils/router-stub.js');
-var Subject = stubRouterContext(TopMenu, {cartCount: '5'});
+var Subject = stubRouterContext(TopMenu, {});
         
 describe('Product component', function(){
     before('render and locate product element', function() {
