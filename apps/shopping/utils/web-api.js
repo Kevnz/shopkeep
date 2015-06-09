@@ -27,12 +27,12 @@ export default {
                 ActionCreators.receiveCartCount(res.body.count);
             }); 
     },
-    addToCart: function (id, quantity = 1) {
+    addToCart: function (product, quantity = 1) {
         request.post(CART_URI + '/add')
-            .send({ product: id, quantity: quantity })
+            .send({ product: product, quantity: quantity })
             .end((err, res) => { 
                 console.log(res);
-                ActionCreators.receiveProduct(res.body);
+                ActionCreators.itemAddedToCart(res.body);
             });
     },
     startCheckout: function () {

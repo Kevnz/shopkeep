@@ -8,18 +8,17 @@ export default class Product extends React.Component {
     constructor(props) {
         super(props);
         this.addToBasket=this.addToBasket.bind(this);
-        console.log(this);
     }
     addToBasket(e) {
         e.preventDefault();
         console.log('addToBasket');
-        ActionCreators.addToCart(this.props.product._id);
+        ActionCreators.addToCart(this.props.product);
     }
     render() {
         let product = this.props.product;
         return (
             <div className="product-listing"> 
-                <h3><Link to={'/product/' +product.slug}>{product.name}</Link></h3>
+                <h3><Link to={'/product/' + product.slug}>{product.name}</Link></h3>
                 <ImageDisplay images={product.images} />
                 <div>${product.price}</div>
                 <button className="btn-add" onClick={this.addToBasket}>Add to cart</button> 

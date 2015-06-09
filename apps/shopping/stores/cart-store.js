@@ -14,6 +14,9 @@ class CartStore {
         console.log('onAddToCart');
         this.count++;
     }
+    onItemAddedToCart(contents) {
+        this.cartContents = contents;
+    }
     onReceiveCart(cart) {
         this.checkout = cart;
     }

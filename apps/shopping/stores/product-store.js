@@ -8,7 +8,7 @@ class ProductStore {
         this.products = [];
     }
     onReceiveProducts (products) {
-        console.log(products);
+        console.log('onReceiveProducts', products);
         this.products = products.items;
     }
     onProductSelected (productKey) {
