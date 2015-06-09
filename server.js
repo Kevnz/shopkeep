@@ -5,7 +5,7 @@
  */
 require("babel/register");
 
-var app = require('../app');
+var app = require('./app');
 var debug = require('debug')('shopkeep:server');
 var http = require('http');
 var routeListing = require('../utils/routes').routeListing
