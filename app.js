@@ -19,6 +19,7 @@ import processor from './auth/processor';
 import { get, put, del, post } from './resources/users';
 import { routeListing } from './utils/routes';
 import MongoSession from 'express-mongo-session';
+import GoogleAnalytics from 'ga';
 
 let conf = xtconf();
 
@@ -59,18 +60,20 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-routeListing(routes.stack, '');
+//routeListing(routes.stack, '');
 app.use('/users', users);
-routeListing(users.stack, '/users');
+//routeListing(users.stack, '/users');
 app.use('/api/products', productApi);
-routeListing(productApi.stack, '/api/products');
+//routeListing(productApi.stack, '/api/products');
 app.use('/api/cart', cartAPI);
-routeListing(cartAPI.stack, '/api/cart');
+//routeListing(cartAPI.stack, '/api/cart');
 app.get('/auth/google', passport.authenticate('google', { scope: ['https://www.googleapis.com/auth/userinfo.email','https://www.googleapis.com/auth/userinfo.profile'] }));
 
 app.get('/auth/google/return', 
   passport.authenticate('google', { successRedirect: '/',
                                     failureRedirect: '/login' }));
+console.log('routes loaded');
+routeListing(app._router.stack, '');
 
 /// catch 404 and forwarding to error handler
 app.use((req, res, next) => {
@@ -85,6 +88,16 @@ app.use((req, res, next) => {
 // will print stacktrace
 if (app.get('env') === 'development') {
     app.use((err, req, res, next) => {
+        var ua = conf.get('ga');
+        var host = 'shopkeep.herokuapp.com';
+        var ga = new GoogleAnalytics(ua, host);
+        ga.trackPage(req.path);
+        ga.trackEvent({
+            category: 'Errors',
+            action: 'Errors',
+            label: err.message,
+            value: err
+        });
         res.status(err.status || 500);
         res.render('error', {
             message: err.message,
@@ -105,6 +118,6 @@ app.use((err, req, res, next) => {
     next();
 });
 
-
+//console.log(app);
 
 export default app;

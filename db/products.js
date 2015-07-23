@@ -36,3 +36,13 @@ export function productCount (req, res, next) {
         next();
     });
 }
+
+export function productsById (ids, callback) {
+    console.log('productsById') 
+    let ObjectId = require('mongo-start/mongojs').ObjectId;
+    let objectIds = ids.map(id=> ObjectId(id));
+    console.log(objectIds);
+    let query = { _id : { $in: objectIds }};
+    console.log(query);
+    products.find(query, callback);
+}

@@ -2,6 +2,7 @@
 import express from 'express';
 import { getCartCount, getCartItemsFromSession } from '../../lib/middleware/carts'; 
 import BigNumber from 'bignumber.js';
+import { productsById } from '../../db/products';
 var router = express.Router(); 
 
 /* GET product listing. */
@@ -23,35 +24,52 @@ router.post('/checkout/start', getCartItemsFromSession, (req, res) => {
 });
 
 router.post('/add', (req, res) => {
+    try {
     let { product, quantity } = req.body;
+    let cart;
     if(!req.session.cart) {
-        req.session.cart = {
+        req.session.cart = {};
+        cart = {
             items: []
         };
+    } else {
+        cart = req.session.cart;
     }
+    
     let inCartAlready = false;
-    req.session.cart.items.forEach((item) => {
+    cart.items.forEach((item) => {
         if(item.product._id === product._id) {
             item.quantity = item.quantity + quantity;
             inCartAlready = true;
         }
     });
     if (!inCartAlready) {
-        req.session.cart.items.push({product: product, quantity: quantity});
+        cart.items.push({product: product._id, quantity: quantity});
     }
- 
-    var costs = req.session.cart.items.map(( item) => {
-        return (new BigNumber(item.product.price)).mul(item.quantity).toString();
-    }); 
-    console.log('costs',costs); 
+    console.log(productsById);
+    productsById(cart.items.map(item=>item._id), (err, products) => {
+        if(err) {
+            console.log('err', err);
 
-    req.session.cart.cost = costs.reduce(function(previousValue, currentValue, index, array) {
-        return (new BigNumber(previousValue)).add(currentValue).toString();
+        }
+
+        let costs = products.map(( item) => {
+            return (new BigNumber(item.product.price)).mul(item.quantity).toString();
+        });
+        console.log('costs', costs); 
+
+        req.session.cart.cost = costs.reduce(function(previousValue, currentValue, index, array) {
+            return (new BigNumber(previousValue)).add(currentValue).toString();
+        });
+        req.session.cart.items = products;
+        console.log(req.session.cart);
+        
+        res.status(200).send(req.session.cart);
     });
 
-    console.log(req.session.cart);
-    
-    res.status(200).send(req.session.cart);
-
+    }catch (err) {
+        console.log(err);
+        res.status(500).send(err);
+    }
 });
 export default router;

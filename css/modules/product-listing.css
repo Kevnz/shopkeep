@@ -1,7 +1,9 @@
 .product-listing {
     inherit: .pure-u-1;
 }
-
+h3 a {
+    color:# 222222;
+}
 @media screen and (min-width: 35.5em) {
    .product-listing {
         display: inline-block;
