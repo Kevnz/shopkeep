@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+  prometheus:
+    image: prom/prometheus
+    environment:
+      - GF_SECURITY_ADMIN_USER=true
+      - GF_SECURITY_ADMIN_PASSWORD=secret
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+  mongodb:
+    image: mongo:3.4
+    ports:
+      - "27018:27017"
+
+  shopkeep.services.user:
+    build:
+      context: .
+      dockerfile: ./src/services/user/Dockerfile
+    command: npm run dev
+    volumes:
+      - ./src/services/user/:/appdir/
+    ports:
+      - "3001:3001"
+    links:
+      - mongodb

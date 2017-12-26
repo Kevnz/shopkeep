@@ -1,0 +1,31 @@
+const faker = require('faker');
+const db = require('./db');
+const config = require('xtconf')();
+const util = require('util');
+
+const genUser = () => {
+  return {
+    firstName: faker.name.firstName(),
+    lastName: faker.name.lastName(),
+    email: faker.internet.exampleEmail()
+  };
+};
+setTimeout(async () => {
+  const fakeUsers = [];
+  try {
+    if (!db.users) {
+      await db.createCollection('users');
+    }
+    const users = db.users;
+    let count = 100;
+    while (count > 0) {
+      fakeUsers.push(users.insert(genUser()));
+      count--;
+    }
+    await Promise.all(fakeUsers);
+    process.exit(0);
+  } catch (err) {
+    console.error('Seed Error', err);
+    process.exit(0);
+  }
+}, 10000);

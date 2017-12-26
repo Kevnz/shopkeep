@@ -1,0 +1,20 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:dev": "node index",
+    "dev": "nodemon --exec \"npm run watch:dev\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glue": "^5.0.0",
+    "h2o2": "^7.0.1",
+    "hapi": "^17.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.1"
+  }
+}
