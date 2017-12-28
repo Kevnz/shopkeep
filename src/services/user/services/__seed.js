@@ -10,6 +10,8 @@ const genUser = () => {
     email: faker.internet.exampleEmail()
   };
 };
+
+console.log('SEED USERS NOW');
 setTimeout(async () => {
   const fakeUsers = [];
   try {
@@ -22,7 +24,7 @@ setTimeout(async () => {
       fakeUsers.push(users.insert(genUser()));
       count--;
     }
-    await Promise.all(fakeUsers);
+    await users.insert(fakeUsers);
     process.exit(0);
   } catch (err) {
     console.error('Seed Error', err);

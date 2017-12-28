@@ -1,9 +1,9 @@
-console.log('Start api gateway');
+console.log('Start product service');
 const Glue = require('glue');
-
+const config = require('xtconf')();
 const manifest = {
   server: {
-    port: 4567,
+    port: config.get('port'),
     routes: {
       cors: true
     },
@@ -13,11 +13,15 @@ const manifest = {
   },
   register: {
     plugins: [{
-      plugin: 'h2o2'
-    },{
-      name: 'route-loader',
-      plugin: './plugins/routes'
-    },],
+      name: 'epimetheus',
+      plugin: './plugins/epimetheus'
+    }, {
+      name: 'get-products',
+      plugin: './plugins/get-products',
+      routes: {
+        prefix: '/v1'
+      }
+    }],
     options: {
 
     }
@@ -32,7 +36,7 @@ const startServer = async () => {
   try {
     const server = await Glue.compose(manifest, options);
     await server.start();
-    console.log('hapi entry h2o2 days!');
+    console.log('hapi entry product days!');
   } catch (err) {
     console.error(err);
     process.exit(1);

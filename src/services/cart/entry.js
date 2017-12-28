@@ -1,9 +1,9 @@
-console.log('Start user service');
+console.log('Start cart service');
 const Glue = require('glue');
-
+const config = require('xtconf')();
 const manifest = {
   server: {
-    port: 3001,
+    port: config.get('port'),
     routes: {
       cors: true
     },
@@ -16,8 +16,8 @@ const manifest = {
       name: 'epimetheus',
       plugin: './plugins/epimetheus'
     }, {
-      name: 'get-users',
-      plugin: './plugins/get-users',
+      name: 'carts',
+      plugin: './plugins/carts',
       routes: {
         prefix: '/v1'
       }
@@ -43,7 +43,7 @@ const startServer = async () => {
         return h.continue;
       }
     });
-    console.log('hapi user service has started!');
+    console.log('shopkeep cart service has started!');
   } catch (err) {
     console.error(err);
     process.exit(1);

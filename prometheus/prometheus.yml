@@ -6,3 +6,9 @@ scrape_configs:
   - job_name: 'users'
     target_groups:
       - targets: ['shopkeep.services.user:3001']
+  - job_name: 'products'
+    target_groups:
+      - targets: ['shopkeep.services.products:3002']
+  - job_name: 'carts'
+    target_groups:
+      - targets: ['shopkeep.services.carts:3003']

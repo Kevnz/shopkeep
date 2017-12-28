@@ -1,23 +1,24 @@
-console.log('Start api gateway');
+console.log('Start user service');
 const Glue = require('glue');
 
 const manifest = {
   server: {
-    port: 4567,
+    port: 3001,
     routes: {
       cors: true
-    },
-    router: {
-      stripTrailingSlash: true
     }
   },
   register: {
     plugins: [{
-      plugin: 'h2o2'
-    },{
-      name: 'route-loader',
-      plugin: './plugins/routes'
-    },],
+      name: 'epimetheus',
+      plugin: './plugins/epimetheus'
+    }, {
+      name: 'get-users',
+      plugin: './plugins/get-users',
+      routes: {
+        prefix: '/v1/users'
+      }
+    }],
     options: {
 
     }
@@ -32,7 +33,7 @@ const startServer = async () => {
   try {
     const server = await Glue.compose(manifest, options);
     await server.start();
-    console.log('hapi entry h2o2 days!');
+    console.log('hapi user days index!');
   } catch (err) {
     console.error(err);
     process.exit(1);

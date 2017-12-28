@@ -1,6 +1,6 @@
 FROM node:carbon
 WORKDIR appdir/
-COPY ./src/services/user/package.json .
+COPY ./src/services/user/ .
 
 RUN npm install
 

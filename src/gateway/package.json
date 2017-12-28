@@ -8,7 +8,7 @@
     "dev": "nodemon --exec \"npm run watch:dev\""
   },
   "author": "",
-  "license": "ISC",
+  "license": "Unlicense",
   "dependencies": {
     "glue": "^5.0.0",
     "h2o2": "^7.0.1",

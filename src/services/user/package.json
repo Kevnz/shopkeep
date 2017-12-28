@@ -1,18 +1,20 @@
 {
-  "name": "user",
+  "name": "shopkeep-user-service",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "database": "node services/__seed",
     "watch:dev": "node entry",
-    "predev": "npm run database",
+    "test:watch": "jest --watchAll",
+    "prewatch:dev": "npm run database",
     "dev": "nodemon --exec \"npm run watch:dev\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "docker:dev": "npm run dev & npm run test:watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "Unlicense",
   "dependencies": {
     "epimetheus": "^1.0.55",
     "glue": "^5.0.0",
@@ -23,6 +25,7 @@
   },
   "devDependencies": {
     "faker": "^4.1.0",
+    "jest": "^22.0.4",
     "nodemon": "^1.13.3"
   }
 }

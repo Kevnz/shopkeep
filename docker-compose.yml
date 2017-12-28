@@ -26,7 +26,14 @@ services:
     command: npm run dev
     volumes:
       - ./src/services/user/:/appdir/
-    ports:
-      - "3001:3001"
+    links:
+      - mongodb
+  shopkeep.services.product:
+    build:
+      context: .
+      dockerfile: ./src/services/product/Dockerfile
+    command: npm run dev
+    volumes:
+      - ./src/services/product/:/appdir/
     links:
       - mongodb

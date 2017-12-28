@@ -25,7 +25,8 @@ module.exports = {
     },
     getAll: async () => {
       const users = db.users;
-      const allUsers = await users.find({}).toArray();
+      const allUsers = await users.find({});
+      console.log('users', allUsers);
       return allUsers;
     },
     genAll: async () => {
