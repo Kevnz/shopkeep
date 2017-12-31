@@ -39,6 +39,20 @@ services:
       - shopkeep.services.product
       - shopkeep.services.cart
 
+  shopkeep.apps.storefront:
+    build:
+      context: .
+      dockerfile: ./src/apps/storefront/Dockerfile
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    volumes:
+      - ./src/apps/storefront/:/appdir/
+    ports:
+      - "4001:4001"
+    links:
+      - prometheus
+      - shopkeep.gateway
   shopkeep.services.user:
     build:
       context: .

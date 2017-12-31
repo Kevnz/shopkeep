@@ -5,7 +5,10 @@ const manifest = {
   server: {
     port: config.get('port'),
     routes: {
-      cors: true
+      cors: {
+        origin: ['*'],
+        additionalHeaders: ['cache-control', 'x-requested-with']
+      }
     },
     router: {
       stripTrailingSlash: true

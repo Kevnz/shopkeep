@@ -3,25 +3,14 @@ const register = (server, options) => {
     method: 'GET',
     path: '/',
     handler: (request, h) => {
-      return "yup";
+      return 'nothing to see';
     }
-  });
-  server.route({
-    method: 'GET',
-    path: '/api/v1/users',
-    handler: (request, h)=> {
-      console.log
-      console.log('handle this yo');
-      return h.proxy({ uri: 'http://shopkeep.services.user:3001/v1/users' });
-  }
   });
   server.route({
     method: 'GET',
     path: '/api/v1/users/{routes*}',
     handler: (request, h)=> {
-      console.log('shopkeep.services.user');
-      console.log('handle this shopkeep.services.user');
-      return h.proxy({ uri: `http://shopkeep.services.user:3001/v1/users/${request.params.routes || ''}` });
+      return 'Hi There, now go away';
     }
   });
   server.route({
@@ -29,8 +18,14 @@ const register = (server, options) => {
     path: '/api/v1/products/{routes*}',
     handler: (request, h)=> {
       const uri = `http://shopkeep.services.product:3002/v1/products/${request.params.routes || ''}`;
-      console.log(uri);
-      console.log('handle the shopkeep.services.product:3002 api');
+      return h.proxy({ uri });
+    }
+  });
+  server.route({
+    method: 'GET',
+    path: '/{routes*}',
+    handler: (request, h) => {
+      const uri = `http://shopkeep.apps.storefront:4001/${request.params.routes || ''}`;
       return h.proxy({ uri });
     }
   });

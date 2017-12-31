@@ -38,8 +38,7 @@ const startServer = async () => {
     await server.start();
     server.ext({
       type: 'onRequest',
-      method: function (request, h) {
-        console.log('path maybe???', request.url);
+      method: (request, h) => {
         return h.continue;
       }
     });
