@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  shopkeep.apps.storefront:
+    build:
+      context: .
+      dockerfile: ./src/apps/storefront/Dockerfile
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    volumes:
+      - ./src/apps/storefront/:/appdir/
+    ports:
+      - "4001:4001"

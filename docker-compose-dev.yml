@@ -1,0 +1,97 @@
+version: '3'
+
+services:
+  grafana:
+    image: grafana/grafana
+    environment:
+      - XGF_SECURITY_ADMIN_USER=true
+      - XGF_SECURITY_ADMIN_PASSWORD=secret
+    ports:
+      - "3000:3000"
+  prometheus:
+    image: prom/prometheus
+    environment:
+      - GF_SECURITY_ADMIN_USERX=true
+      - GF_SECURITY_ADMIN_PASSWORDX=secret
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+
+  mongodb:
+    image: mongo:3.4
+    ports:
+      - "27018:27017"
+
+  shopkeep.gateway:
+    build:
+      context: .
+      dockerfile: ./src/gateway/Dockerfile
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    volumes:
+      - ./src/gateway/:/appdir/
+    ports:
+      - "4567:4567"
+    links:
+      - shopkeep.services.user
+      - shopkeep.services.product
+      - shopkeep.services.cart
+
+  shopkeep.apps.storefront:
+    build:
+      context: .
+      dockerfile: ./src/apps/storefront/Dockerfile
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    volumes:
+      - ./src/apps/storefront/:/appdir/
+    ports:
+      - "4001:4001"
+    links:
+      - prometheus
+      - shopkeep.gateway
+  shopkeep.services.user:
+    build:
+      context: .
+      dockerfile: ./src/services/user/Dockerfile
+    environment:
+      - NODE_ENV=development
+    command: npm run docker:dev
+    volumes:
+      - ./src/services/user/:/appdir/
+    ports:
+      - "3001:3001"
+    links:
+      - mongodb
+      - prometheus
+  shopkeep.services.product:
+    build:
+      context: .
+      dockerfile: ./src/services/product/Dockerfile
+    environment:
+      - NODE_ENV=development
+    command: npm run docker:dev
+    volumes:
+      - ./src/services/product/:/appdir/
+    ports:
+      - "3002:3002"
+    links:
+      - mongodb
+      - prometheus
+  shopkeep.services.cart:
+    build:
+      context: .
+      dockerfile: ./src/services/cart/Dockerfile
+    environment:
+      - NODE_ENV=development
+    command: npm run docker:dev
+    volumes:
+      - ./src/services/cart/:/appdir/
+    ports:
+      - "3003:3003"
+    links:
+      - mongodb
+      - prometheus
