@@ -5,6 +5,7 @@ import queryString from 'query-string';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app';
+import { updateMeta } from './dom-utils';
 import history from './history';
 import router from './router';
 
@@ -42,6 +43,7 @@ if (window.history && 'scrollRestoration' in window.history) {
 
 // Re-render the app when window.location changes
 async function onLocationChange(location, action) {
+  console.log('LOCATION CHANGED');
   // Remember the latest scroll position for the previous location
   scrollPositionsHistory[currentLocation.key] = {
     scrollX: window.pageXOffset,

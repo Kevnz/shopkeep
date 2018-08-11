@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  mongodb.test:
+    image: mongo:3.4
+    ports:
+      - "27018:27017"
+  shopkeep.services.user:
+    build:
+      context: .
+      dockerfile: ./src/services/user/Dockerfile
+    environment:
+      - NODE_ENV=test
+    command: npm run docker:test
+    volumes:
+      - ./src/services/user/:/appdir/
+    ports:
+      - "3001:3001"
+    links:
+      - mongodb.test
+  shopkeep.services.product:
+    build:
+      context: .
+      dockerfile: ./src/services/product/Dockerfile
+    environment:
+      - NODE_ENV=test
+    command: npm run docker:test
+    volumes:
+      - ./src/services/product/:/appdir/
+    links:
+      - mongodb.test
+  shopkeep.services.cart:
+    build:
+      context: .
+      dockerfile: ./src/services/cart/Dockerfile
+    environment:
+      - NODE_ENV=test
+    command: npm run docker:test
+    volumes:
+      - ./src/services/cart/:/appdir/
+    links:
+      - mongodb.test
