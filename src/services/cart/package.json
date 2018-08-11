@@ -10,7 +10,8 @@
     "prewatch:dev": "npm run database",
     "dev": "nodemon --exec \"npm run watch:dev\"",
     "test": "jest",
-    "docker:dev": "npm run dev & npm run test:watch"
+    "docker:dev": "npm run dev & npm run test:watch",
+    "docker:test": "npm run test:watch"
   },
   "keywords": [],
   "author": "",
@@ -21,11 +22,13 @@
     "hapi": "^17.1.1",
     "mongodb": "2.2.28",
     "mongoist": "^1.5.1",
+    "uuid": "^3.1.0",
     "xtconf": "^2.0.0"
   },
   "devDependencies": {
     "faker": "^4.1.0",
     "jest": "^22.0.4",
-    "nodemon": "^1.13.3"
+    "nodemon": "^1.13.3",
+    "supertest": "^3.0.0"
   }
 }

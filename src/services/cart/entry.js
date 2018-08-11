@@ -1,45 +1,12 @@
-console.log('Start cart service');
-const Glue = require('glue');
-const config = require('xtconf')();
-const manifest = {
-  server: {
-    port: config.get('port'),
-    routes: {
-      cors: true
-    },
-    router: {
-      stripTrailingSlash: true
-    }
-  },
-  register: {
-    plugins: [{
-      name: 'epimetheus',
-      plugin: './plugins/epimetheus'
-    }, {
-      name: 'carts',
-      plugin: './plugins/carts',
-      routes: {
-        prefix: '/v1'
-      }
-    }],
-    options: {
-
-    }
-  }
-};
-
-const options = {
-  relativeTo: __dirname
-};
+const getServer = require('./server');
 
 const startServer = async () => {
   try {
-    const server = await Glue.compose(manifest, options);
+    const server = await getServer();
     await server.start();
     server.ext({
       type: 'onRequest',
-      method: function (request, h) {
-        console.log('path maybe???', request.url);
+      method: (request, h) => {
         return h.continue;
       }
     });

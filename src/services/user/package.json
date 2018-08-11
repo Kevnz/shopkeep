@@ -10,7 +10,8 @@
     "prewatch:dev": "npm run database",
     "dev": "nodemon --exec \"npm run watch:dev\"",
     "test": "jest",
-    "docker:dev": "npm run dev & npm run test:watch"
+    "docker:dev": "npm run dev & npm run test:watch",
+    "docker:test": "npm run test:watch"
   },
   "keywords": [],
   "author": "",

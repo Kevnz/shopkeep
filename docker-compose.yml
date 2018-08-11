@@ -37,3 +37,12 @@ services:
       - ./src/services/product/:/appdir/
     links:
       - mongodb
+  shopkeep.services.cart:
+    build:
+      context: .
+      dockerfile: ./src/services/cart/Dockerfile
+    command: npm run dev
+    volumes:
+      - ./src/services/cart/:/appdir/
+    links:
+      - mongodb

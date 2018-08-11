@@ -1,40 +1,46 @@
-const userService = require('../services/users');
+const cartService = require('../services/carts');
 
 const register = (server, options) => {
   server.route({
     method: 'GET',
-    path: '/users',
+    path: '/cart',
     handler: (request, h) => {
-      console.log('ping get all');
-      return userService.getAll();
+
+      return cartService.getForUser();
     }
   });
   server.route({
-    method: 'GET',
-    path: '/all',
-    handler: (request, h) => {
-      console.log('ping get all');
-      return userService.getAll();
+    method: 'PUT',
+    path: '/cart/{productId}',
+    handler: async (request, h) => {
+      let cookie = request.state.session;
+
+      if (!cookie) {
+        // create cart item
+        // save product to cart
+        // return cart id set in cookie
+
+        const cart = await cartService.createCart();
+        cookie = {
+          identifier: cart.identifier
+        };
+      }
+
+      cookie.lastVisit = Date.now()
+      return "";
     }
   });
+
   server.route({
     method: 'GET',
-    path: '/gen-all',
+    path: '/{cartId}',
     handler: (request, h) => {
-      return userService.genAll();
-    }
-  });
-  server.route({
-    method: 'GET',
-    path: '/users/{userId}',
-    handler: (request, h) => {
-      console.log('ping get one');
-      return userService.get(request.params.userId);
+      return ''
     }
   });
 };
 
-const name = 'users-get';
+const name = 'cart';
 
 const version = '1.0.0';
 const multiple = false;
