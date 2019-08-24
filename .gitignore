@@ -6,3 +6,9 @@ newrelic_agent.log
 checkstyle.xml
 report.xml
 npm-debug.log
+
+.serverless
+.dynamodb
+.DS_store
+_lalalambda
+*.log
