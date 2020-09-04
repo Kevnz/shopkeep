@@ -19,7 +19,7 @@
     "epimetheus": "^1.0.55",
     "glue": "^5.0.0",
     "hapi": "^17.1.1",
-    "mongodb": "2.2.28",
+    "mongodb": "3.1.13",
     "mongoist": "^1.5.1",
     "xtconf": "^2.0.0"
   },
